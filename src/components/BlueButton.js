@@ -1,5 +1,5 @@
 //import SvgUri from 'react-native-svg-uri';
-import {View, Text,StyleSheet,TouchableOpacity,Image} from 'react-native'
+import {View, Text,StyleSheet,TouchableOpacity,Image, Dimensions} from 'react-native'
 import PropTypes from 'prop-types';
 import React from 'react'
 import SvgUri from '../../assets/Button_white.svg'
@@ -16,6 +16,9 @@ const BlueButton = ({text, onPress, white, shadow, right})=>{
     let rotateStyle = {btn_wrapper:{},svg:{}}
     let svg_shadow;
 
+    const buttonWidth = Math.round(Dimensions.get('window').width) * 0.9;
+    const buttonHeight = buttonWidth*52/376;
+
     if(white) white_text = btn_styles.color_white//style={[Rotate_Y_AnimatedStyle, styles.imageViewStyle]}>
 
     if(shadow) svg_shadow = btn_styles.shadow;
@@ -28,7 +31,7 @@ const BlueButton = ({text, onPress, white, shadow, right})=>{
     return (
     <View style={[btn_styles.btn_wrapper, rotateStyle.btn_wrapper]}>
         <TouchableOpacity style={[btn_styles.btn, ]} onPress={onPress} >
-            <SvgUri  style={[rotateStyle.svg, svg_shadow]} fill={fillColor}/>
+            <SvgUri style={[rotateStyle.svg, svg_shadow]} fill={fillColor} width={buttonWidth.toString()} height={buttonHeight.toString()}/>
 
         </TouchableOpacity>
         <View pointerEvents='none' style={btn_styles.btn_text_wrapper} disabled={true}>

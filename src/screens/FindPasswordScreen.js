@@ -3,6 +3,9 @@ import {Text, View, StyleSheet, StatusBar, TouchableOpacity, TextInput, Keyboard
 import axios from 'axios'
 import Toast from 'react-native-simple-toast'
 
+import {DefaultInput} from '../components/InputBoxes'
+import BlueButton from '../components/BlueButton'
+
 const apiKey = "beacon091211fX2TAJS0VbillUWp1aVx002VggT"
 const modeType = "findPasswd"
 export default class FindPasswordScreen extends Component {
@@ -39,26 +42,26 @@ export default class FindPasswordScreen extends Component {
     render() {
         return(
             <KeyboardAvoidingView behavior="padding">
-                <ScrollView contentContainerStyle={{width: '100%', height: '100%'}}>
-                <View style={{height: '100%', backgroundColor: '#fff', alignItems:'center', width: '100%',
-                 justifyContent: 'center'}}>
-                    <Text style={{width:'70%'}}>이메일</Text>
-                    <TextInput placeholder="이메일 입력" style={{borderBottomColor: "#828282", borderBottomWidth:1, width:'70%'}}
-                    onChangeText={this._inputEmail} keyboardType={'email-address'}/>
-                    <TouchableOpacity style={styles.btn} onPress={this._findPW}>
-                        <Text style={styles.text}>확인 메일 보내기</Text>
-                    </TouchableOpacity>
+            <>
+                <View style={{height: '100%', width:'100%', backgroundColor: '#fff', alignItems:'center', 
+                 justifyContent: 'center', flex:1}}>
+                    <View style={{paddingHorizontal:40}}>
+                        <DefaultInput text='이메일' placeholder="Seoulpass.com" onChangeText={this._inputEmail} />     
+                    </View>
+                    
+
+                    <View style={styles.btn_container}>
+                        <BlueButton text="확인 메일 보내기" onPress={this._findPW}/>
+                    </View>
                 </View>
-                </ScrollView>
+            </>
             </KeyboardAvoidingView>
         )
     }
 }
 const styles = StyleSheet.create({
-    btn: {
-        width: '90%',
-        marginTop: 20,
-        alignSelf: 'flex-start'
+    btn_container: {
+        width:'100%'
     },
     text: {
         color: '#fff',
@@ -69,7 +72,7 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         marginBottom: 5,
 
-        borderTopColor: '#3d47ff',
+        borderTopColor: '#384ec9',
         borderTopWidth:45,
         
         borderRightWidth: 10,

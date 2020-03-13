@@ -139,7 +139,7 @@ export default class CardComponent extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        width: '90%',
+        width: '100%',
         height: 200,
         borderRadius: 5,
         backgroundColor: '#dfeaf5',

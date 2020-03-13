@@ -12,7 +12,7 @@ import host.exp.exponent.Constants;
 public class AppConstants {
 
   public static final String VERSION_NAME = "1.0.0";
-  public static String INITIAL_URL = "exp://exp.host/@sujng/Beacon";
+  public static String INITIAL_URL = "exp://exp.host/@park-junseo/Beacon";
   public static final String SHELL_APP_SCHEME = "exp66e538e5f59d4952a056728aa7b04be8";
   public static final String RELEASE_CHANNEL = "default";
   public static boolean SHOW_LOADING_VIEW_IN_SHELL_APP = false;

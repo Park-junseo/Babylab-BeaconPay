@@ -72,12 +72,13 @@ export default class LoginScreen extends Component {
                         <GoogleLoginComponent navigation={this.props.navigation}/>
                     </View>
 
-                    <TouchableOpacity style={styles.email_btn} onPress={()=>this.props.navigation.navigate('emailLogin')}>
-                        <Text style={styles.email_text}>이메일로 로그인</Text>
-                    </TouchableOpacity>
+                    <View style={styles.email_container}>
+                        <BlueButton text="이메일로 로그인" white={true} right={true} onPress={()=>this.props.navigation.navigate('emailLogin')}/>
+                    </View>
 
-                    <View style={{flexDirection:'row'}}>
-                        <Text style={{marginTop:15, color:'#fff', width:'50%'}}>회원이 아니신가요?   </Text>
+                    
+                    <View style={styles.join_container}>
+                        <Text style={styles.join_text}>회원이 아니신가요?   </Text>
                         <TouchableOpacity style={styles.join} onPress={()=>this.props.navigation.navigate('join')}>
                             <Text style={styles.join_text}>회원가입 하기</Text>
                         </TouchableOpacity>
@@ -94,7 +95,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         alignItems: 'center',
-        backgroundColor:'#3d47ff',
+        backgroundColor:'#4666e5',
         paddingTop: StatusBar.currentHeight
     },
     email_btn: {
@@ -128,12 +129,20 @@ const styles = StyleSheet.create({
         textAlignVertical: 'center',
 
     },
+    join_container: {
+        flexDirection:'row',
+        marginTop:17,
+        width:'100%',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingHorizontal: 80
+
+    },
     join: {
-        marginTop: 15,
         borderBottomWidth: 1,
         borderColor: '#fff'
     },
     join_text: {
-        color: '#fff'
+        color: '#ffffffdd'
     },
 })

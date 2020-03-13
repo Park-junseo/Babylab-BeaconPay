@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 52">
+<defs>
+<style>
+.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{opacity:1.0;}
+</style>
+<clipPath id="clip-path">
+<rect class="cls-1" width="376" height="52"/>
+</clipPath>
+</defs>
+<g class="cls-2">
+<g id="default_button" data-name="Default button" class="cls-3">
+<path id="button" d="M0,0H376l-8,52H0Z"/>
+</g>
+</g>
+
+</svg>

@@ -6,6 +6,10 @@ import CardComponent from '../components/CardComponent'
 import axios from 'axios'
 const apiKey = "beacon091211fX2TAJS0VbillUWp1aVx002VggT";
 
+import LOGO from '../../assets/logo/My_page.svg'
+import EDIT from '../../assets/btn/Edit.svg'
+import CANCEL from '../../assets/btn/Cancel.svg'
+
 export default class MyPageScreen extends Component {
     constructor(props) {
         super(props)
@@ -79,47 +83,87 @@ export default class MyPageScreen extends Component {
             </View>
         </View>
     )
+
+    renderList = (number)=>{
+        const lists = [];
+        for(let i=0;i<number;i++){
+            lists.push(
+                <View style={styles.list}>
+                    <Text style={styles.date}>1.18 (화)</Text>
+                    
+                    <View style={styles.list_detail_contianer}>
+                        <View style={[styles.list_detail,{marginBottom:14}]}>
+                            <Text style={styles.detail_text}>선릉역</Text>
+                            <Text style={styles.detail_text}>1,250 원</Text>
+                        </View>
+                        <View style={styles.list_detail}>
+                            <Text style={styles.detail_text}>삼성역</Text>
+                            <Text style={styles.detail_text}>1,250 원</Text>
+                        </View>
+                    </View>
+                </View>
+            )
+        }
+
+        return lists.map((item)=>item);
+    }
+
+    componentDidMount() {
+        this.props.navigation.setParams({
+            mypageLeft: (
+                <View style={{flexDirection:'row', alignItems:"flex-start", width:'100%',height:'100%'}}>
+                    <LOGO x="0" width="210" height="100%" style={{marginLeft:-32}}/>
+                </View>
+            ),
+            mypageTitle: (
+                <View style={{marginRight:10}}>
+                    <TouchableOpacity onPress={()=>{}}>
+                        <EDIT width="24" height="24"/>
+                    </TouchableOpacity>
+                </View>
+            ),
+            mypageRight: (
+                <View>
+                    <TouchableOpacity onPress={()=>this.props.navigation.popToTop()}>
+                        <CANCEL width="24" height="24"/>
+                    </TouchableOpacity>
+                </View>
+                
+            )
+        })
+    }
+
     render() {
         return(
-            <View style={{paddingTop: StatusBar.currentHeight, height:'100%', backgroundColor: '#fff'}}>
-                <View style={styles.header}>
-                    <View style={{width: '90%', height: '100%'}}>
-                        <Image resizeMode="contain" source={require('../../assets/Mypage_1.png')} 
-                            style={{width: '55%', height:'100%', marginLeft: -10}}/>
-                    </View>
-
-                    <TouchableHighlight onPress={()=>this.props.navigation.popToTop()}>
-                        <AntDesign name="close" size={35} color='#5e5e5e'/>
-                    </TouchableHighlight>
-                </View>
-
-                <CardComponent navigation={this.props.navigation} setting={true}/>
-
+            <View style={{width:'100%', height:'100%', backgroundColor: '#fff'}}>
                 <View style={styles.container}>
-                    <View style={{flexDirection: 'row'}}>
+                    <CardComponent navigation={this.props.navigation}/>
+
+                    <View style={styles.option_container}>
                         <Text style={styles.title}>이용 내역</Text>
+                        <View style={styles.options}>
+                            {this.state.target == 1 ? <TouchableOpacity style={styles.btn} onPress={()=>this._changeList(1)}> 
+                                <Text style={{color: '#fff'}}>1개월</Text>
+                            </TouchableOpacity> : <TouchableOpacity style={styles.btn2} onPress={()=>this._changeList(1)}>
+                                <Text>1개월</Text>
+                            </TouchableOpacity> }
+                            
+                            {this.state.target == 2 ? <TouchableOpacity style={styles.btn} onPress={()=>this._changeList(2)}>
+                                <Text style={{color: '#fff'}}>2개월</Text>
+                            </TouchableOpacity> : <TouchableOpacity style={styles.btn2} onPress={()=>this._changeList(2)}>
+                                <Text>2개월</Text>
+                            </TouchableOpacity> }
 
-                        {this.state.target == 1 ? <TouchableOpacity style={styles.btn} onPress={()=>this._changeList(1)}> 
-                            <Text style={{color: '#fff'}}>1개월</Text>
-                        </TouchableOpacity> : <TouchableOpacity style={styles.btn2} onPress={()=>this._changeList(1)}>
-                            <Text>1개월</Text>
-                        </TouchableOpacity> }
-                        
-                        {this.state.target == 2 ? <TouchableOpacity style={styles.btn} onPress={()=>this._changeList(2)}>
-                            <Text style={{color: '#fff'}}>2개월</Text>
-                        </TouchableOpacity> : <TouchableOpacity style={styles.btn2} onPress={()=>this._changeList(2)}>
-                            <Text>2개월</Text>
-                        </TouchableOpacity> }
 
-
-                        {this.state.target == 3 ? <TouchableOpacity style={styles.btn} onPress={()=>this._changeList(3)}>
-                            <Text style={{color: '#fff'}}>3개월</Text>
-                        </TouchableOpacity> : <TouchableOpacity style={styles.btn2} onPress={()=>this._changeList(3)}>
-                            <Text>3개월</Text>
-                        </TouchableOpacity> }
+                            {this.state.target == 3 ? <TouchableOpacity style={styles.btn} onPress={()=>this._changeList(3)}>
+                                <Text style={{color: '#fff'}}>3개월</Text>
+                            </TouchableOpacity> : <TouchableOpacity style={styles.btn2} onPress={()=>this._changeList(3)}>
+                                <Text>3개월</Text>
+                            </TouchableOpacity> }
+                        </View>
                     </View>
-
-                    <FlatList
+                </View>
+                <FlatList
                         style={{height: "50%"}}
                         data={this.state.item}
                         renderItem={this._renderItem}
@@ -128,6 +172,19 @@ export default class MyPageScreen extends Component {
                         refreshing={this.state.refreshing}
                         onRefresh={this._handleRefresh}
                        /> 
+                {/*
+                <ScrollView style={{width:'100%'}}>
+                        {this.renderList(10)}
+                </ScrollView>
+                 */}
+                <View style={styles.footer}>
+                    <View style={{width:"100%",height:32, flexDirection:'column', alignItems:'flex-end'}}>
+                        <TouchableOpacity onPress={()=>{this.logout()}}>
+                            <View style={styles.btn_text_wrapper}>
+                                <Text style={styles.btn_text}>로그아웃</Text>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
                 </View>
 
                 
@@ -143,55 +200,99 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     container: {
-        marginTop: 20
+        marginTop: '3%',
+        marginHorizontal:24
+    },
+    option_container:{
+        marginTop: "6%",
+        flexDirection:'row',
+        alignItems:'flex-start',
+        justifyContent:'space-between',
+        marginHorizontal:8,
+        paddingBottom:'3%'
+    },
+    options: {
+        flexDirection:'row',
+        alignItems:'flex-start',
     },
     title: {
-        marginLeft: 20,
         color: '#465cdb',
         fontSize: 15,
         fontWeight: 'bold',
-        width: '40%'
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    list_container: {
+        width:'100%'
     },
     list: {
         width: '100%',
-        borderBottomWidth: 0.5,
-        paddingHorizontal: 20,
-        paddingVertical: 10,
-        height: 80
+        flexDirection:'row',
+        alignItems:'flex-start',
+        borderBottomWidth: 1,
+        borderColor:'#00000099',
+        paddingVertical:20,
+        paddingHorizontal:32,
     },
     date:{
-        width: '40%'
+        color:'#00000099',
+        marginRight:30,
     },
-    station: {
-        width: '40%',
-        fontWeight: 'bold'
+    list_detail_contianer:{
+        flexDirection:'column',
+        alignItems:'flex-start',
+        flex:1,
     },
-    price: {
+    list_detail:{
+        flexDirection:'row',
+        alignItems:'flex-start',
+        justifyContent:'space-between',
+        width:'100%',
+        flex:1
+    },
+    detail_text: {
         fontWeight: 'bold',
-        alignSelf: 'flex-end'
-    },
-    balance: {
-        fontSize: 11
+        color:'#000000dd'
     },
     btn: {
         borderRadius: 30,
-        width: 70, 
-        height: 30,
+        paddingHorizontal:12,
+        paddingVertical:3,
         backgroundColor: '#465cdb',
         alignItems: 'center',
         justifyContent: 'center',
-        marginRight: 5
+        marginLeft: 5
     },
     btn2: {
         borderRadius: 30,
-        width: 70, 
-        height: 30,
+        paddingHorizontal:12,
+        paddingVertical:3,
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
         borderColor: '#465cdb',
         borderWidth: 1,
-        marginRight: 5
+        marginLeft: 5
+    },
+    footer:{
+        width:'100%',
+        flexDirection:'column',
+        alignItems:'center',
+        height:40
+    },
+    btn_text_wrapper:{
+        position:'absolute',
+        alignItems:'center',
+        justifyContent: 'center',
+        top:0,
+        left:0,
+        right:0,
+        bottom:0
+    },
+    btn_text:{
+        color:'#fff',
+        fontWeight:'bold',
+        fontSize:16,
     }
 
     

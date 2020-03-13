@@ -9,6 +9,11 @@ import {NaverLogin} from '@react-native-seoul/naver-login'
 import {GoogleSignin} from '@react-native-community/google-signin';
 import Advertisement from '../components/Advertisement';
 
+import LOGO from '../../assets/logo/Logo_2.svg'
+import PROFILE from '../../assets/btn/My.svg'
+import CHANGE from '../../assets/btn/Change.svg'
+import SEARCH from '../../assets/btn/Search.svg'
+
 
 export default class HomeScreen extends Component {
     constructor(props){
@@ -135,32 +140,39 @@ handleBackButton = () => {
     openModal = () => {
         this.setState({modal: true})
     }
+
+    componentDidMount() {
+        this.props.navigation.setParams({
+            homeLeft: (
+                <View style={{flexDirection:'row', alignItems:"flex-start", width:'100%',height:'100%'}}>
+                    <LOGO x="0" width="290" height="100%" style={{marginLeft:-32}}/>
+                </View>
+            ),
+            homeRight: (
+                <View>
+                    <TouchableOpacity onPress={()=>this.setState({modal: true})}>
+                        <PROFILE width="24" height="24"/>
+                    </TouchableOpacity>
+                </View>
+                
+            )
+        })
+    }
+
     render() {
 
         return(
-            <View style={{paddingTop: StatusBar.currentHeight, backgroundColor: '#fff', height:'100%'}}>
+            <View style={{width:'100%',height:'100%',backgroundColor: '#fff'}}>
                 {/*Header*/}
-                <View style={{marginHorizontal:10}}>
-                    <SafeAreaView style={styles.header}>
-                        <View style={{width:'90%'}}>
-                            <Image resizeMode="contain" source={require('../../assets/Logo_2.png')}
-                                style={{width: '100%', height: '70%', marginLeft: '-10%'}}/>
-                        </View>
-                        <TouchableHighlight style={{width:'20%'}} onPress={()=>this.setState({modal: true})}>
-                            <Image resizeMode="contain" 
-                            source={require('../../assets/My_page.png')} style={{width: '100%', height: '70%'}}/>
-                        </TouchableHighlight>
-                    </SafeAreaView>
-
+                <View style={styles.container}>
                     {/*Card*/}
                     {this.state.pay == 'credit' ? <CardComponent navigation={this.props.navigation} setting={true}/> : <></>}
 
                     <View style={styles.search}>
-                        <TouchableHighlight style={styles.swap} onPress={this._swap}>
-                            <Image resizeMode="contain" source={require('../../assets/Change.png')} 
-                                style={{width: '100%', height:'70%'}}/>
+                        <TouchableHighlight style={styles.swap} onPress={this._swap} underlayColor="none">
+                            <CHANGE width="24" height="24"/>
                         </TouchableHighlight>
-                        <View style={{height:'100%', flex:1, flexDirection:'column', alignItems:'center'}}>
+                        <View style={{height:'100%', width:'100%', flex:1, flexDirection:'column', alignItems:'center'}}>
 
                             <TouchableOpacity style={styles.input} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._depart})}>
                                 <Text>{this.state.departure}</Text>
@@ -171,16 +183,17 @@ handleBackButton = () => {
 
                         </View>
 
-                        <TouchableHighlight style={styles.swap} onPress={()=>this.props.navigation.navigate('search', 
+                        <TouchableHighlight style={styles.swap}  underlayColor="none" onPress={()=>this.props.navigation.navigate('search', 
                             {depart:this.state.departure, dep_code:this.state.dep_code, dest_code:this.state.dest_code, arrive: this.state.destination})}>
-                            <Image resizeMode="contain" source={require('../../assets/Search.png')} 
-                                style={{width: '100%', height:'70%'}}/>
+                            <SEARCH width="24" height="24"/>
                         </TouchableHighlight>
                     </View>
                 </View>
 
+
                 <Map/>
                 <Advertisement/>
+
                 <Modal visible={this.state.modal} animationType="slide" transparent={true} >
                 <View style={styles.modal_container}>
                     <TouchableOpacity style={{height:'60%', width: '100%'}} onPress={this.closeModal}>
@@ -216,15 +229,20 @@ handleBackButton = () => {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        marginTop: '3%',
+        marginHorizontal:24
+    },
     header: {
         flexDirection: 'row',
         width: '100%',
-        height: 50,
+        height: 35,
+        marginTop: 10,
+        marginBottom:15,
         alignItems: 'center',
-        paddingRight: 10,
         flexDirection:'row',
         alignItems:'flex-start',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
     },
    search: {
         backgroundColor: '#fff',
@@ -243,8 +261,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent:'space-between'
-
-  
+      
     },
     swap: {
         width:'8%',
@@ -253,7 +270,8 @@ const styles = StyleSheet.create({
     line: {
         backgroundColor: '#e0e0e0',
         height: 1,
-        width:'100%'
+        width:'100%',
+
     },
     input: {
         width: '100%',
@@ -262,15 +280,31 @@ const styles = StyleSheet.create({
         borderBottomColor: '#00000099',
         borderBottomWidth:0.5,
         flex:1,
-
     },
     input2: {
         width: '100%',
         paddingLeft:12,
         justifyContent: 'center',  
-        flex:1,   
+        flex:1,     
     },
-    
+    list: {
+        width:'90%',
+        height: 80,
+        position: 'relative',
+        zIndex:2000,
+        margin:0
+    },
+    listItem: {
+        borderBottomWidth: 0.5,
+        height: 50,
+        justifyContent: 'center',
+        paddingLeft: 20
+    },
+    listText: {
+        fontSize: 17,
+        color: '#828282',
+        
+    },
     modal_container: {
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         width: '100%',

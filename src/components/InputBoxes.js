@@ -3,22 +3,27 @@ import PropTypes from 'prop-types';
 import React from 'react'
 
 
-const DefaultInput = ({text, placeholder, onChangeText,onSubmitEditing, white, marginRight, marginBottom, blurOnSubmit, pw, ref, children}) => {
+const DefaultInput = (props) => {
     let color_white;
     let placeholderTextColor = '#00000059';
+    let title;
 
-    if(white){
+    if(props.white){
         color_white=styles.color_white;
         placeholderTextColor = '#ffffff99';
     }
 
+    if(props.title) title = <Text style={[styles.default_text,color_white]}>{props.text}</Text>
+
     return(
-        <View style={[{marginRight:marginRight, marginBottom:marginBottom},color_white]}>
-            <Text style={[styles.default_text,color_white]}>{text}</Text>
+        <View style={[{marginRight:props.marginRight, marginBottom:props.marginBottom},color_white]}>
+            {title}
             <View style={{flexDirection: 'row'}}>
-                <TextInput style={[styles.input,color_white]} placeholderTextColor={placeholderTextColor} placeholder={placeholder}
-                onChangeText={onChangeText} onSubmitEditing ={onSubmitEditing} blurOnSubmit={blurOnSubmit} ref={ref} secureTextEntry={pw}/>
-                {children}
+                <TextInput style={[styles.input,color_white]} placeholderTextColor={placeholderTextColor} placeholder={props.placeholder}
+                onChangeText={props.onChangeText} onSubmitEditing ={props.onSubmitEditing} blurOnSubmit={props.blurOnSubmit} ref={props.ref} secureTextEntry={props.pw}>
+                    {props.initText}
+                </TextInput>
+                {props.children}
             </View>
         </View>
     )
@@ -27,6 +32,7 @@ const DefaultInput = ({text, placeholder, onChangeText,onSubmitEditing, white, m
 
 DefaultInput.propTypes = {
     text: PropTypes.string,
+    initText: PropTypes.string,
     onChangeText: PropTypes.func,
     onSubmitEditing: PropTypes.func,
     ref: PropTypes.func,
@@ -35,27 +41,31 @@ DefaultInput.propTypes = {
     blurOnSubmit: PropTypes.bool,
     marginRight: PropTypes.number,
     marginBottom: PropTypes.number,
-    pw: PropTypes.bool
+    pw: PropTypes.bool,
+    title: PropTypes.bool
 };
   
-  DefaultInput.defaultProps = {
+DefaultInput.defaultProps = {
     text: "N/A",
+    initText: "",
     onChangeText: () => console.warn('onChangeText not defined'),
     onSubmitEditing: ()=>{},
     ref:()=>{} ,
-    placeholder:"",
+    placeholder:"none",
     white: false,
     blurOnSubmit: false,
     marginRight: 0,
     marginBottom: 24,
-    pw: false
-  };
+    pw: false,
+    title: true
+};
+
 
 const styles = StyleSheet.create({
     default_text: {
         color: '#000000dd',
         paddingLeft:8,
-        marginBottom:10,
+        marginBottom:9,
         fontWeight:'bold',
         fontSize:12
     },
@@ -68,7 +78,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderColor : '#00000059',
         paddingLeft: 10,
-        paddingBottom:4,
+        paddingBottom:3,
         width:'100%',
         fontSize:14,
 
