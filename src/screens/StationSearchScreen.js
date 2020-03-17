@@ -51,7 +51,7 @@ export default class StationSearchScreen extends Component {
                 </View>
             ),
             searchButton: (
-                <Search width="24" height="24" underlayColor="none"/>
+                <Search width="24" height="24" underlayColor="transparent"/>
             )
         })
     }

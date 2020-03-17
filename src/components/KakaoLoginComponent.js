@@ -78,11 +78,11 @@ export default class KakaoLoginComponent extends Component {
                     source={require('../../assets/kakao.png')}/>
             </TouchableHighlight>
 
-            <Modal visible={this.state.loading}>
+      {/*      <Modal visible={this.state.loading}>
                 <View style={{backgroundColor: 'rgba(0, 0, 0, 0.5)',
                                 width: '100%',
                                 height: '100%'}}/>
-        </Modal>
+        </Modal>*/}
             </>
         )
     }

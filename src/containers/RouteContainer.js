@@ -49,7 +49,6 @@ export default class RouteContainer extends Component {
     }
     //1개 path당 걸리는 시간
     _getEachPathInfo = () => {
-        if(this.state.item.length ===null) return;
         for(let i = 0; i<this.state.item.length; i++) {
             this.state.item[i].subtime = 0;
             let total = 0;
@@ -121,19 +120,24 @@ export default class RouteContainer extends Component {
 
     }
 
+
     render() {
         return(
-            <>
+            <View style={{width:'100%', flexDirection:'column'}}>
                { this.state.render && this.state.item.map((value) => {
                    const startline = value.pathList[0].routeNm+"";
                     return (
-                        <View style={{width:'100%', paddingHorizontal:16}}>
+                        <View style={{width:'100%', paddingHorizontal:16,marginVertical: 8,flexDirection:'row',justifyContent:'space-between', flex:1}}>
                             <View style={styles.container}>
                                 <View style={[styles.container_header,styles.margin_horizontal]}>
-                                    <View style={styles.container_header_text}>
-                                        <Text style={{fontSize:28, fontWeight:'bold'}}>{value.time} </Text>
-                                        <Text style={{fontWeight:'bold'}}>분</Text>
-                                        <Text style={{fontWeight:'bold'}}> | {this._calculateTime(value.time)} 도착</Text>
+                                    <View>
+                                        <View style={styles.container_header_text}>
+                                            <Text style={{fontSize:28, fontWeight:'bold'}}>{value.time} </Text>
+                                            <Text style={{fontWeight:'bold'}}>분</Text>
+                                            <Text style={{fontWeight:'bold'}}> | {this._calculateTime(value.time)} 도착</Text>
+                                        </View>
+                                        <Text style={[styles.container_detail]}>
+                                        환승 {value.pathList.length}회 | 도보 {value.time - value.subtime} 분 | {this._calculateFee(value.distance)} 원</Text>
                                     </View>
                                     <TouchableHighlight onPress={()=>this.detail(value, this._calculateTime(value.time) )}>
                                         <DETAIL source={require('../../assets/btn/Right_B.svg')} width="24" height="24"/>
@@ -141,10 +145,6 @@ export default class RouteContainer extends Component {
 
                                 </View>
 
-
-                            
-                                <Text style={[styles.container_detail,styles.margin_horizontal]}>
-                                환승 {value.pathList.length}회 | 도보 {value.time - value.subtime} 분 | {this._calculateFee(value.distance)} 원</Text>
                                 <View style={styles.route_graph}>
                                     {
                                                     
@@ -162,20 +162,20 @@ export default class RouteContainer extends Component {
                                 <View style={[styles.sumary_path,styles.margin_horizontal]}> 
                                     <View style={{flexDirection: 'row', width: '100%', marginTop: 5, alignItems:'flex-start'}}>
                                         <View style={{borderRadius: 50,
-                                                        width: 20,
-                                                        height: 20,
+                                                        width: 16,
+                                                        height: 16,
                                                         backgroundColor: this.state.color[value.pathList[0].routeNm],
                                                         alignItems: 'center', justifyContent: 'center'}}>
-                                                            <Text style={{color: '#fff'}}>{startline.substring(0,1)}</Text>
+                                                            <Text style={{color: '#fff', fontSize:10}}>{startline.substring(0,1)}</Text>
                                         </View>
-                                        <Text style={{marginLeft:8}}>{value.pathList[0].fname}</Text>
+                                        <Text style={{marginLeft:8, fontSize:12, fontWeight:'bold'}}>{value.pathList[0].fname}</Text>
                                     </View>
                                     
 
                                     <View style={{flexDirection: 'row', width: '100%'}}>
-                                        <View style={{width:10,height: 30, borderRightColor: '#00000059', borderRightWidth: 1,borderStyle: 'dotted'}}/>
-                                        <View style={{flexDirection: 'column', height:'100%', backgroundColor:'#fd3'}}>
-                                            <Text style={{marginLeft: 18}}>{value.pathList[0].tname}</Text>
+                                        <View style={{width:8,height: 29, borderRightColor: '#00000059', borderRightWidth: 1,borderStyle: 'dotted'}}/>
+                                        <View style={{flexDirection: 'column',justifyContent:'flex-end'}}>
+                                            <Text style={{marginLeft: 16, fontSize:12, fontWeight:'bold'}}>{value.pathList[0].tname}</Text>
                                         </View>
                                     </View>
                                     
@@ -186,7 +186,7 @@ export default class RouteContainer extends Component {
                     )
                              })
                 }
-            </>
+            </View>
         )
     }
 }
@@ -194,8 +194,8 @@ export default class RouteContainer extends Component {
 const styles = StyleSheet.create({
     container: {
         width: '100%',
-        alignSelf: 'center',
-        height: 180,
+        //alignSelf: 'center',
+        //height: 180,
         borderBottomWidth: 0,
         
         shadowColor: "#000",
@@ -209,16 +209,27 @@ const styles = StyleSheet.create({
         elevation: 2,
 
         alignItems: 'flex-start',
-        paddingTop: 10,
+        paddingTop: 16,
         paddingBottom: 22,
-        marginVertical: 8,
-        paddingHorizontal:16
+        //marginVertical: 8,
+        paddingHorizontal:16,
+
+        justifyContent:'center',
+        
+        flex:1
     },
     container_header: {
-        flexDirection: 'row', height: '30%', alignItems: 'center', width:'100%',justifyContent:'space-between'
+        flexDirection: 'row',
+        height: '30%',
+        alignItems: 'center',
+        width:'100%',
+        justifyContent:'space-between',
+        marginBottom:11
     },
     container_header_text: {
-        flexDirection: 'row', alignItems: 'baseline'
+        flexDirection: 'row',
+        alignItems: 'baseline',
+        paddingBottom:12
     },
     container_detail:{
         marginBottom:10,
@@ -226,7 +237,7 @@ const styles = StyleSheet.create({
         color:'#00000099'
     },
     route_graph:{
-        flexDirection: 'row', alignItems: 'flex-start',
+        flexDirection: 'row', alignItems: 'flex-start', marginBottom:6
     },
     circle: {
         borderRadius: 50,

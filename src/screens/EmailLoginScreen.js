@@ -18,6 +18,9 @@ export default class EmailLoginScreen extends Component {
         }
     }
     login = () => {
+        //this.props.navigation.navigate('Home');
+        //return;
+
         axios.get('https://beacon.smst.kr/appAPI/v1/loginPhone.php?apiKey='
             +key+'&modeType=loginPhone&email='+this.state.email+'&passwd='+this.state.password)
         .then(response => {
@@ -46,7 +49,7 @@ export default class EmailLoginScreen extends Component {
     }
     render() {
         return(
-            <KeyboardAvoidingView behavior="height">
+            <KeyboardAvoidingView behavior="height" style={{marginHorizontal:0, paddingHorizontal:0}}>
             <ScrollView contentContainerStyle={{width: '100%', height: '100%'}}>
             <View style={{backgroundColor:'#4666e5', width: '100%', height: '100%', alignItems: 'center'}}>
                 <View style={{height: '40%', width: '100%', marginTop:60}}>

@@ -28,8 +28,57 @@ export default class JoinScreen extends Component{
             addr: '',
             addr2: '',
             modal: false,
+
+            agreement: [],
         }
     }
+
+    componentWillMount() {
+        const agreeArray = [
+            {
+                title: '서울패스 이용약관 동의',
+                necessary: true,
+                content: '약관~~~~~~~~~~~~~',
+                check:this.check_1,
+                checkState:this.state.check_1
+            },
+            {
+                title: '개인정보 수집이용 동의',
+                necessary: true,
+                content: '약관~~~~~~~~~~~~~2',
+                check:this.check_2,
+                checkState:this.state.check_2
+            }
+        ]
+
+        this.setState((state)=>({agreement:agreeArray}));
+    }
+
+    showAgreement=()=>{
+        let agreeArray = this.state.agreement;
+        agreeArray[0].checkState=this.state.check_1;
+        agreeArray[1].checkState=this.state.check_2;
+        
+        this.setState((prev)=>({agreement: agreeArray}));
+
+
+        this.props.navigation.navigate('agree', {agreeArray:agreeArray});
+    }
+
+    getCheck_1() {
+        let check = false;
+        this.setState((prev)=>{check=prev.check_1});
+        console.log(check);
+        return check;
+    }
+
+    getCheck_2() {
+        let check = false;
+        this.setState((prev)=>{check=prev.check_2});
+        //console.log(check);
+        return check;
+    }
+
     check_1 = () => {
         this.setState((prev)=>({check_1:!prev.check_1}));
         this.setState((prev)=>({check_all:(prev.check_1&&prev.check_2)}));
@@ -156,6 +205,18 @@ export default class JoinScreen extends Component{
         this.setState({modal: true})
     }
 
+    agreeElement = () => {
+        return (
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                <CheckBox style={styles.check_box} value={this.state.check_1} onValueChange={this.check_1} />
+                <TouchableOpacity onPress={()=>this.props.navigation.navigate('agree')}>
+                    <Text style={styles.agree_text}>서울하이패스 이용약관 동의(필수)</Text>
+                </TouchableOpacity>
+                
+            </View>
+        )
+    }
+
     render() {
         return(
             <KeyboardAvoidingView behavior="padding">
@@ -224,21 +285,23 @@ export default class JoinScreen extends Component{
                         <View>
                             <View style={{flexDirection: 'row', alignItems: 'center'}}>
                                 <CheckBox style={styles.check_box} value={this.state.check_1} onValueChange={this.check_1} />
-                                <TouchableOpacity onPress={()=>this.props.navigation.navigate('agree')}>
-                                    <Text style={styles.agree_text}>서울하이패스 이용약관 동의(필수)</Text>
+                                <TouchableOpacity onPress={this.showAgreement}>
+                                    <Text style={styles.agree_text}>{this.state.agreement[0].title}{(this.state.agreement[0].necessary) ? " (필수)" : ""}</Text>
                                 </TouchableOpacity>
                                 
                             </View>
                             <View style={{flexDirection: 'row', alignItems: 'center'}}>
                                 <CheckBox style={styles.check_box} value={this.state.check_2} onValueChange={this.check_2} />
-                                <TouchableOpacity onPress={()=>this.props.navigation.navigate('agree')}>
-                                    <Text style={styles.agree_text}>개인정보 수집이용 동의(필수)</Text>
+                                <TouchableOpacity onPress={this.showAgreement}>
+                                    <Text style={styles.agree_text}>{this.state.agreement[1].title}{(this.state.agreement[1].necessary) ? " (필수)" : ""}</Text>
                                 </TouchableOpacity>
                                 
                             </View>
                         </View>
                         <View style={{flex:1, flexDirection:'row', alignItems:'center', justifyContent:'flex-end'}}>
-                            <MoreButton width="24" height="24" fill={'#808080'}/>
+                            <TouchableOpacity onPress={this.showAgreement}>
+                                <MoreButton width="24" height="24" fill={'#808080'}/>
+                            </TouchableOpacity>
                         </View>
 
                         

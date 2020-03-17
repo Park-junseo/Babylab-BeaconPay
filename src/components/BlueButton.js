@@ -2,7 +2,8 @@
 import {View, Text,StyleSheet,TouchableOpacity,Image, Dimensions} from 'react-native'
 import PropTypes from 'prop-types';
 import React from 'react'
-import SvgUri from '../../assets/Button_white.svg'
+import BLUE from '../../assets//btn/Button_blue.svg'
+import WHITE from '../../assets//btn/Button_white.svg'
 
 const BlueButton = ({text, onPress, white, shadow, right})=>{
     //const uri = '../../assets/btn/Button_'+((white)?'white':'blue')+'.svg';
@@ -31,7 +32,8 @@ const BlueButton = ({text, onPress, white, shadow, right})=>{
     return (
     <View style={[btn_styles.btn_wrapper, rotateStyle.btn_wrapper]}>
         <TouchableOpacity style={[btn_styles.btn, ]} onPress={onPress} >
-            <SvgUri style={[rotateStyle.svg, svg_shadow]} fill={fillColor} width={buttonWidth.toString()} height={buttonHeight.toString()}/>
+            {(white) ?<WHITE style={[rotateStyle.svg, svg_shadow]} fill={fillColor} width={buttonWidth.toString()} height={buttonHeight.toString()}/>:
+             <BLUE style={[rotateStyle.svg, svg_shadow]} fill={fillColor} width={buttonWidth.toString()} height={buttonHeight.toString()}/>}
 
         </TouchableOpacity>
         <View pointerEvents='none' style={btn_styles.btn_text_wrapper} disabled={true}>

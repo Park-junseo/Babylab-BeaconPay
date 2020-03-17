@@ -4,5 +4,6 @@ package host.exp.exponent.generated;
 public class DetachBuildConstants {
 
   public static final String DEVELOPMENT_URL = "exp66e538e5f59d4952a056728aa7b04be8://172.30.1.79:19000";
-
+  //public static final String DEVELOPMENT_URL = "http://whenever.site";
+  //public static final String DEVELOPMENT_URL = "https://beacon.smst.kr/expo/web-build/expo/index.html";
 }

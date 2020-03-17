@@ -150,8 +150,7 @@ export default class InfoModifyScreen extends Component {
 
                     </View>
                     <View style={styles.join_btn_container}>
-                        <Text>3333</Text>
-                        <BlueButton text={'정보수정'} onPress={this._modify} white={false}/>
+                        <BlueButton text={'정보수정'} onPress={this._modify}/>
                     </View>
                 </ScrollView>
                 <Modal visible={this.state.modal}> 
@@ -194,7 +193,6 @@ const styles = StyleSheet.create({
     join_btn_container: {
         width: '100%',
         marginTop: 20,
-        backgroundColor:'#fda'
     },
     detail_btn: {
         backgroundColor: '#f5f5f5',

@@ -4,6 +4,9 @@ import {RadioButton} from 'react-native-paper'
 import CardComponent from '../components/CardComponent'
 import axios from 'axios'
 
+import BlueButton from '../components/BlueButton'
+import {DefaultInput} from '../components/InputBoxes'
+
 const apiKey = "beacon091211fX2TAJS0VbillUWp1aVx002VggT";
 const modeType = "charge";
 
@@ -14,6 +17,9 @@ export default class ChargeScreen extends Component {
             val: 1,
             charge: 10000,
             id: "",
+
+            auto: 10000,
+            optionHeight: null
         }
     }
     componentDidMount() {
@@ -72,44 +78,89 @@ export default class ChargeScreen extends Component {
         this.props.navigation.state.params.goBackData({refresh: true})
         this.props.navigation.pop()
     }
+
+    setAutoCharge = (price) => {
+        this.setState({auto:price})
+    }
+
+    autoChargeHighlight = (price) => {
+        return (price == this.state.auto) ? styles.blueColor : null;
+    }
+
     render() {
         return(
             <KeyboardAvoidingView behavior="position">
             
-            {this.state.id != "" && <View style={{width: '100%', height: '100%', backgroundColor: '#fff'}}>
-                <ScrollView>
-                <CardComponent setting={false}/>
-
+            {this.state.id != "" && 
+            <View style={styles.full_container}>
                 <View style={styles.container}>
-                    <View style={{flexDirection: 'row', height: 50, alignItems: 'center'}}>
-                        <RadioButton color={'#465cdb'} onPress={()=>this.setState({charge: 10000, val: 1})}
-                            status={this.state.val == 1 ? 'checked':'unchecked'} /><Text>10,000원</Text>
-                    </View>
-                    <View style={{flexDirection: 'row', height: 50, alignItems: 'center'}}>
-                        <RadioButton color={'#465cdb'} onPress={()=>this.setState({charge: 30000, val:3})}
-                            status={this.state.val == 3 ? 'checked':'unchecked'} /><Text>30,000원</Text>
-                    </View>
-                    <View style={{flexDirection: 'row', height: 50, alignItems: 'center'}}>
-                        <RadioButton color={'#465cdb'} onPress={()=>this.setState({charge: 50000, val:5})}
-                            status={this.state.val == 5 ? 'checked':'unchecked'} /><Text>50,000원</Text>
-                    </View>
+                    <CardComponent setting={false}/>
+                    <View style={[styles.option_container,this.state.optionHeight]}>
+                        <View style={styles.option}>
+                            <View style ={styles.option_title}>
+                                <RadioButton color={'#465cdb'} onPress={()=>this.setState({charge: 10000, val: 1,optionHeight:null})}
+                                    status={this.state.val == 1 ? 'checked':'unchecked'} /><Text>10,000원</Text>
+                            </View>
+                        </View>
+                        <View style={styles.option}>
+                            <View style ={styles.option_title}>
+                                <RadioButton color={'#465cdb'} onPress={()=>this.setState({charge: 30000, val:3,optionHeight:null})}
+                                    status={this.state.val == 3 ? 'checked':'unchecked'} /><Text>30,000원</Text>
+                            </View>
+                        </View>
+                        <View style={styles.option}>
+                            <View style ={styles.option_title}>
+                                <RadioButton color={'#465cdb'} onPress={()=>this.setState({charge: 50000, val:5,optionHeight:null})}
+                                    status={this.state.val == 5 ? 'checked':'unchecked'} /><Text>50,000원</Text>
+                            </View>
+                        </View>
 
-
-                    <View style={{flexDirection: 'row', height: 50, alignItems: 'center'}}>
-                        <RadioButton color={'#465cdb'} onPress={()=>this.setState({charge: 0, val:0})}
-                            status={this.state.val == 0 ? 'checked':'unchecked'} /><Text>직접 입력 </Text>
-                    </View>
-
-                    {this.state.val == 0 ? <View style={{alignSelf: 'center', width: '90%'}}>
+                        <View style={[styles.option]}>
+                            <View style ={styles.option_title}>
+                                <RadioButton color={'#465cdb'} onPress={()=>this.setState({charge: 0, val:0,optionHeight:null})}
+                                    status={this.state.val == 0 ? 'checked':'unchecked'} />
+                                <Text>직접 입력  </Text>
+                            </View>
+                            {this.state.val == 0 ? <View style={{marginLeft:35}}>
                             <TextInput style={styles.input} placeholder={'직접 입력 (10,000원 이상)'} 
                             onChangeText={this._input} keyboardType={'numeric'}/>
                         </View> : <></>}
+                        </View>
+                    </View>
                 </View>
                 
-                <TouchableOpacity style={styles.btn} onPress={this._charge}>
-                    <Text style={styles.text}>결제하기</Text>
-                </TouchableOpacity>
-                </ScrollView>
+                <View style={styles.bottom_container}>
+                    <View style={{marginHorizontal:24}}>
+                        <View style={styles.option_container}>
+                            <View style={styles.option}>
+                                <View style ={styles.option_title}>
+                                    <RadioButton color={'#465cdb'} onPress={()=>this.setState({val: -1,optionHeight:styles.option_height})}
+                                    status={this.state.val < 0 ? 'checked':'unchecked'} /><Text>자동충전</Text>
+                                </View>
+                                {this.state.val < 0 ? <View style={{marginLeft:35}}>
+                                    <Text>1,500원 이하 남을 경우 10,000 원 자동 충전합니다.</Text>
+                                    <View style={styles.button_container}>
+                                        <TouchableOpacity style={[styles.price_button,this.autoChargeHighlight(10000)]} onPress={()=>this.setAutoCharge(10000)}>
+                                            <Text>10,000</Text>
+                                        </TouchableOpacity>
+                                        <TouchableOpacity style={[styles.price_button,this.autoChargeHighlight(30000)]} onPress={()=>this.setAutoCharge(30000)}>
+                                            <Text>30,000</Text>
+                                        </TouchableOpacity>
+                                        <TouchableOpacity style={[styles.price_button,this.autoChargeHighlight(50000)]} onPress={()=>this.setAutoCharge(50000)}>
+                                            <Text>50,000</Text>
+                                        </TouchableOpacity>
+                                        <TouchableOpacity style={[styles.price_button,this.autoChargeHighlight(100000)]} onPress={()=>this.setAutoCharge(100000)}>
+                                            <Text>100,000</Text>
+                                        </TouchableOpacity>
+                                    </View>
+                                </View> : <></>}
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.btn_wrapper}>
+                        <BlueButton text='결제하기' />
+                    </View>
+                </View>
             </View>
             }
             </KeyboardAvoidingView>
@@ -118,9 +169,42 @@ export default class ChargeScreen extends Component {
     }
 }
 const styles = StyleSheet.create({
+    full_container:{
+        width: '100%',
+        height: '100%',
+        backgroundColor: '#f5f5f5',
+        flexDirection:'column',
+        alignItems:'flex-start',
+        justifyContent:'space-between'
+    },
+
     container: {
-        width: '90%',
-        alignSelf: 'center'
+        width:'100%',
+        paddingHorizontal:24,
+        alignSelf: 'center',
+        paddingTop:12,
+        backgroundColor:'#fff',
+        borderBottomLeftRadius:5,
+        borderBottomRightRadius:5,
+        marginBottom:5,
+        
+    },
+    option_container:{
+        marginHorizontal:16,
+        marginVertical:'4%',
+        flexDirection:'column',
+        alignSelf:'flex-start',
+        justifyContent:'space-between',
+        //justifyContent:'space-evenly',
+        flexGrow:1
+    },
+    option: {
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+    },
+    option_title: {
+        flexDirection: 'row',
+        alignItems: 'center',
     },
     input: {
         borderBottomWidth: 0.5,
@@ -128,10 +212,9 @@ const styles = StyleSheet.create({
         width: 200,
         
     },
-    btn: {
-        width: '90%',
+    btn_wrapper: {
+        width: '100%',
         marginTop: 20,
-        alignSelf: 'flex-start'
     },
     text: {
         color: '#fff',
@@ -142,8 +225,8 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         marginBottom: 5,
 
-        borderTopColor: '#3d47ff',
-        borderTopWidth:50,
+        borderTopColor: '#384ec9',
+        borderTopWidth:45,
         
         borderRightWidth: 10,
         borderRightColor: 'transparent',
@@ -153,5 +236,34 @@ const styles = StyleSheet.create({
 
         textAlign: 'center',
         textAlignVertical: 'center',
+    },
+    bottom_container: {
+        width:'100%',
+        backgroundColor:'#fff',
+        borderTopLeftRadius:5,
+        borderTopRightRadius:5,
+        flex:1,
+    },
+    button_container: {
+        flexDirection:'row',
+        marginHorizontal:-4,
+        alignSelf:'center',
+        marginTop:16
+    },
+    price_button :{
+        flex:1,
+        alignItems:'center',
+        backgroundColor:'#fff',
+        borderRadius:5,
+        borderColor:'#4a66e5',
+        borderWidth:1,
+        marginHorizontal:2
+    },
+    blueColor:{
+        backgroundColor:'#4a66e5'
+    },
+    option_height:{
+        
+        height:'10%'
     }
 })

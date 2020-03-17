@@ -252,1044 +252,1045 @@
 124-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:53:5-29
 125        android:supportsRtl="true"
 125-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-35
-126        android:usesCleartextTraffic="true" >
-126-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:54:5-40
-127        <activity
-127-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:56:7-59:50
-128            android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
-128-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:57:11-86
-129            android:configChanges="orientation|screenSize"
-129-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:22:13-59
-130            android:label="OAuth2.0 In-app"
-130-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:58:11-42
-131            android:screenOrientation="portrait" />
-131-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:59:11-47
-132        <activity
-132-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:61:5-66:16
-133            android:name="host.exp.exponent.LauncherActivity"
-133-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:62:7-39
-134            android:exported="true"
-134-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:63:7-30
-135            android:launchMode="singleTask"
-135-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:64:7-38
-136            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-136-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:65:7-66
-137        </activity>
-138        <activity
-138-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:68:5-73:16
-139            android:name="host.exp.exponent.experience.ExperienceActivity"
-139-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:69:7-52
-140            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-140-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:70:7-77
-141            android:theme="@style/Theme.Exponent.Light"
-141-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:71:7-50
-142            android:windowSoftInputMode="adjustResize" >
-142-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:72:7-49
-143        </activity>
-144        <activity
-144-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:75:5-95:16
-145            android:name="host.exp.exponent.MainActivity"
-145-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:76:7-35
-146            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-146-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:78:7-77
-147            android:launchMode="singleTask"
-147-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:77:7-38
-148            android:theme="@style/Theme.Exponent.Splash"
-148-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:79:7-51
-149            android:windowSoftInputMode="adjustResize" >
-149-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:80:7-49
-150            <intent-filter>
-150-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:81:7-88:23
-151                <data android:scheme="exp66e538e5f59d4952a056728aa7b04be8" />
-151-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
-151-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
-152
-153                <action android:name="android.intent.action.VIEW" />
-153-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
-153-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
-154
-155                <category android:name="android.intent.category.DEFAULT" />
-155-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
-155-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
-156                <category android:name="android.intent.category.BROWSABLE" />
-156-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
-156-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
-157            </intent-filter>
-158            <intent-filter>
-158-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:89:7-93:23
-159                <action android:name="android.intent.action.MAIN" />
-159-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:90:9-60
-159-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:90:17-58
-160
-161                <category android:name="android.intent.category.LAUNCHER" />
-161-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:92:9-68
-161-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:92:19-66
-162            </intent-filter>
-163            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
-164        </activity>
-165        <activity
-165-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:97:5-103:16
-166            android:name="host.exp.exponent.experience.HomeActivity"
-166-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:98:7-46
-167            android:label="@string/app_name"
-167-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:99:7-39
-168            android:launchMode="singleTask"
-168-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:100:7-38
-169            android:screenOrientation="portrait"
-169-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:101:7-43
-170            android:theme="@style/Theme.Exponent.Light" >
-170-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:102:7-50
-171        </activity>
-172        <activity
-172-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:105:5-114:15
-173            android:name="host.exp.exponent.experience.TvActivity"
-173-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:106:7-44
-174            android:label="@string/app_name"
-174-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:107:7-39
-175            android:screenOrientation="landscape"
-175-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:109:7-44
-176            android:theme="@style/Theme.Exponent.Light" >
-176-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:108:7-50
-177            <intent-filter>
-177-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:110:6-113:22
-178                <action android:name="android.intent.action.MAIN" />
-178-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:90:9-60
-178-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:90:17-58
-179
-180                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-180-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:112:8-77
-180-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:112:18-74
-181            </intent-filter>
-182        </activity>
-183        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-183-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:118:5-81
-183-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:118:15-79
-184        <!-- WHEN_PREPARING_SHELL_REMOVE_FROM_HERE -->
-185        <!-- ADD DEV SETTINGS HERE -->
-186        <!-- BEGIN_SDK_36 -->
-187        <activity android:name="abi36_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
-187-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:122:5-91
-187-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:122:15-89
-188        <!-- END_SDK_36 -->
-189        <!-- BEGIN_SDK_35 -->
-190        <activity android:name="abi35_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
-190-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:125:5-91
-190-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:125:15-89
-191        <!-- END_SDK_35 -->
-192        <!-- BEGIN_SDK_34 -->
-193        <activity android:name="abi34_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
-193-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:128:5-91
-193-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:128:15-89
-194        <!-- END_SDK_34 -->
-195        <!-- BEGIN_SDK_33 -->
-196        <activity android:name="abi33_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
-196-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:131:5-91
-196-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:131:15-89
-197        <!-- END_SDK_33 -->
-198        <!-- WHEN_PREPARING_SHELL_REMOVE_TO_HERE -->
-199
-200        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
-200-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:135:5-144:16
-200-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:136:9-70
-201            <intent-filter>
-201-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:138:7-143:23
-202                <action android:name="android.intent.action.VIEW" />
-202-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
-202-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
-203
-204                <category android:name="android.intent.category.DEFAULT" />
-204-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
-204-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
-205                <category android:name="android.intent.category.BROWSABLE" />
-205-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
-205-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
-206
-207                <data
-207-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
-208                    android:path="oauthredirect"
-208-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:142:57-85
-209                    android:scheme="kr.babylab.BeaconPayment" />
-209-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
-210            </intent-filter>
-211        </activity>
-212
-213        <!-- START OF STRIPE SCHEMES -->
-214        <activity
-214-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:147:5-158:16
-215            android:name="expo.modules.payments.stripe.RedirectUriReceiver"
-215-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:150:9-72
-216            android:exported="true"
-216-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:148:9-32
-217            android:launchMode="singleTask"
-217-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:149:9-40
-218            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-218-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:151:9-79
-219            <intent-filter>
-219-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:152:9-157:25
-220                <action android:name="android.intent.action.VIEW" />
-220-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
-220-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
-221
-222                <category android:name="android.intent.category.DEFAULT" />
-222-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
-222-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
-223                <category android:name="android.intent.category.BROWSABLE" />
-223-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
-223-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
-224
-225                <data android:scheme="expo.modules.payments.stripe.d198f1f3-05b8-4316-8b68-b7107c1314d6" />
-225-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
-225-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
-226            </intent-filter>
-227        </activity>
-228        <!-- Versioned Activity for Stripe -->
-229        <!-- BEGIN_SDK_36 -->
-230        <activity
-230-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:161:5-172:16
-231            android:name="abi36_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
-231-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:164:7-80
-232            android:exported="true"
-232-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:162:7-30
-233            android:launchMode="singleTask"
-233-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:163:7-38
-234            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-234-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:165:7-77
-235            <intent-filter>
-235-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:166:7-171:23
-236                <action android:name="android.intent.action.VIEW" />
-236-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
-236-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
-237
-238                <category android:name="android.intent.category.DEFAULT" />
-238-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
-238-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
-239                <category android:name="android.intent.category.BROWSABLE" />
-239-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
-239-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
-240
-241                <data android:scheme="abi36_0_0.expo.modules.payments.stripe" />
-241-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
-241-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
-242            </intent-filter>
-243        </activity>
-244        <!-- END_SDK_36 -->
-245        <!-- BEGIN_SDK_35 -->
-246        <activity
-246-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:175:3-186:14
-247            android:name="abi35_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
-247-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:178:4-77
-248            android:exported="true"
-248-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:176:4-27
-249            android:launchMode="singleTask"
-249-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:177:4-35
-250            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-250-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:179:4-74
-251            <intent-filter>
-251-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:180:4-185:20
-252                <action android:name="android.intent.action.VIEW" />
-252-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
-252-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
-253
-254                <category android:name="android.intent.category.DEFAULT" />
-254-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
-254-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
-255                <category android:name="android.intent.category.BROWSABLE" />
-255-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
-255-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
-256
-257                <data android:scheme="abi35_0_0.expo.modules.payments.stripe" />
-257-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
-257-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
-258            </intent-filter>
-259        </activity>
-260        <!-- END_SDK_35 -->
-261        <!-- BEGIN_SDK_34 -->
-262        <activity
-262-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:189:5-200:16
-263            android:name="abi34_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
-263-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:192:7-80
-264            android:exported="true"
-264-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:190:7-30
-265            android:launchMode="singleTask"
-265-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:191:7-38
-266            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-266-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:193:7-77
-267            <intent-filter>
-267-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:194:7-199:23
-268                <action android:name="android.intent.action.VIEW" />
-268-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
-268-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
-269
-270                <category android:name="android.intent.category.DEFAULT" />
-270-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
-270-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
-271                <category android:name="android.intent.category.BROWSABLE" />
-271-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
-271-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
-272
-273                <data android:scheme="abi34_0_0.expo.modules.payments.stripe" />
-273-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
-273-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
-274            </intent-filter>
-275        </activity>
-276        <!-- END_SDK_34 -->
-277        <!-- BEGIN_SDK_33 -->
-278        <activity
-278-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:203:5-214:16
-279            android:name="abi33_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
-279-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:206:7-80
-280            android:exported="true"
-280-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:204:7-30
-281            android:launchMode="singleTask"
-281-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:205:7-38
-282            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-282-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:207:7-77
-283            <intent-filter>
-283-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:208:7-213:23
-284                <action android:name="android.intent.action.VIEW" />
-284-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
-284-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
-285
-286                <category android:name="android.intent.category.DEFAULT" />
-286-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
-286-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
-287                <category android:name="android.intent.category.BROWSABLE" />
-287-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
-287-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
-288
-289                <data android:scheme="abi33_0_0.expo.modules.payments.stripe" />
-289-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
-289-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
-290            </intent-filter>
-291        </activity>
-292        <!-- END_SDK_33 -->
-293        <!-- END OF STRIPE SCHEMES -->
-294
-295        <activity
-295-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:218:5-222:16
-296            android:name="host.exp.exponent.experience.ErrorActivity"
-296-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:219:7-47
-297            android:screenOrientation="portrait"
-297-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:221:7-43
-298            android:theme="@style/Theme.Exponent.Dark" >
-298-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:220:7-49
-299        </activity>
-300        <activity
-300-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:224:5-228:16
-301            android:name="host.exp.exponent.experience.InfoActivity"
-301-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:225:7-46
-302            android:screenOrientation="portrait"
-302-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:226:7-43
-303            android:theme="@style/Theme.Exponent.Light" >
-303-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:227:7-50
-304        </activity>
-305        <activity
-305-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:230:5-235:39
-306            android:name="com.facebook.FacebookActivity"
-306-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:231:7-51
-307            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-307-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:232:7-90
-308            android:label="@string/app_name"
-308-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:233:7-39
-309            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-309-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:234:7-66
-310        <activity
-310-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:237:5-241:69
-311            android:name="com.facebook.ads.InterstitialAdActivity"
-311-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:238:7-61
-312            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-312-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:239:7-90
-313            android:label="@string/app_name"
-313-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:240:7-39
-314            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-314-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:241:7-66
-315
-316        <service
-316-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:243:5-245:34
-317            android:name="host.exp.exponent.ExponentIntentService"
-317-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:244:7-44
-318            android:exported="false" />
-318-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:245:7-31
-319
-320        <!-- Analytics -->
-321        <receiver
-321-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:248:5-254:16
-322            android:name="host.exp.exponent.referrer.InstallReferrerReceiver"
-322-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:249:7-72
-323            android:exported="true" >
-323-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:250:7-30
-324            <intent-filter>
-324-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:251:7-253:23
-325                <action android:name="com.android.vending.INSTALL_REFERRER" />
-325-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:9-71
-325-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:17-68
-326            </intent-filter>
-327        </receiver>
-328
-329        <!--
-330    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
-331    TODO: turn it back on when it's fixed
-332    <service
-333      android:name="com.google.android.gms.analytics.CampaignTrackingService"
-334      android:enabled="true"
-335      android:exported="false" />
-336        -->
-337
-338        <receiver
-338-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:264:5-269:16
-339            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
-339-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:264:15-80
-340            android:enabled="true"
-340-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:265:15-37
-341            android:exported="false" >
-341-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:33:13-37
-342            <intent-filter>
-342-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:266:7-268:23
-343                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
-343-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:267:9-86
-343-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:267:17-83
-344            </intent-filter>
-345        </receiver>
-346
-347        <service
-347-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:271:5-273:40
-348            android:name="com.google.android.gms.analytics.AnalyticsService"
-348-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:271:14-78
-349            android:enabled="true"
-349-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:272:14-36
-350            android:exported="false" />
-350-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:273:14-38
-351
-352        <!-- GCM -->
-353        <receiver
-353-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:276:5-286:16
-354            android:name="com.google.android.gms.gcm.GcmReceiver"
-354-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:277:7-60
-355            android:exported="true"
-355-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:278:7-30
-356            android:permission="com.google.android.c2dm.permission.SEND" >
-356-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:279:7-67
-357            <intent-filter>
-357-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:280:7-285:23
-358                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-358-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:9-72
-358-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:17-70
-359                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-359-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:282:9-77
-359-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:282:17-75
-360
-361                <category android:name="kr.babylab.BeaconPayment" />
-361-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:284:9-60
-361-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:284:19-58
-362            </intent-filter>
-363        </receiver>
-364
-365        <service
-365-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:288:5-294:15
-366            android:name="host.exp.exponent.gcm.ExponentGcmListenerService"
-366-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:289:7-53
-367            android:exported="false" >
-367-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:290:7-31
-368            <intent-filter>
-368-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:291:7-293:23
-369                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-369-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:9-72
-369-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:17-70
-370            </intent-filter>
-371        </service>
-372        <service
-372-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:295:5-301:15
-373            android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService"
-373-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:296:7-60
-374            android:exported="false" >
-374-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:297:7-31
-375            <intent-filter>
-375-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:298:7-300:23
-376                <action android:name="com.google.android.gms.iid.InstanceID" />
-376-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:299:9-71
-376-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:299:17-69
-377            </intent-filter>
-378        </service>
-379        <service
-379-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:302:5-305:15
-380            android:name="host.exp.exponent.gcm.GcmRegistrationIntentService"
-380-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:303:7-55
-381            android:exported="false" >
-381-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:304:7-31
-382        </service>
-383
-384        <!-- FCM -->
-385        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService" >
-385-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:308:5-313:15
-385-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:309:7-50
-386            <intent-filter>
-386-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:310:7-312:23
-387                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-387-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:311:9-69
-387-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:311:17-67
-388            </intent-filter>
-389        </service>
-390
-391        <meta-data
-391-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:314:5-316:62
-392            android:name="com.google.firebase.messaging.default_notification_icon"
-392-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:315:7-77
-393            android:resource="@drawable/shell_notification_icon" />
-393-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:316:7-59
-394        <meta-data
-394-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:317:5-319:47
-395            android:name="com.google.firebase.messaging.default_notification_color"
-395-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:318:7-78
-396            android:resource="@color/colorAccent" />
-396-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:319:7-44
-397
-398        <service
-398-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:320:5-323:15
-399            android:name="host.exp.exponent.fcm.FcmRegistrationIntentService"
-399-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:321:7-55
-400            android:exported="false" >
-400-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:322:7-31
-401        </service>
-402
-403        <!-- ImagePicker native module -->
-404        <activity
-404-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:326:5-329:16
-405            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-405-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:327:7-70
-406            android:theme="@style/Base.Theme.AppCompat" >
-406-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:328:7-50
-407        </activity>
-408
-409        <!-- ADD FABRIC CONFIG HERE -->
-410        <!-- BEGIN FABRIC CONFIG -->
-411        <meta-data
-411-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:334:5-336:65
-412            android:name="io.fabric.ApiKey"
-412-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:335:7-38
-413            android:value="a25fafe9f9edee11a9882b32e0cd7a26df6e2c42" />
-413-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:336:7-63
-414        <!-- END FABRIC CONFIG -->
-415
+126        android:testOnly="true"
+127        android:usesCleartextTraffic="true" >
+127-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:54:5-40
+128        <activity
+128-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:56:7-59:50
+129            android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+129-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:57:11-86
+130            android:configChanges="orientation|screenSize"
+130-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:22:13-59
+131            android:label="OAuth2.0 In-app"
+131-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:58:11-42
+132            android:screenOrientation="portrait" />
+132-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:59:11-47
+133        <activity
+133-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:61:5-66:16
+134            android:name="host.exp.exponent.LauncherActivity"
+134-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:62:7-39
+135            android:exported="true"
+135-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:63:7-30
+136            android:launchMode="singleTask"
+136-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:64:7-38
+137            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+137-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:65:7-66
+138        </activity>
+139        <activity
+139-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:68:5-73:16
+140            android:name="host.exp.exponent.experience.ExperienceActivity"
+140-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:69:7-52
+141            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+141-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:70:7-77
+142            android:theme="@style/Theme.Exponent.Light"
+142-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:71:7-50
+143            android:windowSoftInputMode="adjustResize" >
+143-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:72:7-49
+144        </activity>
+145        <activity
+145-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:75:5-95:16
+146            android:name="host.exp.exponent.MainActivity"
+146-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:76:7-35
+147            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+147-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:78:7-77
+148            android:launchMode="singleTask"
+148-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:77:7-38
+149            android:theme="@style/Theme.Exponent.Splash"
+149-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:79:7-51
+150            android:windowSoftInputMode="adjustResize" >
+150-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:80:7-49
+151            <intent-filter>
+151-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:81:7-88:23
+152                <data android:scheme="exp66e538e5f59d4952a056728aa7b04be8" />
+152-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
+152-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
+153
+154                <action android:name="android.intent.action.VIEW" />
+154-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
+154-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
+155
+156                <category android:name="android.intent.category.DEFAULT" />
+156-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
+156-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
+157                <category android:name="android.intent.category.BROWSABLE" />
+157-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
+157-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
+158            </intent-filter>
+159            <intent-filter>
+159-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:89:7-93:23
+160                <action android:name="android.intent.action.MAIN" />
+160-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:90:9-60
+160-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:90:17-58
+161
+162                <category android:name="android.intent.category.LAUNCHER" />
+162-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:92:9-68
+162-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:92:19-66
+163            </intent-filter>
+164            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
+165        </activity>
+166        <activity
+166-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:97:5-103:16
+167            android:name="host.exp.exponent.experience.HomeActivity"
+167-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:98:7-46
+168            android:label="@string/app_name"
+168-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:99:7-39
+169            android:launchMode="singleTask"
+169-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:100:7-38
+170            android:screenOrientation="portrait"
+170-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:101:7-43
+171            android:theme="@style/Theme.Exponent.Light" >
+171-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:102:7-50
+172        </activity>
+173        <activity
+173-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:105:5-114:15
+174            android:name="host.exp.exponent.experience.TvActivity"
+174-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:106:7-44
+175            android:label="@string/app_name"
+175-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:107:7-39
+176            android:screenOrientation="landscape"
+176-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:109:7-44
+177            android:theme="@style/Theme.Exponent.Light" >
+177-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:108:7-50
+178            <intent-filter>
+178-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:110:6-113:22
+179                <action android:name="android.intent.action.MAIN" />
+179-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:90:9-60
+179-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:90:17-58
+180
+181                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+181-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:112:8-77
+181-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:112:18-74
+182            </intent-filter>
+183        </activity>
+184        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+184-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:118:5-81
+184-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:118:15-79
+185        <!-- WHEN_PREPARING_SHELL_REMOVE_FROM_HERE -->
+186        <!-- ADD DEV SETTINGS HERE -->
+187        <!-- BEGIN_SDK_36 -->
+188        <activity android:name="abi36_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+188-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:122:5-91
+188-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:122:15-89
+189        <!-- END_SDK_36 -->
+190        <!-- BEGIN_SDK_35 -->
+191        <activity android:name="abi35_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+191-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:125:5-91
+191-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:125:15-89
+192        <!-- END_SDK_35 -->
+193        <!-- BEGIN_SDK_34 -->
+194        <activity android:name="abi34_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+194-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:128:5-91
+194-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:128:15-89
+195        <!-- END_SDK_34 -->
+196        <!-- BEGIN_SDK_33 -->
+197        <activity android:name="abi33_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+197-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:131:5-91
+197-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:131:15-89
+198        <!-- END_SDK_33 -->
+199        <!-- WHEN_PREPARING_SHELL_REMOVE_TO_HERE -->
+200
+201        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
+201-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:135:5-144:16
+201-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:136:9-70
+202            <intent-filter>
+202-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:138:7-143:23
+203                <action android:name="android.intent.action.VIEW" />
+203-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
+203-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
+204
+205                <category android:name="android.intent.category.DEFAULT" />
+205-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
+205-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
+206                <category android:name="android.intent.category.BROWSABLE" />
+206-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
+206-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
+207
+208                <data
+208-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
+209                    android:path="oauthredirect"
+209-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:142:57-85
+210                    android:scheme="kr.babylab.BeaconPayment" />
+210-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
+211            </intent-filter>
+212        </activity>
+213
+214        <!-- START OF STRIPE SCHEMES -->
+215        <activity
+215-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:147:5-158:16
+216            android:name="expo.modules.payments.stripe.RedirectUriReceiver"
+216-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:150:9-72
+217            android:exported="true"
+217-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:148:9-32
+218            android:launchMode="singleTask"
+218-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:149:9-40
+219            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+219-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:151:9-79
+220            <intent-filter>
+220-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:152:9-157:25
+221                <action android:name="android.intent.action.VIEW" />
+221-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
+221-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
+222
+223                <category android:name="android.intent.category.DEFAULT" />
+223-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
+223-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
+224                <category android:name="android.intent.category.BROWSABLE" />
+224-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
+224-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
+225
+226                <data android:scheme="expo.modules.payments.stripe.d198f1f3-05b8-4316-8b68-b7107c1314d6" />
+226-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
+226-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
+227            </intent-filter>
+228        </activity>
+229        <!-- Versioned Activity for Stripe -->
+230        <!-- BEGIN_SDK_36 -->
+231        <activity
+231-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:161:5-172:16
+232            android:name="abi36_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+232-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:164:7-80
+233            android:exported="true"
+233-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:162:7-30
+234            android:launchMode="singleTask"
+234-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:163:7-38
+235            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+235-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:165:7-77
+236            <intent-filter>
+236-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:166:7-171:23
+237                <action android:name="android.intent.action.VIEW" />
+237-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
+237-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
+238
+239                <category android:name="android.intent.category.DEFAULT" />
+239-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
+239-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
+240                <category android:name="android.intent.category.BROWSABLE" />
+240-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
+240-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
+241
+242                <data android:scheme="abi36_0_0.expo.modules.payments.stripe" />
+242-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
+242-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
+243            </intent-filter>
+244        </activity>
+245        <!-- END_SDK_36 -->
+246        <!-- BEGIN_SDK_35 -->
+247        <activity
+247-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:175:3-186:14
+248            android:name="abi35_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+248-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:178:4-77
+249            android:exported="true"
+249-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:176:4-27
+250            android:launchMode="singleTask"
+250-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:177:4-35
+251            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+251-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:179:4-74
+252            <intent-filter>
+252-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:180:4-185:20
+253                <action android:name="android.intent.action.VIEW" />
+253-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
+253-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
+254
+255                <category android:name="android.intent.category.DEFAULT" />
+255-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
+255-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
+256                <category android:name="android.intent.category.BROWSABLE" />
+256-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
+256-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
+257
+258                <data android:scheme="abi35_0_0.expo.modules.payments.stripe" />
+258-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
+258-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
+259            </intent-filter>
+260        </activity>
+261        <!-- END_SDK_35 -->
+262        <!-- BEGIN_SDK_34 -->
+263        <activity
+263-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:189:5-200:16
+264            android:name="abi34_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+264-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:192:7-80
+265            android:exported="true"
+265-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:190:7-30
+266            android:launchMode="singleTask"
+266-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:191:7-38
+267            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+267-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:193:7-77
+268            <intent-filter>
+268-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:194:7-199:23
+269                <action android:name="android.intent.action.VIEW" />
+269-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
+269-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
+270
+271                <category android:name="android.intent.category.DEFAULT" />
+271-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
+271-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
+272                <category android:name="android.intent.category.BROWSABLE" />
+272-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
+272-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
+273
+274                <data android:scheme="abi34_0_0.expo.modules.payments.stripe" />
+274-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
+274-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
+275            </intent-filter>
+276        </activity>
+277        <!-- END_SDK_34 -->
+278        <!-- BEGIN_SDK_33 -->
+279        <activity
+279-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:203:5-214:16
+280            android:name="abi33_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+280-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:206:7-80
+281            android:exported="true"
+281-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:204:7-30
+282            android:launchMode="singleTask"
+282-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:205:7-38
+283            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+283-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:207:7-77
+284            <intent-filter>
+284-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:208:7-213:23
+285                <action android:name="android.intent.action.VIEW" />
+285-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
+285-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
+286
+287                <category android:name="android.intent.category.DEFAULT" />
+287-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
+287-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
+288                <category android:name="android.intent.category.BROWSABLE" />
+288-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
+288-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
+289
+290                <data android:scheme="abi33_0_0.expo.modules.payments.stripe" />
+290-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
+290-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
+291            </intent-filter>
+292        </activity>
+293        <!-- END_SDK_33 -->
+294        <!-- END OF STRIPE SCHEMES -->
+295
+296        <activity
+296-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:218:5-222:16
+297            android:name="host.exp.exponent.experience.ErrorActivity"
+297-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:219:7-47
+298            android:screenOrientation="portrait"
+298-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:221:7-43
+299            android:theme="@style/Theme.Exponent.Dark" >
+299-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:220:7-49
+300        </activity>
+301        <activity
+301-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:224:5-228:16
+302            android:name="host.exp.exponent.experience.InfoActivity"
+302-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:225:7-46
+303            android:screenOrientation="portrait"
+303-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:226:7-43
+304            android:theme="@style/Theme.Exponent.Light" >
+304-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:227:7-50
+305        </activity>
+306        <activity
+306-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:230:5-235:39
+307            android:name="com.facebook.FacebookActivity"
+307-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:231:7-51
+308            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+308-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:232:7-90
+309            android:label="@string/app_name"
+309-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:233:7-39
+310            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+310-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:234:7-66
+311        <activity
+311-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:237:5-241:69
+312            android:name="com.facebook.ads.InterstitialAdActivity"
+312-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:238:7-61
+313            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+313-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:239:7-90
+314            android:label="@string/app_name"
+314-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:240:7-39
+315            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+315-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:241:7-66
+316
+317        <service
+317-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:243:5-245:34
+318            android:name="host.exp.exponent.ExponentIntentService"
+318-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:244:7-44
+319            android:exported="false" />
+319-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:245:7-31
+320
+321        <!-- Analytics -->
+322        <receiver
+322-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:248:5-254:16
+323            android:name="host.exp.exponent.referrer.InstallReferrerReceiver"
+323-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:249:7-72
+324            android:exported="true" >
+324-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:250:7-30
+325            <intent-filter>
+325-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:251:7-253:23
+326                <action android:name="com.android.vending.INSTALL_REFERRER" />
+326-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:9-71
+326-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:17-68
+327            </intent-filter>
+328        </receiver>
+329
+330        <!--
+331    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
+332    TODO: turn it back on when it's fixed
+333    <service
+334      android:name="com.google.android.gms.analytics.CampaignTrackingService"
+335      android:enabled="true"
+336      android:exported="false" />
+337        -->
+338
+339        <receiver
+339-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:264:5-269:16
+340            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+340-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:264:15-80
+341            android:enabled="true"
+341-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:265:15-37
+342            android:exported="false" >
+342-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:33:13-37
+343            <intent-filter>
+343-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:266:7-268:23
+344                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+344-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:267:9-86
+344-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:267:17-83
+345            </intent-filter>
+346        </receiver>
+347
+348        <service
+348-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:271:5-273:40
+349            android:name="com.google.android.gms.analytics.AnalyticsService"
+349-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:271:14-78
+350            android:enabled="true"
+350-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:272:14-36
+351            android:exported="false" />
+351-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:273:14-38
+352
+353        <!-- GCM -->
+354        <receiver
+354-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:276:5-286:16
+355            android:name="com.google.android.gms.gcm.GcmReceiver"
+355-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:277:7-60
+356            android:exported="true"
+356-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:278:7-30
+357            android:permission="com.google.android.c2dm.permission.SEND" >
+357-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:279:7-67
+358            <intent-filter>
+358-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:280:7-285:23
+359                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+359-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:9-72
+359-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:17-70
+360                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+360-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:282:9-77
+360-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:282:17-75
+361
+362                <category android:name="kr.babylab.BeaconPayment" />
+362-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:284:9-60
+362-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:284:19-58
+363            </intent-filter>
+364        </receiver>
+365
+366        <service
+366-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:288:5-294:15
+367            android:name="host.exp.exponent.gcm.ExponentGcmListenerService"
+367-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:289:7-53
+368            android:exported="false" >
+368-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:290:7-31
+369            <intent-filter>
+369-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:291:7-293:23
+370                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+370-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:9-72
+370-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:17-70
+371            </intent-filter>
+372        </service>
+373        <service
+373-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:295:5-301:15
+374            android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService"
+374-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:296:7-60
+375            android:exported="false" >
+375-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:297:7-31
+376            <intent-filter>
+376-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:298:7-300:23
+377                <action android:name="com.google.android.gms.iid.InstanceID" />
+377-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:299:9-71
+377-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:299:17-69
+378            </intent-filter>
+379        </service>
+380        <service
+380-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:302:5-305:15
+381            android:name="host.exp.exponent.gcm.GcmRegistrationIntentService"
+381-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:303:7-55
+382            android:exported="false" >
+382-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:304:7-31
+383        </service>
+384
+385        <!-- FCM -->
+386        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService" >
+386-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:308:5-313:15
+386-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:309:7-50
+387            <intent-filter>
+387-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:310:7-312:23
+388                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+388-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:311:9-69
+388-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:311:17-67
+389            </intent-filter>
+390        </service>
+391
+392        <meta-data
+392-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:314:5-316:62
+393            android:name="com.google.firebase.messaging.default_notification_icon"
+393-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:315:7-77
+394            android:resource="@drawable/shell_notification_icon" />
+394-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:316:7-59
+395        <meta-data
+395-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:317:5-319:47
+396            android:name="com.google.firebase.messaging.default_notification_color"
+396-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:318:7-78
+397            android:resource="@color/colorAccent" />
+397-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:319:7-44
+398
+399        <service
+399-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:320:5-323:15
+400            android:name="host.exp.exponent.fcm.FcmRegistrationIntentService"
+400-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:321:7-55
+401            android:exported="false" >
+401-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:322:7-31
+402        </service>
+403
+404        <!-- ImagePicker native module -->
+405        <activity
+405-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:326:5-329:16
+406            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+406-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:327:7-70
+407            android:theme="@style/Base.Theme.AppCompat" >
+407-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:328:7-50
+408        </activity>
+409
+410        <!-- ADD FABRIC CONFIG HERE -->
+411        <!-- BEGIN FABRIC CONFIG -->
+412        <meta-data
+412-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:334:5-336:65
+413            android:name="io.fabric.ApiKey"
+413-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:335:7-38
+414            android:value="a25fafe9f9edee11a9882b32e0cd7a26df6e2c42" />
+414-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:336:7-63
+415        <!-- END FABRIC CONFIG -->
 416
-417        <!-- ADD GOOGLE MAPS CONFIG HERE -->
-418        <!-- BEGIN GOOGLE MAPS CONFIG -->
-419        <meta-data
-419-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:341:5-343:64
-420            android:name="com.google.android.geo.API_KEY"
-420-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:342:7-52
-421            android:value="AIzaSyDh7eDB9snEFSYtf-k0gfxA45HFoR0L--I" />
-421-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:343:7-62
-422        <!-- END GOOGLE MAPS CONFIG -->
-423
+417
+418        <!-- ADD GOOGLE MAPS CONFIG HERE -->
+419        <!-- BEGIN GOOGLE MAPS CONFIG -->
+420        <meta-data
+420-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:341:5-343:64
+421            android:name="com.google.android.geo.API_KEY"
+421-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:342:7-52
+422            android:value="AIzaSyDh7eDB9snEFSYtf-k0gfxA45HFoR0L--I" />
+422-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:343:7-62
+423        <!-- END GOOGLE MAPS CONFIG -->
 424
-425        <!-- ADD GOOGLE MOBILE ADS CONFIG HERE -->
-426        <!-- BEGIN GOOGLE MOBILE ADS CONFIG -->
-427        <meta-data
-427-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:348:5-350:63
-428            android:name="com.google.android.gms.ads.APPLICATION_ID"
-428-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:349:7-63
-429            android:value="ca-app-pub-3940256099942544~3347511713" />
-429-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:350:7-61
-430        <meta-data
-430-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:351:5-107
-431            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
-431-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:351:16-84
-432            android:value="true" />
-432-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:351:85-105
-433        <!-- END GOOGLE MOBILE ADS CONFIG -->
-434
+425
+426        <!-- ADD GOOGLE MOBILE ADS CONFIG HERE -->
+427        <!-- BEGIN GOOGLE MOBILE ADS CONFIG -->
+428        <meta-data
+428-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:348:5-350:63
+429            android:name="com.google.android.gms.ads.APPLICATION_ID"
+429-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:349:7-63
+430            android:value="ca-app-pub-3940256099942544~3347511713" />
+430-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:350:7-61
+431        <meta-data
+431-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:351:5-107
+432            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
+432-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:351:16-84
+433            android:value="true" />
+433-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:351:85-105
+434        <!-- END GOOGLE MOBILE ADS CONFIG -->
 435
-436        <!-- ADD BRANCH CONFIG HERE -->
-437
+436
+437        <!-- ADD BRANCH CONFIG HERE -->
 438
-439        <!-- ADD FACEBOOK APP ID CONFIG HERE -->
-440        <!-- ADD FACEBOOK APP DISPLAY NAME CONFIG HERE -->
-441        <!-- Tags below need to be in one line with no whitespace after android:value -->
-442        <!-- in order for XDL to be able to replace values in them -->
-443        <meta-data
-443-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:360:5-95
-444            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
-444-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:360:16-71
-445            android:value="false" />
-445-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:360:72-93
-446        <meta-data
-446-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:361:5-87
-447            android:name="com.facebook.sdk.AutoInitEnabled"
-447-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:361:16-63
-448            android:value="false" />
-448-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:361:64-85
-449        <meta-data
-449-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:362:5-101
-450            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
-450-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:362:16-77
-451            android:value="false" />
-451-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:362:78-99
-452        <meta-data
-452-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:364:5-109
-453            android:name="standaloneStripeScheme"
-453-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:364:16-53
-454            android:value="d198f1f3-05b8-4316-8b68-b7107c1314d6" />
-454-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:364:54-106
-455        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
-456        <!-- Scheduled notifications -->
-457        <receiver
-457-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:79:9-81:40
-458            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
-458-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:80:13-89
-459            android:exported="false" />
-459-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:81:13-37
-460        <receiver
-460-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:82:9-92:20
-461            android:name="host.exp.exponent.notifications.receivers.SchedulingTriggerReceiver"
-461-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:83:13-95
-462            android:exported="true" >
-462-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:84:13-36
-463            <intent-filter>
-463-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:85:13-91:29
-464                <action android:name="android.intent.action.REBOOT" />
-464-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:86:17-71
-464-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:86:25-68
-465                <action android:name="android.intent.action.BOOT_COMPLETED" />
-465-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:87:17-79
-465-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:87:25-76
-466                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-466-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:88:17-81
-466-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:88:25-78
-467                <action android:name="android.intent.action.TIME_CHANGED" />
-467-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:89:17-77
-467-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:89:25-74
-468                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-468-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:90:17-82
-468-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:90:25-79
-469            </intent-filter>
-470        </receiver> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
-471        <provider
-471-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:96:9-104:20
-472            android:name="androidx.core.content.FileProvider"
-472-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:97:13-62
-473            android:authorities="kr.babylab.BeaconPayment.provider"
-473-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:98:13-60
-474            android:exported="false"
-474-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:99:13-37
-475            android:grantUriPermissions="true" >
-475-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:100:13-47
-476            <meta-data
-476-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
-477                android:name="android.support.FILE_PROVIDER_PATHS"
-477-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:102:17-67
-478                android:resource="@xml/provider_paths" />
-478-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:103:17-55
-479        </provider>
-480        <provider
-480-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:105:9-113:20
-481            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
-481-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:106:13-109
-482            android:authorities="kr.babylab.BeaconPayment.fileprovider"
-482-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:107:13-64
-483            android:exported="false"
-483-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:108:13-37
-484            android:grantUriPermissions="true" >
-484-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:109:13-47
-485            <meta-data
-485-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
-486                android:name="android.support.FILE_PROVIDER_PATHS"
-486-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:102:17-67
-487                android:resource="@xml/provider_paths" />
-487-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:103:17-55
-488        </provider>
-489        <provider
-489-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
-490            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-490-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
-491            android:authorities="kr.babylab.BeaconPayment.fileprovider"
-491-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
-492            android:exported="false"
-492-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
-493            android:grantUriPermissions="true" >
-493-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
-494            <meta-data
-494-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
-495                android:name="android.support.FILE_PROVIDER_PATHS"
-495-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:102:17-67
-496                android:resource="@xml/file_provider_paths" />
-496-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:103:17-55
-497        </provider> <!-- 2 -->
-498        <!-- 3 -->
-499        <meta-data
-499-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-21:53
-500            android:name="com.kakao.sdk.AppKey"
-500-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-48
-501            android:value="@string/kakao_app_key" /> <!-- 4 -->
-501-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-50
-502        <activity
-502-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-28:20
-503            android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
-503-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-86
-504            android:configChanges="orientation|screenSize"
-504-->[com.kakao.sdk:auth:1.26.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d9139b27daa6ed7c1810dd4a025744ab\auth-1.26.0\AndroidManifest.xml:14:13-59
-505            android:exported="false"
-505-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-37
-506            android:label="@string/com_kakao_login_button"
-506-->[com.kakao.sdk:auth:1.26.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d9139b27daa6ed7c1810dd4a025744ab\auth-1.26.0\AndroidManifest.xml:16:13-59
-507            android:launchMode="singleTop"
-507-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-43
-508            android:windowSoftInputMode="adjustResize" >
-508-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-55
-509        </activity>
-510
-511        <provider
-511-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-27:20
-512            android:name="expo.modules.filesystem.FileSystemFileProvider"
-512-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
-513            android:authorities="kr.babylab.BeaconPayment.FileSystemFileProvider"
-513-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-74
-514            android:exported="false"
-514-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-37
-515            android:grantUriPermissions="true" >
-515-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-47
-516            <meta-data
-516-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
-517                android:name="android.support.FILE_PROVIDER_PATHS"
-517-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:102:17-67
-518                android:resource="@xml/file_system_provider_paths" />
-518-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:103:17-55
-519        </provider>
-520
-521        <service
-521-->[:expo-location] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-18:40
-522            android:name="expo.modules.location.services.LocationTaskService"
-522-->[:expo-location] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-78
-523            android:exported="false" />
-523-->[:expo-location] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
-524
-525        <activity
-525-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:17:9-19:67
-526            android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
-526-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:18:13-76
-527            android:theme="@style/Theme.AppCompat.Light.Dialog" />
-527-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:19:13-64
-528        <activity
-528-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:24:9-40:20
-529            android:name="com.nhn.android.naverlogin.ui.OAuthCustomTabActivity"
-529-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:25:13-80
-530            android:configChanges="orientation|screenSize"
-530-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:26:13-59
-531            android:launchMode="singleTask"
-531-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:27:13-44
-532            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-532-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:28:13-72
-533            <intent-filter>
-533-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:29:13-39:29
-534                <action android:name="android.intent.action.VIEW" />
-534-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
-534-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
-535
-536                <category android:name="android.intent.category.DEFAULT" />
-536-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
-536-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
-537                <category android:name="android.intent.category.BROWSABLE" />
-537-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
-537-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
-538                <!-- Intent URL 에서 로그인 액티비티를 실행하기 위해 설정 -->
-539                <data
-539-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
-540                    android:host="authorize"
-541                    android:path="/"
-541-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:142:57-85
-542                    android:scheme="naver3rdpartylogin" />
-542-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
-543            </intent-filter>
-544        </activity>
-545        <activity android:name="com.facebook.CustomTabMainActivity" />
-545-->[com.facebook.android:facebook-common:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\b9c078ca57dcbd9a342f0af9cb07b415\jetified-facebook-common-5.0.1\AndroidManifest.xml:33:9-71
-545-->[com.facebook.android:facebook-common:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\b9c078ca57dcbd9a342f0af9cb07b415\jetified-facebook-common-5.0.1\AndroidManifest.xml:33:19-68
-546        <activity android:name="com.facebook.CustomTabActivity" />
-546-->[com.facebook.android:facebook-common:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\b9c078ca57dcbd9a342f0af9cb07b415\jetified-facebook-common-5.0.1\AndroidManifest.xml:34:9-67
-546-->[com.facebook.android:facebook-common:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\b9c078ca57dcbd9a342f0af9cb07b415\jetified-facebook-common-5.0.1\AndroidManifest.xml:34:19-64
-547        <activity
-547-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:15:9-18:40
-548            android:name="com.facebook.ads.AudienceNetworkActivity"
-548-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:16:13-68
-549            android:configChanges="keyboardHidden|orientation|screenSize"
-549-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:17:13-74
-550            android:exported="false" />
-550-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:18:13-37
-551        <activity
-551-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:19:9-23:39
-552            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
-552-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:20:13-74
-553            android:configChanges="keyboardHidden|orientation|screenSize"
-553-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:21:13-74
-554            android:exported="false"
-554-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:22:13-37
-555            android:process=":adnw" />
-555-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:23:13-36
-556
-557        <service
-557-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:25:9-27:40
-558            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
-558-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:26:13-83
-559            android:exported="false" />
-559-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:27:13-37
-560        <service
-560-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:28:9-31:39
-561            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
-561-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:29:13-77
-562            android:exported="false"
-562-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:30:13-37
-563            android:process=":adnw" />
-563-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:31:13-36
-564        <service
-564-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:40:9-44:72
-565            android:name="com.google.android.gms.analytics.AnalyticsJobService"
-565-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:41:13-80
-566            android:enabled="true"
-566-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:42:13-35
-567            android:exported="false"
-567-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:43:13-37
-568            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
-568-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:44:13-69
-569        <uses-library
-569-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\35d0f6a14e75b554aa2c1bc729188628\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
-570            android:name="org.apache.http.legacy"
-570-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\35d0f6a14e75b554aa2c1bc729188628\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
-571            android:required="false" />
-571-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\35d0f6a14e75b554aa2c1bc729188628\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
-572
-573        <activity
-573-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
-574            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-574-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
-575            android:excludeFromRecents="true"
-575-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
-576            android:exported="false"
-576-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
-577            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-577-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
-578        <!--
-579            Service handling Google Sign-In user revocation. For apps that do not integrate with
-580            Google Sign-In, this service will never be started.
-581        -->
-582        <service
-582-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
-583            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-583-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
-584            android:exported="true"
-584-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
-585            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-585-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
-586
-587        <activity
-587-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:27:9-31:75
-588            android:name="net.openid.appauth.AuthorizationManagementActivity"
-588-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:28:13-78
-589            android:exported="false"
-589-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:29:13-37
-590            android:launchMode="singleTask"
-590-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:30:13-44
-591            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-591-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:31:13-72
-592
-593        <service
-593-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
-594            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-594-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
-595            android:exported="false" />
-595-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
-596        <service
-596-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
-597            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-597-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
-598            android:exported="false" />
-598-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
-599        <service
-599-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
-600            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-600-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
-601            android:exported="false" />
-601-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
-602        <!--
-603             FirebaseMessagingService performs security checks at runtime,
-604             but set to not exported to explicitly avoid allowing another app to call it.
-605        -->
-606        <service
-606-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c0488efafa96fc2dcd64b3ae61b9d4f1\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:28:9-34:19
-607            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-607-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c0488efafa96fc2dcd64b3ae61b9d4f1\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:29:13-82
-608            android:exported="false" >
-608-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c0488efafa96fc2dcd64b3ae61b9d4f1\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:30:13-37
-609            <intent-filter android:priority="-500" >
-609-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:310:7-312:23
-610                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-610-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:311:9-69
-610-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:311:17-67
-611            </intent-filter>
-612        </service>
-613        <service
-613-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:27:9-33:19
-614            android:name="com.google.firebase.components.ComponentDiscoveryService"
-614-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:28:13-84
-615            android:exported="false" >
-615-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:29:13-37
-616            <meta-data
-616-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:30:13-32:85
-617                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-617-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:31:17-139
-618                android:value="com.google.firebase.components.ComponentRegistrar" />
-618-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:32:17-82
-619            <meta-data
-619-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:32:13-34:85
-620                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-620-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:33:17-96
-621                android:value="com.google.firebase.components.ComponentRegistrar" />
-621-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:34:17-82
-622        </service>
-623
-624        <receiver
-624-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:37:9-44:20
-625            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-625-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:38:13-78
-626            android:exported="true"
-626-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:39:13-36
-627            android:permission="com.google.android.c2dm.permission.SEND" >
-627-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:40:13-73
-628            <intent-filter>
-628-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:291:7-293:23
-629                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-629-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:9-72
-629-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:17-70
-630            </intent-filter>
-631        </receiver>
-632
-633        <activity
-633-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\7d3134a92b294f0d1ded3d6e23c764af\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-634            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-634-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\7d3134a92b294f0d1ded3d6e23c764af\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-635            android:exported="false"
-635-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\7d3134a92b294f0d1ded3d6e23c764af\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-636            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-636-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\7d3134a92b294f0d1ded3d6e23c764af\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-637
-638        <provider
-638-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:12:9-16:39
-639            android:name="com.google.firebase.provider.FirebaseInitProvider"
-639-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:13:13-77
-640            android:authorities="kr.babylab.BeaconPayment.firebaseinitprovider"
-640-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:14:13-72
-641            android:exported="false"
-641-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:15:13-37
-642            android:initOrder="100" />
-642-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:16:13-36
-643
-644        <receiver
-644-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:29:9-33:20
-645            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-645-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:30:13-85
-646            android:enabled="true"
-646-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:31:13-35
-647            android:exported="false" >
-647-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:32:13-37
-648        </receiver>
-649        <receiver
-649-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:34:9-42:20
-650            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-650-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:35:13-100
-651            android:enabled="true"
-651-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:36:13-35
-652            android:exported="true"
-652-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:37:13-36
-653            android:permission="android.permission.INSTALL_PACKAGES" >
-653-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:38:13-69
-654            <intent-filter>
-654-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:251:7-253:23
-655                <action android:name="com.android.vending.INSTALL_REFERRER" />
-655-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:9-71
-655-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:17-68
-656            </intent-filter>
-657        </receiver>
-658
-659        <service
-659-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:44:9-47:40
-660            android:name="com.google.android.gms.measurement.AppMeasurementService"
-660-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:45:13-84
-661            android:enabled="true"
-661-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:46:13-35
-662            android:exported="false" />
-662-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:47:13-37
-663        <service
-663-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:48:9-52:72
-664            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-664-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:49:13-87
-665            android:enabled="true"
-665-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:50:13-35
-666            android:exported="false"
-666-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:51:13-37
-667            android:permission="android.permission.BIND_JOB_SERVICE" />
-667-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:52:13-69
-668
-669        <meta-data
-669-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\60cf0b0d62c0fea5eeb44ab7d56d4f62\jetified-play-services-basement-16.2.0\AndroidManifest.xml:23:9-25:69
-670            android:name="com.google.android.gms.version"
-670-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\60cf0b0d62c0fea5eeb44ab7d56d4f62\jetified-play-services-basement-16.2.0\AndroidManifest.xml:24:13-58
-671            android:value="@integer/google_play_services_version" />
-671-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\60cf0b0d62c0fea5eeb44ab7d56d4f62\jetified-play-services-basement-16.2.0\AndroidManifest.xml:25:13-66
-672        <!--
-673         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-674         with the application context. This config is merged in with the host app's manifest,
-675         but there can only be one provider with the same authority activated at any given
-676         point; so if the end user has two or more different apps that use Facebook SDK, only the
-677         first one will be able to use the provider. To work around this problem, we use the
-678         following placeholder in the authority to identify each host application as if it was
-679         a completely different provider.
-680        -->
-681        <provider
-681-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:39:9-42:40
-682            android:name="com.facebook.internal.FacebookInitProvider"
-682-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:40:13-70
-683            android:authorities="kr.babylab.BeaconPayment.FacebookInitProvider"
-683-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:41:13-72
-684            android:exported="false" />
-684-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:42:13-37
-685
-686        <receiver
-686-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:44:9-50:20
-687            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-687-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:45:13-86
-688            android:exported="false" >
-688-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:46:13-37
-689            <intent-filter>
-689-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:47:13-49:29
-690                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-690-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:48:17-95
-690-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:48:25-92
-691            </intent-filter>
-692        </receiver>
-693        <receiver
-693-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:51:9-58:20
-694            android:name="com.facebook.CampaignTrackingReceiver"
-694-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:52:13-65
-695            android:exported="true"
-695-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:53:13-36
-696            android:permission="android.permission.INSTALL_PACKAGES" >
-696-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:54:13-69
-697            <intent-filter>
-697-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:251:7-253:23
-698                <action android:name="com.android.vending.INSTALL_REFERRER" />
-698-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:9-71
-698-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:17-68
-699            </intent-filter>
-700        </receiver>
-701
-702        <provider
-702-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
-703            android:name="com.crashlytics.android.CrashlyticsInitProvider"
-703-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75
-704            android:authorities="kr.babylab.BeaconPayment.crashlyticsinitprovider"
-704-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
-705            android:exported="false"
-705-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
-706            android:initOrder="90" />
-706-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
-707    </application>
-708
-709</manifest>
+439
+440        <!-- ADD FACEBOOK APP ID CONFIG HERE -->
+441        <!-- ADD FACEBOOK APP DISPLAY NAME CONFIG HERE -->
+442        <!-- Tags below need to be in one line with no whitespace after android:value -->
+443        <!-- in order for XDL to be able to replace values in them -->
+444        <meta-data
+444-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:360:5-95
+445            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+445-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:360:16-71
+446            android:value="false" />
+446-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:360:72-93
+447        <meta-data
+447-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:361:5-87
+448            android:name="com.facebook.sdk.AutoInitEnabled"
+448-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:361:16-63
+449            android:value="false" />
+449-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:361:64-85
+450        <meta-data
+450-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:362:5-101
+451            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+451-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:362:16-77
+452            android:value="false" />
+452-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:362:78-99
+453        <meta-data
+453-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:364:5-109
+454            android:name="standaloneStripeScheme"
+454-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:364:16-53
+455            android:value="d198f1f3-05b8-4316-8b68-b7107c1314d6" />
+455-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:364:54-106
+456        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+457        <!-- Scheduled notifications -->
+458        <receiver
+458-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:79:9-81:40
+459            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
+459-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:80:13-89
+460            android:exported="false" />
+460-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:81:13-37
+461        <receiver
+461-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:82:9-92:20
+462            android:name="host.exp.exponent.notifications.receivers.SchedulingTriggerReceiver"
+462-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:83:13-95
+463            android:exported="true" >
+463-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:84:13-36
+464            <intent-filter>
+464-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:85:13-91:29
+465                <action android:name="android.intent.action.REBOOT" />
+465-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:86:17-71
+465-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:86:25-68
+466                <action android:name="android.intent.action.BOOT_COMPLETED" />
+466-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:87:17-79
+466-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:87:25-76
+467                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+467-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:88:17-81
+467-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:88:25-78
+468                <action android:name="android.intent.action.TIME_CHANGED" />
+468-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:89:17-77
+468-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:89:25-74
+469                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+469-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:90:17-82
+469-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:90:25-79
+470            </intent-filter>
+471        </receiver> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
+472        <provider
+472-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:96:9-104:20
+473            android:name="androidx.core.content.FileProvider"
+473-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:97:13-62
+474            android:authorities="kr.babylab.BeaconPayment.provider"
+474-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:98:13-60
+475            android:exported="false"
+475-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:99:13-37
+476            android:grantUriPermissions="true" >
+476-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:100:13-47
+477            <meta-data
+477-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+478                android:name="android.support.FILE_PROVIDER_PATHS"
+478-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:102:17-67
+479                android:resource="@xml/provider_paths" />
+479-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:103:17-55
+480        </provider>
+481        <provider
+481-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:105:9-113:20
+482            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
+482-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:106:13-109
+483            android:authorities="kr.babylab.BeaconPayment.fileprovider"
+483-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:107:13-64
+484            android:exported="false"
+484-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:108:13-37
+485            android:grantUriPermissions="true" >
+485-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:109:13-47
+486            <meta-data
+486-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+487                android:name="android.support.FILE_PROVIDER_PATHS"
+487-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:102:17-67
+488                android:resource="@xml/provider_paths" />
+488-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:103:17-55
+489        </provider>
+490        <provider
+490-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+491            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+491-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
+492            android:authorities="kr.babylab.BeaconPayment.fileprovider"
+492-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
+493            android:exported="false"
+493-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+494            android:grantUriPermissions="true" >
+494-->[:react-native-webview] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+495            <meta-data
+495-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+496                android:name="android.support.FILE_PROVIDER_PATHS"
+496-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:102:17-67
+497                android:resource="@xml/file_provider_paths" />
+497-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:103:17-55
+498        </provider> <!-- 2 -->
+499        <!-- 3 -->
+500        <meta-data
+500-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-21:53
+501            android:name="com.kakao.sdk.AppKey"
+501-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-48
+502            android:value="@string/kakao_app_key" /> <!-- 4 -->
+502-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-50
+503        <activity
+503-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-28:20
+504            android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
+504-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-86
+505            android:configChanges="orientation|screenSize"
+505-->[com.kakao.sdk:auth:1.26.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d9139b27daa6ed7c1810dd4a025744ab\auth-1.26.0\AndroidManifest.xml:14:13-59
+506            android:exported="false"
+506-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-37
+507            android:label="@string/com_kakao_login_button"
+507-->[com.kakao.sdk:auth:1.26.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d9139b27daa6ed7c1810dd4a025744ab\auth-1.26.0\AndroidManifest.xml:16:13-59
+508            android:launchMode="singleTop"
+508-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-43
+509            android:windowSoftInputMode="adjustResize" >
+509-->[:react-native-seoul-kakao-login] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-55
+510        </activity>
+511
+512        <provider
+512-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-27:20
+513            android:name="expo.modules.filesystem.FileSystemFileProvider"
+513-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
+514            android:authorities="kr.babylab.BeaconPayment.FileSystemFileProvider"
+514-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-74
+515            android:exported="false"
+515-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-37
+516            android:grantUriPermissions="true" >
+516-->[:expo-file-system] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-47
+517            <meta-data
+517-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+518                android:name="android.support.FILE_PROVIDER_PATHS"
+518-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:102:17-67
+519                android:resource="@xml/file_system_provider_paths" />
+519-->[host.exp.exponent:expoview:36.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eefc08ed24fffacbf219d7ba38ed1485\expoview-36.0.0\AndroidManifest.xml:103:17-55
+520        </provider>
+521
+522        <service
+522-->[:expo-location] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-18:40
+523            android:name="expo.modules.location.services.LocationTaskService"
+523-->[:expo-location] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-78
+524            android:exported="false" />
+524-->[:expo-location] D:\park-jun-seo\Beacon\Babylab-BeaconPay\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+525
+526        <activity
+526-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:17:9-19:67
+527            android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+527-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:18:13-76
+528            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+528-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:19:13-64
+529        <activity
+529-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:24:9-40:20
+530            android:name="com.nhn.android.naverlogin.ui.OAuthCustomTabActivity"
+530-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:25:13-80
+531            android:configChanges="orientation|screenSize"
+531-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:26:13-59
+532            android:launchMode="singleTask"
+532-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:27:13-44
+533            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+533-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:28:13-72
+534            <intent-filter>
+534-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\cf68361a35d42cdc49d5ee8f087484b1\jetified-naveridlogin-android-sdk-4.2.5\AndroidManifest.xml:29:13-39:29
+535                <action android:name="android.intent.action.VIEW" />
+535-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:9-60
+535-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:84:17-58
+536
+537                <category android:name="android.intent.category.DEFAULT" />
+537-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:9-67
+537-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:86:19-65
+538                <category android:name="android.intent.category.BROWSABLE" />
+538-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:9-69
+538-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:87:19-67
+539                <!-- Intent URL 에서 로그인 액티비티를 실행하기 위해 설정 -->
+540                <data
+540-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:9-69
+541                    android:host="authorize"
+542                    android:path="/"
+542-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:142:57-85
+543                    android:scheme="naver3rdpartylogin" />
+543-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:82:15-67
+544            </intent-filter>
+545        </activity>
+546        <activity android:name="com.facebook.CustomTabMainActivity" />
+546-->[com.facebook.android:facebook-common:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\b9c078ca57dcbd9a342f0af9cb07b415\jetified-facebook-common-5.0.1\AndroidManifest.xml:33:9-71
+546-->[com.facebook.android:facebook-common:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\b9c078ca57dcbd9a342f0af9cb07b415\jetified-facebook-common-5.0.1\AndroidManifest.xml:33:19-68
+547        <activity android:name="com.facebook.CustomTabActivity" />
+547-->[com.facebook.android:facebook-common:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\b9c078ca57dcbd9a342f0af9cb07b415\jetified-facebook-common-5.0.1\AndroidManifest.xml:34:9-67
+547-->[com.facebook.android:facebook-common:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\b9c078ca57dcbd9a342f0af9cb07b415\jetified-facebook-common-5.0.1\AndroidManifest.xml:34:19-64
+548        <activity
+548-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:15:9-18:40
+549            android:name="com.facebook.ads.AudienceNetworkActivity"
+549-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:16:13-68
+550            android:configChanges="keyboardHidden|orientation|screenSize"
+550-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:17:13-74
+551            android:exported="false" />
+551-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:18:13-37
+552        <activity
+552-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:19:9-23:39
+553            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
+553-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:20:13-74
+554            android:configChanges="keyboardHidden|orientation|screenSize"
+554-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:21:13-74
+555            android:exported="false"
+555-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:22:13-37
+556            android:process=":adnw" />
+556-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:23:13-36
+557
+558        <service
+558-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:25:9-27:40
+559            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
+559-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:26:13-83
+560            android:exported="false" />
+560-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:27:13-37
+561        <service
+561-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:28:9-31:39
+562            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
+562-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:29:13-77
+563            android:exported="false"
+563-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:30:13-37
+564            android:process=":adnw" />
+564-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\baae4a23afe4488ad8f4d0a3a9bb8c4e\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:31:13-36
+565        <service
+565-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:40:9-44:72
+566            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+566-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:41:13-80
+567            android:enabled="true"
+567-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:42:13-35
+568            android:exported="false"
+568-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:43:13-37
+569            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+569-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\64c756d2852cd1c77aaf0188abc05d22\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:44:13-69
+570        <uses-library
+570-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\35d0f6a14e75b554aa2c1bc729188628\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+571            android:name="org.apache.http.legacy"
+571-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\35d0f6a14e75b554aa2c1bc729188628\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+572            android:required="false" />
+572-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\35d0f6a14e75b554aa2c1bc729188628\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+573
+574        <activity
+574-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+575            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+575-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+576            android:excludeFromRecents="true"
+576-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+577            android:exported="false"
+577-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+578            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+578-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+579        <!--
+580            Service handling Google Sign-In user revocation. For apps that do not integrate with
+581            Google Sign-In, this service will never be started.
+582        -->
+583        <service
+583-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+584            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+584-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+585            android:exported="true"
+585-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+586            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+586-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9d0f32e401d5010859deef57baa44729\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+587
+588        <activity
+588-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:27:9-31:75
+589            android:name="net.openid.appauth.AuthorizationManagementActivity"
+589-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:28:13-78
+590            android:exported="false"
+590-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:29:13-37
+591            android:launchMode="singleTask"
+591-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:30:13-44
+592            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+592-->[net.openid:appauth:0.7.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\d0f8ebaea184c14f72a0db0bd365dc20\jetified-appauth-0.7.1\AndroidManifest.xml:31:13-72
+593
+594        <service
+594-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+595            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+595-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+596            android:exported="false" />
+596-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+597        <service
+597-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+598            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+598-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+599            android:exported="false" />
+599-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+600        <service
+600-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+601            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+601-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+602            android:exported="false" />
+602-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e1c3d9bfcf4c840b54277ef3f5372e9a\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+603        <!--
+604             FirebaseMessagingService performs security checks at runtime,
+605             but set to not exported to explicitly avoid allowing another app to call it.
+606        -->
+607        <service
+607-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c0488efafa96fc2dcd64b3ae61b9d4f1\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:28:9-34:19
+608            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+608-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c0488efafa96fc2dcd64b3ae61b9d4f1\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:29:13-82
+609            android:exported="false" >
+609-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c0488efafa96fc2dcd64b3ae61b9d4f1\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:30:13-37
+610            <intent-filter android:priority="-500" >
+610-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:310:7-312:23
+611                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+611-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:311:9-69
+611-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:311:17-67
+612            </intent-filter>
+613        </service>
+614        <service
+614-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:27:9-33:19
+615            android:name="com.google.firebase.components.ComponentDiscoveryService"
+615-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:28:13-84
+616            android:exported="false" >
+616-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:29:13-37
+617            <meta-data
+617-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:30:13-32:85
+618                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+618-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:31:17-139
+619                android:value="com.google.firebase.components.ComponentRegistrar" />
+619-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\2712abc3b801979cda020d9053e984a4\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:32:17-82
+620            <meta-data
+620-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:32:13-34:85
+621                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+621-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:33:17-96
+622                android:value="com.google.firebase.components.ComponentRegistrar" />
+622-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:34:17-82
+623        </service>
+624
+625        <receiver
+625-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:37:9-44:20
+626            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+626-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:38:13-78
+627            android:exported="true"
+627-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:39:13-36
+628            android:permission="com.google.android.c2dm.permission.SEND" >
+628-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e20a743ff4e7510d4ad302e8f2e7391d\jetified-firebase-iid-18.0.0\AndroidManifest.xml:40:13-73
+629            <intent-filter>
+629-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:291:7-293:23
+630                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+630-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:9-72
+630-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:281:17-70
+631            </intent-filter>
+632        </receiver>
+633
+634        <activity
+634-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\7d3134a92b294f0d1ded3d6e23c764af\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+635            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+635-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\7d3134a92b294f0d1ded3d6e23c764af\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+636            android:exported="false"
+636-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\7d3134a92b294f0d1ded3d6e23c764af\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+637            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+637-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\7d3134a92b294f0d1ded3d6e23c764af\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+638
+639        <provider
+639-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:12:9-16:39
+640            android:name="com.google.firebase.provider.FirebaseInitProvider"
+640-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:13:13-77
+641            android:authorities="kr.babylab.BeaconPayment.firebaseinitprovider"
+641-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:14:13-72
+642            android:exported="false"
+642-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:15:13-37
+643            android:initOrder="100" />
+643-->[com.google.firebase:firebase-common:17.0.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\c14c5a7985f80f52755782171a4771ec\jetified-firebase-common-17.0.0\AndroidManifest.xml:16:13-36
+644
+645        <receiver
+645-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:29:9-33:20
+646            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+646-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:30:13-85
+647            android:enabled="true"
+647-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:31:13-35
+648            android:exported="false" >
+648-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:32:13-37
+649        </receiver>
+650        <receiver
+650-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:34:9-42:20
+651            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+651-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:35:13-100
+652            android:enabled="true"
+652-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:36:13-35
+653            android:exported="true"
+653-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:37:13-36
+654            android:permission="android.permission.INSTALL_PACKAGES" >
+654-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:38:13-69
+655            <intent-filter>
+655-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:251:7-253:23
+656                <action android:name="com.android.vending.INSTALL_REFERRER" />
+656-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:9-71
+656-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:17-68
+657            </intent-filter>
+658        </receiver>
+659
+660        <service
+660-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:44:9-47:40
+661            android:name="com.google.android.gms.measurement.AppMeasurementService"
+661-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:45:13-84
+662            android:enabled="true"
+662-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:46:13-35
+663            android:exported="false" />
+663-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:47:13-37
+664        <service
+664-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:48:9-52:72
+665            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+665-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:49:13-87
+666            android:enabled="true"
+666-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:50:13-35
+667            android:exported="false"
+667-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:51:13-37
+668            android:permission="android.permission.BIND_JOB_SERVICE" />
+668-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\9504b3f6ff87a37d417d881434ded649\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:52:13-69
+669
+670        <meta-data
+670-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\60cf0b0d62c0fea5eeb44ab7d56d4f62\jetified-play-services-basement-16.2.0\AndroidManifest.xml:23:9-25:69
+671            android:name="com.google.android.gms.version"
+671-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\60cf0b0d62c0fea5eeb44ab7d56d4f62\jetified-play-services-basement-16.2.0\AndroidManifest.xml:24:13-58
+672            android:value="@integer/google_play_services_version" />
+672-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\60cf0b0d62c0fea5eeb44ab7d56d4f62\jetified-play-services-basement-16.2.0\AndroidManifest.xml:25:13-66
+673        <!--
+674         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+675         with the application context. This config is merged in with the host app's manifest,
+676         but there can only be one provider with the same authority activated at any given
+677         point; so if the end user has two or more different apps that use Facebook SDK, only the
+678         first one will be able to use the provider. To work around this problem, we use the
+679         following placeholder in the authority to identify each host application as if it was
+680         a completely different provider.
+681        -->
+682        <provider
+682-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:39:9-42:40
+683            android:name="com.facebook.internal.FacebookInitProvider"
+683-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:40:13-70
+684            android:authorities="kr.babylab.BeaconPayment.FacebookInitProvider"
+684-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:41:13-72
+685            android:exported="false" />
+685-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:42:13-37
+686
+687        <receiver
+687-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:44:9-50:20
+688            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+688-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:45:13-86
+689            android:exported="false" >
+689-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:46:13-37
+690            <intent-filter>
+690-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:47:13-49:29
+691                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+691-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:48:17-95
+691-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:48:25-92
+692            </intent-filter>
+693        </receiver>
+694        <receiver
+694-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:51:9-58:20
+695            android:name="com.facebook.CampaignTrackingReceiver"
+695-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:52:13-65
+696            android:exported="true"
+696-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:53:13-36
+697            android:permission="android.permission.INSTALL_PACKAGES" >
+697-->[com.facebook.android:facebook-core:5.0.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\e8d473c5ef42f7bde6fc553ae01801ac\jetified-facebook-core-5.0.1\AndroidManifest.xml:54:13-69
+698            <intent-filter>
+698-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:251:7-253:23
+699                <action android:name="com.android.vending.INSTALL_REFERRER" />
+699-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:9-71
+699-->D:\park-jun-seo\Beacon\Babylab-BeaconPay\android\app\src\main\AndroidManifest.xml:252:17-68
+700            </intent-filter>
+701        </receiver>
+702
+703        <provider
+703-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
+704            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+704-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75
+705            android:authorities="kr.babylab.BeaconPayment.crashlyticsinitprovider"
+705-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
+706            android:exported="false"
+706-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
+707            android:initOrder="90" />
+707-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\user88\.gradle\caches\transforms-2\files-2.1\eaf6d73db2ae5c5590e10edbde1d1ff1\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
+708    </application>
+709
+710</manifest>

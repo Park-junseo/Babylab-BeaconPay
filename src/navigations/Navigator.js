@@ -21,6 +21,7 @@ import React,{Component} from 'react'
 import {Text, Image, View, TouchableOpacity} from 'react-native'
 
 import BackButton from '../../assets/btn/Back.svg'
+import CANCEL from '../../assets/btn/Cancel.svg'
 
 
 const payStack = createStackNavigator(
@@ -59,18 +60,22 @@ const loginStack = createStackNavigator(
         },
         agree: {
             screen: AgreementScreen,
-            navigationOptions: {
+            navigationOptions: ({navigation}) => ({
                 title: "이용약관",
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#000'
-                },
+                headerTransparent:null,
                 headerStyle: {
                     elevation: 0,
                     shadowOpacity: 0,
+                    backgroundColor: '#fff',
+                    
                 },
-            }
+                headerLeft: <View style={{width:24}}></View>,
+                headerRight: ()=>(
+                    <TouchableOpacity onPress={()=>{navigation.goBack()}}>
+                        <CANCEL width= "24" height="24" fill='#808080'/>
+                    </TouchableOpacity>
+                ),
+            })
         },
         findPW: {
             screen: FindPasswordScreen,
@@ -152,9 +157,8 @@ const MyPageStack = createStackNavigator(
         Mypage: {
             screen: MyPageScreen,
             navigationOptions: ({navigation}) => ({
-                title: 'hey',
+                title: "",
                 headerLeft: ()=>(navigation.getParam('mypageLeft', <Text>Error</Text>)),
-                headerTitle: ()=>(navigation.getParam('mypageTitle', <Text>Error</Text>)),
                 headerRight:()=>(navigation.getParam('mypageRight', <View></View>)),
                 headerTitleStyle: {
                     fontSize: 16,

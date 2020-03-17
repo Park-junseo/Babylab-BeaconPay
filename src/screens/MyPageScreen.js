@@ -10,6 +10,8 @@ import LOGO from '../../assets/logo/My_page.svg'
 import EDIT from '../../assets/btn/Edit.svg'
 import CANCEL from '../../assets/btn/Cancel.svg'
 
+import LOGOUT from '../../assets/btn/Logout_button.svg'
+
 export default class MyPageScreen extends Component {
     constructor(props) {
         super(props)
@@ -115,15 +117,20 @@ export default class MyPageScreen extends Component {
                     <LOGO x="0" width="210" height="100%" style={{marginLeft:-32}}/>
                 </View>
             ),
+            /*
             mypageTitle: (
-                <View style={{marginRight:10}}>
+                <View style={{marginRight:10,}}>
                     <TouchableOpacity onPress={()=>{}}>
                         <EDIT width="24" height="24"/>
                     </TouchableOpacity>
                 </View>
             ),
+            */
             mypageRight: (
-                <View>
+                <View style={{flexDirection:'row', alignItems:'flex-end'}}>
+                    <TouchableOpacity onPress={()=>{this.props.navigation.navigate("MyModi")}}>
+                        <EDIT width="24" height="24" style={{marginRight:10}}/>
+                    </TouchableOpacity>
                     <TouchableOpacity onPress={()=>this.props.navigation.popToTop()}>
                         <CANCEL width="24" height="24"/>
                     </TouchableOpacity>
@@ -163,23 +170,13 @@ export default class MyPageScreen extends Component {
                         </View>
                     </View>
                 </View>
-                <FlatList
-                        style={{height: "50%"}}
-                        data={this.state.item}
-                        renderItem={this._renderItem}
-                        keyExtractor={(item, index) => item.id}
-                        onEndReached={this._scrollHandler}
-                        refreshing={this.state.refreshing}
-                        onRefresh={this._handleRefresh}
-                       /> 
-                {/*
                 <ScrollView style={{width:'100%'}}>
                         {this.renderList(10)}
                 </ScrollView>
-                 */}
                 <View style={styles.footer}>
                     <View style={{width:"100%",height:32, flexDirection:'column', alignItems:'flex-end'}}>
                         <TouchableOpacity onPress={()=>{this.logout()}}>
+                            <LOGOUT style={{width:'100', height:'100%'}}/>
                             <View style={styles.btn_text_wrapper}>
                                 <Text style={styles.btn_text}>로그아웃</Text>
                             </View>
@@ -290,7 +287,7 @@ const styles = StyleSheet.create({
         bottom:0
     },
     btn_text:{
-        color:'#fff',
+        color:'#00000059',
         fontWeight:'bold',
         fontSize:16,
     }

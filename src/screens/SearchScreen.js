@@ -34,16 +34,6 @@ export default class SearchScreen extends Component {
             current_time: "오늘 "+new Date().getHours()+":"+new Date().getMinutes()
         }
     }
-    componentDidMount () {
-        const depart = this.props.navigation.getParam('depart')
-        const arrive = this.props.navigation.getParam('arrive');
-        const dep_code = this.props.navigation.getParam('dep_code');
-        const dest_code = this.props.navigation.getParam('dest_code');
-        
-        this.setState({depart: depart, arrive: arrive, dep_code: dep_code, dest_code: dest_code}, function() {
-            this._getPathInfo()
-        })
-    }
    
     //최단 경로 찾기
     _getPathInfo = () => {
@@ -111,7 +101,7 @@ export default class SearchScreen extends Component {
     _setHeader = () => {
         this.props.navigation.setParams({
             searchChange: (
-                <TouchableHighlight onPress={this._swap} underlayColor="none">
+                <TouchableHighlight onPress={this._swap} underlayColor="transparent">
                     <CHANGE width= '24' height='24'/>
                 </TouchableHighlight>
             ),
@@ -131,10 +121,10 @@ export default class SearchScreen extends Component {
             ),
             searchRight: (
                 <View>
-                    <TouchableHighlight onPress={this._init} style={{marginBottom:6}} underlayColor="none">
+                    <TouchableHighlight onPress={this._init} style={{marginBottom:6}} underlayColor="transparent">
                         <CANCEL width= '24' height='24'/>
                     </TouchableHighlight>
-                    <TouchableHighlight onPress={this._getPathInfo} style={{marginTop:6}} underlayColor="none">
+                    <TouchableHighlight onPress={this._getPathInfo} style={{marginTop:6}} underlayColor="transparent">
                         <SEARCH width= '24' height='24'/>
                     </TouchableHighlight>
                 </View>

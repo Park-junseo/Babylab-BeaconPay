@@ -169,7 +169,7 @@ handleBackButton = () => {
                     {this.state.pay == 'credit' ? <CardComponent navigation={this.props.navigation} setting={true}/> : <></>}
 
                     <View style={styles.search}>
-                        <TouchableHighlight style={styles.swap} onPress={this._swap} underlayColor="none">
+                        <TouchableHighlight style={styles.swap} onPress={this._swap} underlayColor="#transparent">
                             <CHANGE width="24" height="24"/>
                         </TouchableHighlight>
                         <View style={{height:'100%', width:'100%', flex:1, flexDirection:'column', alignItems:'center'}}>
@@ -183,7 +183,7 @@ handleBackButton = () => {
 
                         </View>
 
-                        <TouchableHighlight style={styles.swap}  underlayColor="none" onPress={()=>this.props.navigation.navigate('search', 
+                        <TouchableHighlight style={styles.swap}  underlayColor="transparent" onPress={()=>this.props.navigation.navigate('search', 
                             {depart:this.state.departure, dep_code:this.state.dep_code, dest_code:this.state.dest_code, arrive: this.state.destination})}>
                             <SEARCH width="24" height="24"/>
                         </TouchableHighlight>
@@ -206,9 +206,6 @@ handleBackButton = () => {
                                 style={{width: 30, height: 30}} />
                             </TouchableHighlight>
                         </View>
-                        <TouchableOpacity style={styles.modal_list} onPress={()=>this._navigateMy('MyModi')}>
-                            <Text style={{fontWeight: 'bold'}}>내 정보 변경</Text>
-                        </TouchableOpacity>
 
                         <TouchableOpacity style={styles.modal_list} onPress={()=>this._navigateMy('My')}>
                             <Text style={{fontWeight: 'bold'}}>이용 내역</Text>
