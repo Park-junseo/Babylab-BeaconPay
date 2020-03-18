@@ -46,7 +46,7 @@ export default class EmailLoginScreen extends Component {
     }
     render() {
         return(
-            <KeyboardAvoidingView behavior="padding" style={{marginHorizontal:0, paddingHorizontal:0}}>
+            <KeyboardAvoidingView behavior="height" style={{marginHorizontal:0, paddingHorizontal:0}}>
             <ScrollView contentContainerStyle={{width: '100%', height: '100%'}}>
             <View style={{backgroundColor:'#4666e5', width: '100%', height: '100%', alignItems: 'center'}}>
                 <View style={{height: '40%', width: '100%', marginTop:60}}>

@@ -244,7 +244,7 @@ handleBackButton = () => {
 const styles = StyleSheet.create({
     container: {
         marginTop: '3%',
-        marginHorizontal:24
+        marginHorizontal:24,
     },
     header: {
         flexDirection: 'row',
@@ -269,7 +269,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.20,
         shadowRadius: 1.41,
         elevation: 2, 
-        marginTop:16,
+        //marginTop:16,
         alignSelf: 'center',
         alignItems: 'center',
         flexDirection: 'row',
@@ -328,7 +328,8 @@ const styles = StyleSheet.create({
         width: '100%',
         backgroundColor: '#fff',
         position: 'absolute',
-        bottom: 0
+        bottom: 0,
+        paddingBottom:10
     },
     modal_title: {
         fontWeight: 'bold'
@@ -347,6 +348,7 @@ const styles = StyleSheet.create({
         height: '25%',
         justifyContent: 'center',
         width: '80%',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginVertical:5
     }
 })

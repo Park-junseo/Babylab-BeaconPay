@@ -13,7 +13,7 @@ const BlueButton = ({text, onPress, white, shadow, right})=>{
 
     let white_text;
     let white_back;
-    let rotateStyle = {btn_wrapper:{},svg:{},wrapper:{}}
+    let rotateStyle = {btn_wrapper:{},svg:btn_styles.btn_shape,wrapper:{}}
     let svg_shadow;
 
     if(white) {
@@ -25,14 +25,13 @@ const BlueButton = ({text, onPress, white, shadow, right})=>{
 
     if(!right) {
         rotateStyle.btn_wrapper= btn_styles.flex_right;
-        rotateStyle.svg=btn_styles.rotate;
+        rotateStyle.svg=btn_styles.btn_shape2;
         rotateStyle.wrapper = btn_styles.flex_start;
     }
-
+/*
     return (
     <View style={[btn_styles.btn_wrapper, rotateStyle.btn_wrapper,{backgroundColor:'#fa0'}]}>
         <TouchableOpacity style={[btn_styles.btn, rotateStyle.wrapper]} onPress={onPress} >
-            {/*<SvgUri  style={[rotateStyle.svg, svg_shadow]} fill={fillColor}/>*/}
             <View style={[btn_styles.btn_shape,rotateStyle.svg, svg_shadow,white_back]}></View>
         </TouchableOpacity>
         <View pointerEvents='none' style={btn_styles.btn_text_wrapper} disabled={true}>
@@ -40,6 +39,14 @@ const BlueButton = ({text, onPress, white, shadow, right})=>{
         </View>
     </View>        
     )
+*/
+    return (
+        <View style={[btn_styles.btn_wrapper, rotateStyle.btn_wrapper,]}>
+            <TouchableOpacity style={[btn_styles.btn, rotateStyle.wrapper]} onPress={onPress} >
+                <Text style={[rotateStyle.svg, svg_shadow,white_back,white_text]}>{text}</Text>
+            </TouchableOpacity>
+        </View>        
+        )
 
 };
 
@@ -117,7 +124,7 @@ const btn_styles = StyleSheet.create({
         elevation: 3,
     },
     btn_shape: {
-        color: '#4666e5',
+        color: '#fff',
         fontWeight: 'bold',
 
         width: '100%',
@@ -137,8 +144,30 @@ const btn_styles = StyleSheet.create({
         textAlign: 'center',
         textAlignVertical: 'center',
     },
+    btn_shape2: {
+        color: '#fff',
+        fontWeight: 'bold',
+
+        width: '100%',
+        height:0,
+        alignSelf: 'flex-start',
+        marginBottom: 5,
+
+        borderTopColor: '#4666e5',
+        borderTopWidth:50,
+        
+        borderRightWidth: 10,
+        borderRightColor: 'transparent',
+        borderStyle: 'solid',
+        alignSelf:'flex-end',
+        right: 0,
+
+        textAlign: 'center',
+        textAlignVertical: 'center',
+    },
     back_white:{
         borderBottomColor: '#fff',
+        borderTopColor: '#fff',
     }
 })
 

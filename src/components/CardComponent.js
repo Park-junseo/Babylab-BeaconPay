@@ -77,110 +77,76 @@ export default class CardComponent extends Component {
     
         return(
             <>
-            <View style={styles.container}>
-                {/*<Image source={require('../../assets/Card')} style={styles.card}/>*/}
-                <View style={{flexDirection: 'row', height: 40}}>
-                    <Text style={styles.bank_title}>카카오뱅크</Text>
-                    {this.props.setting && <TouchableHighlight onPress={this.openModal}>
-                        <Feather name="more-vertical" size={30} color="#465cdb"/>
-                    </TouchableHighlight>}
-                </View>
-                <View style={{flexDirection: 'row', width: '100%', justifyContent: 'center', marginTop: 10, height:20}}>
-                    <View style={{flexDirection:'row', width:'25%', justifyContent: 'center', marginTop:5}}>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                    </View>
-
-                    <View style={{flexDirection:'row', width:'25%', justifyContent: 'center', marginTop:5}}>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                    </View>
-
-                    <View style={{flexDirection:'row', width:'25%', justifyContent: 'center', marginTop:5}}>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                        <View style={{marginRight: 2}}><FontAwesome name="circle" size={8} color="#465cdb"/></View>
-                    </View>
-
-                    <View style={{flexDirection:'row', width:'25%', justifyContent: 'center'}}>
-                        <Text style={{marginRight: 2,  fontSize:17, color: '#465cdb'}}>1 8 2 6</Text>
+             <View style={styles.container}>
+                    <Image source={require('../../assets/Card.png')} resizeMode="contain" style={styles.card}/>
+                    <View style={styles.card_content}>
+                        <View style={{flexDirection: 'row', height: 40}}>
+                            <Text style={styles.bank_title}> </Text>
+                            {this.props.setting && <TouchableHighlight onPress={this.openModal}>
+                                <Feather name="more-vertical" size={30} color="#fff"/>
+                            </TouchableHighlight>}
+                        </View>
+                        <View style={{flexDirection: 'row', width: '55%', alignSelf:'flex-end', marginTop: 20, alignItems:'center'}}>
+                            <Text style={{color: '#fff', marginRight:10}}>잔여 금액</Text>
+                            <Text style={{color:'#fff', fontSize:20, fontWeight:'bold'}}>{this._balanceToText(this.state.balance)} 원</Text>
+                        </View>
                     </View>
                 </View>
 
-                <View style={{flexDirection: 'row', marginTop: 20}}>
-                    <View style={{width:'50%'}}>
-                        <Text style={styles.text}>CARDHOLDER NAME</Text>
-                        <Text style={{color: '#465cdb'}}>{this.state.name}</Text>
-                    </View>
-
-                    <View>
-                        <Text style={styles.text}>EXPIRE DATE</Text>
-                        <Text style={{color: '#465cdb'}}>{this.state.expire}</Text>
-                    </View>
-                </View>
-                <View style={{flexDirection: 'row', width: '55%', alignSelf:'flex-end', marginTop: 20, alignItems:'center'}}>
-                    <Text style={{color: '#465cdb', marginRight:10}}>잔여 금액</Text>
-                    <Text style={{color:'#465cdb', fontSize:20, fontWeight:'bold'}}>{this._balanceToText(this.state.balance)} 원</Text>
-                </View>
-            </View>
             <Modal visible={this.state.modal} animationType="slide" transparent={true} >
                 <View style={styles.modal_container}>
                     <TouchableOpacity style={{height:'60%', width: '100%'}} onPress={this.closeModal}>
                     </TouchableOpacity>
                     <View style={styles.modal_content}>
                         <View style={styles.modal_title_content}>
-                            <Text style={styles.modal_title}>결제 설정</Text>
+                        <Text style={styles.modal_title}>결제 설정</Text>
                             <TouchableHighlight style={{position: 'absolute', right: 0}} onPress={this.closeModal}>
                                 <Image resizeMode="contain" source={require('../../assets/Cancel.png')} 
-                                style={{width: 30, height: 30}} />
+                                style={{width: 24, height: 24}} />
                             </TouchableHighlight>
                         </View>
+
                         <TouchableOpacity style={styles.modal_list} onPress={this._pay}>
                             <Text style={{fontWeight: 'bold'}}>결제 정보 변경</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.modal_list} onPress={this._charge}>
                             <Text style={{fontWeight: 'bold'}}>충전하기</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.modal_list} onPress={this._refreshBalance}>
-                            <Text style={{fontWeight: 'bold'}}>잔액 새로고침</Text>
-                        </TouchableOpacity>
+
 
                     </View>
                 </View>
-            </Modal>
+                </Modal>
             </>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    container: {
+    container_wrapper:{
         width: '100%',
-        height: 200,
-        borderRadius: 5,
-        backgroundColor: '#dfeaf5',
-        alignSelf :'center',
-        marginTop: 10,
-        paddingHorizontal: 20,
-        paddingVertical:10,
-
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 3,
-        },
-        shadowOpacity: 0.27,
-        shadowRadius: 4.65,
-
-        elevation: 6,
+        flexDirection:'row',
+        backgroundColor:'#430'
     },
-    card: {
+    container: {
+
+        position:'relative',
+
+
+
+    },
+    card:{
+        width:'100%',
+        borderRadius: 2,
+    },
+    card_content: {
         position:'absolute',
+        top:0, right:0, left: 0, bottom:0,
+        paddingHorizontal: 20,
+        paddingVertical:30,
+        flexDirection:'column',
+        justifyContent:'space-between'
+
     },
     bank_title: {
         width: '90%',
@@ -204,7 +170,8 @@ const styles = StyleSheet.create({
         width: '100%',
         backgroundColor: '#fff',
         position: 'absolute',
-        bottom: 0
+        bottom: 0,
+        paddingBottom:10
     },
     modal_title: {
         fontWeight: 'bold'
@@ -224,6 +191,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: '80%',
         alignSelf: 'center',
-        marginVertical:10
+        marginVertical:5
     }
 })

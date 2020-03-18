@@ -98,6 +98,7 @@ export default class MyPageScreen extends Component {
     _changeList(target) {
         this.setState({target: target})
     }
+    
     _renderItem = ({item}) => (  
         <View style={styles.list}>
             <View style={{flexDirection:'row', marginTop: 20}}>
@@ -110,6 +111,24 @@ export default class MyPageScreen extends Component {
             </View>
         </View>
     )
+/*
+    _renderItem = ({item}) => (  
+        <View style={styles.list}>
+            <Text style={styles.date}>{item.regdate.replace(" ", "\n")}</Text>
+            
+            <View style={styles.list_detail_contianer}>
+                <View style={[styles.list_detail,{marginBottom:14}]}>
+                    <Text style={styles.detail_text}>선릉역</Text>
+                    <Text style={styles.detail_text}>1,250 원</Text>
+                </View>
+                <View style={styles.list_detail}>
+                    <Text style={styles.detail_text}>삼성역</Text>
+                    <Text style={styles.detail_text}>1,250 원</Text>
+                </View>
+            </View>
+        </View>
+    )
+    */
     render() {
         return(
             <View style={{width:'100%', height:'100%', backgroundColor: '#fff'}}>
@@ -142,8 +161,7 @@ export default class MyPageScreen extends Component {
                     </View>
                 </View>
                 <ScrollView>
-                <FlatList
-                        style={{height: "50%"}}
+                    <FlatList
                         data={this.state.item}
                         renderItem={this._renderItem}
                         keyExtractor={(item, index) => item.id}
@@ -154,13 +172,9 @@ export default class MyPageScreen extends Component {
                 </ScrollView>
 
                 <View style={styles.footer}>
-                    <View style={{width:"100%",height:32, flexDirection:'column', alignItems:'flex-end'}}>
-                        <TouchableOpacity onPress={()=>{this.logout()}}>
-                            <Image resizeMode="contain" source={require('../../assets/btn_png/Logout_button.png')} 
-                                style={{width:'100%', height:'100%'}}/>
-                            <View style={styles.btn_text_wrapper}>
-                                <Text style={styles.btn_text}>로그아웃</Text>
-                            </View>
+                    <View style={{width:"100%",height:'100%', flexDirection:'row', alignItems:'center', justifyContent:'flex-end'}}>
+                        <TouchableOpacity style={{width:100,height:32}} onPress={()=>{this.logout()}}>
+                            <Text style={styles.btn_text}>로그아웃</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -236,7 +250,7 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         paddingHorizontal:12,
         paddingVertical:3,
-        backgroundColor: '#465cdb',
+        backgroundColor: '#f00',
         alignItems: 'center',
         justifyContent: 'center',
         marginLeft: 5
@@ -256,7 +270,8 @@ const styles = StyleSheet.create({
         width:'100%',
         flexDirection:'column',
         alignItems:'center',
-        height:40
+        height:40,
+        height:50
     },
     btn_text_wrapper:{
         position:'absolute',
@@ -268,9 +283,27 @@ const styles = StyleSheet.create({
         bottom:0
     },
     btn_text:{
-        color:'#00000059',
-        fontWeight:'bold',
-        fontSize:16,
+        //color:'#ffffff59',
+        //fontWeight:'bold',
+        //fontSize:16,
+
+        color: '#00000059',
+        fontWeight: 'bold',
+
+        width: '100%',
+        height:'100%',
+        marginBottom: 5,
+
+        borderTopColor: '#fafafa',
+        borderTopWidth:32,
+        
+        borderLeftWidth: 10,
+        borderLeftColor: 'transparent',
+        borderStyle: 'solid',
+        right: 0,
+
+        textAlign: 'center',
+        textAlignVertical: 'center',
     }
 
     

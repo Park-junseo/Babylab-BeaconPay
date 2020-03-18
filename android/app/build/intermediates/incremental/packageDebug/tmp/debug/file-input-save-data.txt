@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Mar 18 19:35:16 KST 2020
+#Wed Mar 18 22:13:14 KST 2020
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=D\:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
