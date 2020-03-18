@@ -1,4 +1,4 @@
-#Wed Mar 18 13:50:54 KST 2020
+#Wed Mar 18 19:35:12 KST 2020
 path.3=classes3.dex
 path.2=classes2.dex
 path.1=classes.dex
@@ -7,7 +7,7 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.3=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/transforms/dexMerger/debug/0
-base.2=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/transforms/dexMerger/debug/0
-base.1=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/transforms/dexMerger/debug/1
-base.0=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/transforms/dexMerger/debug/0
+base.3=D\:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+base.2=D\:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+base.1=D\:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+base.0=D\:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0

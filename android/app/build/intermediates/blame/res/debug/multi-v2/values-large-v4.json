@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+            "outputFile": "D:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/dad8e6e3cdaba489e27325cc2bc9d9da/res/values-large-v4/values-large-v4.xml",
+                    "source": "C:\\Users\\user88\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\05a56a48ab40d7c93578f779aec09f6e\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/aadd747ffa01426ff92aa34647e9be53/res/values-large-v4/values-large-v4.xml",
+                    "source": "C:\\Users\\user88\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\06f6f295363cf52bfc9012f3e0c5f603\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

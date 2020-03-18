@@ -6,6 +6,20 @@ export default class ChangepasswordScreen extends Component {
     constructor(props) {
         super(props)
     }
+
+    componentDidMount() {
+        this.props.navigation.setParams({
+            changeSave: (
+                <View style={{flexDirection:'row', alignItems:'flex-end'}}>
+                    <TouchableOpacity onPress={this.changePW}>
+                        <Text style={{color: '#465cbd', fontSize: 16, fontWeight: 'bold'}}>저장</Text>
+                    </TouchableOpacity>
+                </View>
+                
+            )
+        })
+    }
+
     changePW = () => {
         Alert.alert(
             '비밀번호가 변경되었습니다. ',
@@ -23,32 +37,124 @@ export default class ChangepasswordScreen extends Component {
     render() {
         return(
             <KeyboardAvoidingView behavior="padding">
-            <ScrollView contentContainerStyle={{width: '100%', height: '100%'}}>
-            <View style={{height: '100%', backgroundColor: '#fff', alignItems: 'center', paddingTop: 30}}>
-                
-                <Text style={{width:'80%'}}>임시비밀번호</Text>
-                <TextInput style={styles.input} placeholder="임시 비밀번호" secureTextEntry={true}/>
+            <View style={styles.container}>
+                <ScrollView>
+                    <View style={[styles.login_form,styles.margin_horizontal]}>
 
-                <Text style={{width:'80%'}}>새 비밀번호 (8자리 이상)</Text>
-                <TextInput style={styles.input}  secureTextEntry={true}/>
 
-                <Text style={{width:'80%'}}>비밀번호 확인</Text>
-                <TextInput style={styles.input}  secureTextEntry={true}/>
+                        <View style={[{marginBottom:70},]}>
+                            <Text style={[input_styles.default_text,{fontSize:14}]}>임시비밀번호</Text>
+                            <View style={{flexDirection: 'row'}}>
+                                <TextInput style={[input_styles.input]} placeholder="●●●●●●●●" secureTextEntry={true}/>
+                            </View>
+                        </View>
+                        <View style={[{marginBottom:70},]}>
+                            <Text style={[input_styles.default_text,{fontSize:14}]}>새 비밀번호 (8자리 이상)</Text>
+                            <View style={{flexDirection: 'row'}}>
+                                <TextInput style={[input_styles.input]} placeholder="●●●●●●●●" secureTextEntry={true}/>
+                            </View>
+                        </View>
 
-                <TouchableOpacity style={{alignSelf: 'flex-end', marginRight: 30}} onPress={this.changePW}>
-                    <Text style={{color: '#465cbd', fontSize: 18, fontWeight: 'bold'}}>저장</Text>
-                </TouchableOpacity>
+                        <View style={[{marginBottom:70},]}>
+                            <Text style={[input_styles.default_text,{fontSize:14}]}>비밀번호 확인</Text>
+                            <View style={{flexDirection: 'row'}}>
+                                <TextInput style={[input_styles.input]} placeholder="●●●●●●●●" secureTextEntry={true}/>
+                            </View>
+                        </View>
+                    </View>
+                </ScrollView>
             </View>
-            </ScrollView>
             </KeyboardAvoidingView>
         )
     }
 }
+
 const styles = StyleSheet.create({
-    input: {
-        width: '80%',
+    container: {
+        width: '100%',
+        height: '100%',
+        backgroundColor:'#fff'
+    },
+    login_form:{
+        marginTop:20,
+        marginHorizontal: 40,
+        marginBottom:'6%'
+    },
+    input : {
         borderBottomWidth: 1,
-        borderColor: '#828282',
-        marginBottom: 50
+        borderColor : '#828282',
+        paddingLeft: 10,
+        
+    },
+    detail_btn: {
+        backgroundColor: '#f5f5f5',
+        borderRadius: 7,
+        marginLeft: 7,
+        paddingHorizontal:12,
+        paddingVertical:9,
+        borderRadius:20,
+        alignSelf:'baseline',
+        marginBottom:-8
+    },
+    detail_text: {
+        color: '#000000dd',
+        fontWeight: 'bold',
+        fontSize:10
+    },
+    margin_horizontal: {
+        marginHorizontal:40
+    }
+})
+
+const input_styles = StyleSheet.create({
+    default_text: {
+        color: '#000000dd',
+        paddingLeft:8,
+        marginBottom:9,
+        fontWeight:'bold',
+        fontSize:12
+    },
+    detail_text: {
+        color: '#000000dd',
+        fontWeight: 'bold',
+        fontSize:10
+    },
+    input : {
+        borderBottomWidth: 1,
+        borderColor : '#00000059',
+        paddingLeft: 10,
+        paddingBottom:3,
+        width:'100%',
+        fontSize:14,
+
+    },
+    /*
+    input_container: {
+        marginBottom: 24,
+    },
+    */
+    detail_input: {
+        borderBottomWidth: 1,
+        borderColor : '#00000059',
+        paddingLeft: 10,
+        marginBottom:8,
+        paddingBottom:4,
+        width:'100%',
+        fontSize:14
+    },
+    detail_btn: {
+        backgroundColor: '#f5f5f5',
+        borderRadius: 7,
+        marginLeft: 7,
+        paddingHorizontal:12,
+        paddingVertical:12,
+        textAlignVertical:'bottom',
+        alignSelf:'baseline',
+        justifyContent:'center',
+        borderRadius:20
+    },
+    color_white:{
+        color: '#ffffffdd',
+        borderColor: '#ffffff99'
     }
 })

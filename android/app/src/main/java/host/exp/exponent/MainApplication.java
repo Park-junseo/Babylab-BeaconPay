@@ -21,6 +21,8 @@ import okhttp3.OkHttpClient;
 
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
+import com.solinor.bluetoothstatus.RNBluetoothManagerPackage;
+import com.reactnativecommunity.rnpermissions.RNPermissionsPackage;
 import com.facebook.soloader.SoLoader;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
@@ -48,6 +50,8 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
 
         // Needed for `react-native link`
         // new MainReactPackage(),
+            new RNBluetoothManagerPackage(),
+            new RNPermissionsPackage(),
            
 
             new SplashScreenReactPackage(),

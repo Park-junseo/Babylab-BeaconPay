@@ -26,6 +26,7 @@ export default class KakaoPayScreen extends Component {
         console.log(response);
     }
     _KakaoPayRequest(url) {
+        console.log(url)
     if(url == 'intent://exit') {                //결제 종료 요청
         this.props.navigation.state.params.goBackData({refresh: true})
         this.props.navigation.pop();

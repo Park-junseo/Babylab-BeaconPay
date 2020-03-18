@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+            "outputFile": "D:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/babylabco/Desktop/Beacon/android/app/src/main/res/values-w820dp/dimens.xml",
+                    "source": "D:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "2",
-                        "startOffsets": "287",
+                        "startOffsets": "291",
                         "endColumns": "55",
-                        "endOffsets": "340"
+                        "endOffsets": "344"
                     },
                     "to": {
                         "startLines": "2",

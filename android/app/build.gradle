@@ -107,6 +107,9 @@ apply from: 'expo.gradle'
 apply from: "../../node_modules/react-native-unimodules/gradle.groovy"
 
 dependencies {
+  implementation 'androidx.annotation:annotation:1.1.0'
+    implementation project(':react-native-bluetooth-status')
+    implementation project(':react-native-permissions')
   implementation project(':RNSendIntentModule')
     implementation project(':react-native-svg')
     implementation project(':react-native-webview')

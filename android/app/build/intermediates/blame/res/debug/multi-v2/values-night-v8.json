@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "D:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/aadd747ffa01426ff92aa34647e9be53/res/values-night-v8/values-night-v8.xml",
+                    "source": "C:\\Users\\user88\\.gradle\\caches\\transforms-1\\files-1.1\\expoview-36.0.0.aar\\1c29f3e1b7e017ee4d2f31796fb85e44\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "38",
+                        "endOffsets": "89"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user88\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\06f6f295363cf52bfc9012f3e0c5f603\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -18,16 +28,6 @@
                         "startOffsets": "94,164,248,332,428,530,632,726",
                         "endColumns": "69,83,83,95,101,101,93,88",
                         "endOffsets": "159,243,327,423,525,627,721,810"
-                    }
-                },
-                {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-1/files-1.1/expoview-36.0.0.aar/1454d7e62d498201b8f50cbf3ed5431e/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "38",
-                        "endOffsets": "89"
                     }
                 }
             ]

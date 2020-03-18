@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rSG/values-en-rSG.xml",
+            "outputFile": "D:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSG\\values-en-rSG.xml",
             "map": [
                 {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-1/files-1.1/jetified-play-services-wallet-16.0.1.aar/3a95aba65ef42db35740c1988a52fe98/res/values-en-rSG/values.xml",
+                    "source": "C:\\Users\\user88\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-wallet-16.0.1.aar\\690303abc440cc6a269b421d78c1b6b2\\res\\values-en-rSG\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

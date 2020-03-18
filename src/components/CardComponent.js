@@ -58,11 +58,27 @@ export default class CardComponent extends Component {
         this.closeModal();
         this.props.navigation.navigate('charge',{ goBackData: this._return})
     }
+    _balanceToText = (balance) => {
+        let text = '';
+        let j = 1;
+        for(let i = balance.length; i>=0; i-=1) {
+            text = balance.substring(i+1, i) +text;
+            if(i > 0 && text.length > 0 && j%4 === 0)
+            text = ','+text;
+            
+            
+            j += 1;
+           
+        }
+        return text;
+    }
+
     render() {
     
         return(
             <>
             <View style={styles.container}>
+                {/*<Image source={require('../../assets/Card')} style={styles.card}/>*/}
                 <View style={{flexDirection: 'row', height: 40}}>
                     <Text style={styles.bank_title}>카카오뱅크</Text>
                     {this.props.setting && <TouchableHighlight onPress={this.openModal}>
@@ -109,7 +125,7 @@ export default class CardComponent extends Component {
                 </View>
                 <View style={{flexDirection: 'row', width: '55%', alignSelf:'flex-end', marginTop: 20, alignItems:'center'}}>
                     <Text style={{color: '#465cdb', marginRight:10}}>잔여 금액</Text>
-                    <Text style={{color:'#465cdb', fontSize:20, fontWeight:'bold'}}>{this.state.balance} 원</Text>
+                    <Text style={{color:'#465cdb', fontSize:20, fontWeight:'bold'}}>{this._balanceToText(this.state.balance)} 원</Text>
                 </View>
             </View>
             <Modal visible={this.state.modal} animationType="slide" transparent={true} >
@@ -144,7 +160,7 @@ export default class CardComponent extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        width: '90%',
+        width: '100%',
         height: 200,
         borderRadius: 5,
         backgroundColor: '#dfeaf5',
@@ -162,6 +178,9 @@ const styles = StyleSheet.create({
         shadowRadius: 4.65,
 
         elevation: 6,
+    },
+    card: {
+        position:'absolute',
     },
     bank_title: {
         width: '90%',
@@ -181,7 +200,7 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     modal_content: {
-        height: '30%',
+        height: '25%',
         width: '100%',
         backgroundColor: '#fff',
         position: 'absolute',
@@ -204,6 +223,7 @@ const styles = StyleSheet.create({
         height: '25%',
         justifyContent: 'center',
         width: '80%',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginVertical:10
     }
 })

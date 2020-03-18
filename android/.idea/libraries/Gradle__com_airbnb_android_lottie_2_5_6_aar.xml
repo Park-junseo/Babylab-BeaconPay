@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.airbnb.android:lottie:2.5.6@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-lottie-2.5.6.aar/f61a04b2fa9bb1ac567514367d47f980/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-lottie-2.5.6.aar/6affff3f374df2a8b08027be9392d35f/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-lottie-2.5.6.aar/f61a04b2fa9bb1ac567514367d47f980/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-lottie-2.5.6.aar/f61a04b2fa9bb1ac567514367d47f980/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-lottie-2.5.6.aar/6affff3f374df2a8b08027be9392d35f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-lottie-2.5.6.aar/6affff3f374df2a8b08027be9392d35f/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.airbnb.android/lottie/2.5.6/deb60222492c0e62f921c770a01a2a990955d2eb/lottie-2.5.6-javadoc.jar!/" />

@@ -1,1 +1,1 @@
-{"mName":"externalOverride","mStoreFile":"/Users/babylabco/Desktop/apkTest","mStorePassword":"12345678","mKeyAlias":"key0","mKeyPassword":"12345678","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}
+{"mName":"debug","mStoreFile":"D:\\park-jun-seo\\Beacon\\Babylab-BeaconPay\\android\\debug.keystore","mStorePassword":"android","mKeyAlias":"AndroidDebugKey","mKeyPassword":"android","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}

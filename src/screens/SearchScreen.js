@@ -6,8 +6,12 @@ import axios from 'axios'
 import Toast from 'react-native-simple-toast'
 
 
+//const pathKey = 'FI9hHlDS2Gr%2FxSZe6VIbL2h6TOv%2Bom0ye60SNfxCnVlz4SnPEBWzjfoSYTC%2BSBILqOFiWKaIt48dGUX2GKaJtQ%3D%3D';
 const gpsKey = '5743714d496c736a35387a7047544a';
-const pathKey = 'FI9hHlDS2Gr%2FxSZe6VIbL2h6TOv%2Bom0ye60SNfxCnVlz4SnPEBWzjfoSYTC%2BSBILqOFiWKaIt48dGUX2GKaJtQ%3D%3D';
+const pathKey = 'jQXVKZ9WMQk3uZllNXGnqAmjMYF9DdXl3ZBcdQI6rR2k760galhA%2FkrDRClsHT%2Fn6LV2rjOck98g4CXamFnXtg%3D%3D';
+
+
+
 var parseString = require('react-native-xml2js').parseString;
 
 export default class SearchScreen extends Component {
@@ -120,43 +124,49 @@ export default class SearchScreen extends Component {
     }
     render() {
         return(
-            <View style={{paddingTop:StatusBar.currentHeight, width: '100%', height: '100%', backgroundColor: '#fff'}}>
+            <View style={{width: '100%', height: '100%', backgroundColor: '#fff'}}>
                 <View style={styles.search}>
-                    <TouchableHighlight style={styles.swap} onPress={this._swap}>
-                        <Image resizeMode="contain" source={require('../../assets/Change.png')} 
-                            style={{width: '100%', height:'70%'}}/>
+                    <TouchableHighlight style={styles.swap} onPress={this._swap} underlayColor="#transparent">
+                        <Image resizeMode="contain" source={require('../../assets/btn_png/Change_New.png')} 
+                            style={{width: 24, height:24}}/>
                     </TouchableHighlight>
-                    <View style={{width: '70%', marginRight: 10}}>
+                    <View style={{height:'100%', width:'100%', flex:1, flexDirection:'column', alignItems:'center'}}>
+                        <TouchableOpacity style={styles.input} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._depart, default:this.state.depart})}>
+                            <Text>{(this.state.dep_code) ? this.state.depart:'출발역을 입력해주세요'}</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.input2} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._dest, default:this.state.arrive})}>
+                            <Text>{(this.state.dest_code) ? this.state.arrive: '도착역을 입력해주세요'}</Text>
+                        </TouchableOpacity>
 
-                        <TouchableOpacity style={styles.input} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._depart})}>
-                            <Text style={{fontSize: 15}}>{this.state.depart}</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={styles.input2} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._dest})}>
-                            <Text style={{fontSize: 15}}>{this.state.arrive}</Text>
-                        </TouchableOpacity>
+                    </View>
+                    <View style={styles.swap}>
+                        <TouchableHighlight style={{marginBottom:8}} underlayColor="transparent" onPress={this._init}>
+                            <Image resizeMode="contain" source={require('../../assets/btn_png/Cancel.png')} 
+                                style={{width: 24, height:24}}/>
+                        </TouchableHighlight>
+                        <TouchableHighlight style={{marginTop:8}} underlayColor="transparent" onPress={this._getPathInfo}>
+                            <Image resizeMode="contain" source={require('../../assets/btn_png/Search.png')} 
+                                style={{width: 24, height:24}}/>
+                        </TouchableHighlight>
                     </View>
 
-                    <View style={styles.icon}>
-                        <TouchableHighlight onPress={this._init}>
-                            <MaterialIcons name="close" size={35} color="#5e5e5e"/>
-                        </TouchableHighlight>
 
-                        <TouchableHighlight onPress={this._getPathInfo}>
-                        <Image resizeMode="contain" source={require('../../assets/Search.png')} 
-                            style={{width: '100%', height:'52%', marginTop: 5}}/>
-                        </TouchableHighlight>
-                    </View>
-                    
                 </View>
 
-                <View style={{width: '90%', alignSelf: 'center', height: 40, justifyContent: 'center'}}>
-                    <View style={{flexDirection: 'row',alignItems: 'center'}}>
-                        <Text style={{fontSize: 15, color: '#465cdb', fontWeight: 'bold'}}>{this.state.current_time}</Text>
-                        <Text style={{fontSize: 15, color: '#828282', fontWeight: 'bold'}}>   출발</Text>
-                        <TouchableHighlight>
-                            <Image source={require('../../assets/More_down.png')} resizeMode='contain' style={{height: 30, width: 40}} />
-                        </TouchableHighlight>
+                <View style={{width: '100%',flexDirection:'row',alignItems:'flex-start', paddingHorizontal:32, paddingVertical:14}}>
+                    <View  style={{flexDirection:'row',alignItems:'center', alignSelf:'center'}}>
+                        <Text style={{fontSize: 12, color: '#465cdb', fontWeight: 'bold'}}>
+                            {this.state.current_time} 
+                        </Text>
+                        <Text style={{fontSize: 12, color:'#00000099', fontWeight: 'bold',}}>  출발
+                        </Text>
+                        {/*
+                        <View style={{width:24, height:24}}>
+                            <Image resizeMode="contain" source={require('../../assets/btn_png/More_down.png')} 
+                                style={{width: 24, height:24}}/>
+                        </View>*/}
                     </View>
+                    
                 </View>
                 <ScrollView>
                 <RouteContainer navigation={this.props.navigation} item={this.state.path} />
@@ -172,7 +182,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         width: '100%',
         height:100,
-        marginTop:20,
         alignSelf: 'center',
         alignItems: 'center',
         flexDirection: 'row',
@@ -180,28 +189,58 @@ const styles = StyleSheet.create({
         borderBottomWidth: 5,
         borderColor: '#e3e3e3'
     },
+    search: {
+        backgroundColor: '#fff',
+        width: '100%',
+        height:110,
+        /*
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.20,
+        shadowRadius: 1.41,
+        elevation: 5, 
+        */
+        marginTop:StatusBar.currentHeight,
+        alignSelf: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent:'space-between',
+
+        paddingVertical:14,
+        paddingHorizontal:6,
+
+        borderBottomWidth: 5,
+        borderColor: '#00000010'
+      
+    },
     swap: {
-        width:'10%'
+        alignSelf:'center',
+        marginHorizontal:12
     },
     line: {
         backgroundColor: '#e0e0e0',
         height: 1,
-        width:'100%'
-    },
-    input: {
-        width: '90%',
-        marginLeft: 20,
-        height:'45%',
-        justifyContent: 'center',
-        borderBottomColor: '#828282',
-        borderBottomWidth:0.5
+        width:'100%',
 
     },
+    input: {
+        width: '100%',
+        paddingLeft:12,
+        justifyContent: 'center',
+        borderBottomColor: '#00000099',
+        borderBottomWidth:0.5,
+        flex:1,
+        color: '#00000099',
+    },
     input2: {
-        width: '90%',
-        marginLeft: 20,
-        height:'45%',
-        justifyContent: 'center',       
+        width: '100%',
+        paddingLeft:12,
+        justifyContent: 'center',  
+        flex:1,     
+        color: '#00000099',
     },
     icon: {
         width: '10%',

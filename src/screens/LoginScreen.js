@@ -4,6 +4,18 @@ import NaverLoginComponent from '../components/NaverLoginComponent'
 import KakaoLoginComponent from '../components/KakaoLoginComponent'
 import GoogleLoginComponent from '../components/GoogleLoginComponent'
 import BlueButton from '../components/BlueButton'
+import {check, PERMISSIONS, request} from 'react-native-permissions'
+async function requestAll() {
+    if(Platform.OS === 'android') {
+        const bluetoothStatus = await request(PERMISSIONS.ANDROID.BLUETOOTH);
+        const bluetoothAdminStatus = await request(PERMISSIONS.ANDROID.BLUETOOTH_ADMIN)
+        return {bluetoothStatus, bluetoothAdminStatus};
+    }
+    if(Platform.OS === 'ios') {
+        const bluetooth = await request(PERMISSIONS.IOS.BLUETOOTH_PERIPHERAL);
+        return{bluetoothAdminStatus};
+    }
+  }
 
 console.disableYellowBox = true;
 
@@ -17,6 +29,8 @@ export default class LoginScreen extends Component {
     }
 
     componentDidMount() {
+        requestAll().then(statuses => console.log(statuses));
+
         AsyncStorage.getItem("id").then(asyncStorageRes => {
             if(asyncStorageRes != null) {
                 this.props.navigation.navigate('Home')
@@ -52,13 +66,13 @@ export default class LoginScreen extends Component {
         }
         return true;
     }
-    render() {
 
+    render() {
         return(
             
             <View style={styles.container}>
                 <View style={{height: '30%', width: '100%',  marginTop:60}}>
-                    <Image resizeMode="contain" source={require('../image/LOGO.png')}
+                    <Image resizeMode="contain" source={require('../../assets/LOGO.png')} 
                             style={{width: '100%', height: '100%'}}/>
                 </View>
                    
@@ -74,12 +88,13 @@ export default class LoginScreen extends Component {
                         <GoogleLoginComponent navigation={this.props.navigation}/>
                     </View>
 
-                    <TouchableOpacity style={styles.email_btn} onPress={()=>this.props.navigation.navigate('emailLogin')}>
-                        <Text style={styles.email_text}>이메일로 로그인</Text>
-                    </TouchableOpacity>
+                    <View style={styles.email_container}>
+                        <BlueButton text="이메일로 로그인" white={true} right={true} onPress={()=>this.props.navigation.navigate('emailLogin')}/>
+                    </View>
 
-                    <View style={{flexDirection:'row'}}>
-                        <Text style={{marginTop:15, color:'#fff', width:'50%'}}>회원이 아니신가요?   </Text>
+                    
+                    <View style={styles.join_container}>
+                        <Text style={styles.join_text}>회원이 아니신가요?   </Text>
                         <TouchableOpacity style={styles.join} onPress={()=>this.props.navigation.navigate('join')}>
                             <Text style={styles.join_text}>회원가입 하기</Text>
                         </TouchableOpacity>
@@ -96,8 +111,9 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         alignItems: 'center',
-        backgroundColor:'#3d47ff',
-        paddingTop: StatusBar.currentHeight
+        backgroundColor:'#4666e5',
+        paddingTop: StatusBar.currentHeight,
+        flexDirection:'column'
     },
     email_btn: {
         width: '90%',
@@ -106,7 +122,8 @@ const styles = StyleSheet.create({
     },
     email_container: {
         marginTop: 24,
-        width:'100%'
+        width:'100%',
+        //height:'100%'
     },
     email_text:{
         color: '#384ec9',
@@ -130,12 +147,20 @@ const styles = StyleSheet.create({
         textAlignVertical: 'center',
 
     },
+    join_container: {
+        flexDirection:'row',
+        marginTop:17,
+        width:'100%',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingHorizontal: 80
+
+    },
     join: {
-        marginTop: 15,
         borderBottomWidth: 1,
         borderColor: '#fff'
     },
     join_text: {
-        color: '#fff'
+        color: '#ffffffdd'
     },
 })

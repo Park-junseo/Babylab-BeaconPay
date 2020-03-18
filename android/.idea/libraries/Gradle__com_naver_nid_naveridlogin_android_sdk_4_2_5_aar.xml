@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.naver.nid:naveridlogin-android-sdk:4.2.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-naveridlogin-android-sdk-4.2.5.aar/f883b52741480dedbe9b77ccc04b15fc/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-naveridlogin-android-sdk-4.2.5.aar/f883b52741480dedbe9b77ccc04b15fc/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-naveridlogin-android-sdk-4.2.5.aar/99fb53db41b24a974c7aa34178c3b36d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-naveridlogin-android-sdk-4.2.5.aar/99fb53db41b24a974c7aa34178c3b36d/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.naver.nid/naveridlogin-android-sdk/4.2.5/70138aa2cb8e219bc3db4c17d8ba071d6d790268/naveridlogin-android-sdk-4.2.5-javadoc.jar!/" />

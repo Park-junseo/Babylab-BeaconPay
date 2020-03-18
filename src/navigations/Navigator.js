@@ -19,6 +19,12 @@ import KakaoPayScreen from '../screens/KakaoPayScreen'
 
 
 
+import React,{Component} from 'react'
+
+import {Text, Image, View, TouchableOpacity} from 'react-native'
+
+
+
 const payStack = createStackNavigator(
     {
         payinfo: {
@@ -44,58 +50,7 @@ const loginStack = createStackNavigator(
             screen: JoinScreen,
             navigationOptions: {
                 title: "이메일로 회원가입하기",
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#000'
-                },
-                headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
-                    
-                },
-            }
-        },
-        agree: {
-            screen: AgreementScreen,
-            navigationOptions: {
-                title: "이용약관",
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#000'
-                },
-                headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
-                },
-            }
-        },
-        findPW: {
-            screen: FindPasswordScreen,
-            navigationOptions: {
-                title:"비밀번호 찾기",
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#000'
-                },
-                headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
-                    
-                },
-            }
-        },
-        changePW: {
-            screen: ChangepasswordScreen,
-            navigationOptions: {
-                title: "비밀번호 변경하기",
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#000'
-                },
+                headerTransparent:null,
                 headerStyle: {
                     elevation: 0,
                     shadowOpacity: 0,
@@ -104,23 +59,105 @@ const loginStack = createStackNavigator(
                 },
             }
         },
-        emailLogin: {
-            screen: EmailLoginScreen,
-            navigationOptions: {
-                title: "",
+        agree: {
+            screen: AgreementScreen,
+            navigationOptions: ({navigation}) => ({
+                title: "이용약관",
+                headerTransparent:null,
                 headerStyle: {
                     elevation: 0,
                     shadowOpacity: 0,
-                    backgroundColor: '#3d47ff',
+                    backgroundColor: '#fff',
                     
                 },
-                headerTintColor: '#fff'
+                headerLeft: <View style={{width:24}}></View>,
+                headerRight: ()=>(
+                    <TouchableOpacity onPress={()=>{navigation.goBack()}}>
+                        <Image source={require('../../assets/btn_png/Cancel.png')} resizeMode='contain' style={{width:24, height:24}}/>
+                    </TouchableOpacity>
+                ),
+            })
+        },
+        findPW: {
+            screen: FindPasswordScreen,
+            navigationOptions: {
+                title:"비밀번호 찾기",
             }
+        },
+        changePW: {
+            screen: ChangepasswordScreen,
+            navigationOptions: ({navigation}) => ({
+                title: "비밀번호변경하기",
+                headerTransparent:null,
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    backgroundColor: '#fff',
+                    
+                },
+                headerRight: ()=>(navigation.getParam('changeSave', <Text>Error</Text>)),
+                
+            })
+        },
+        emailLogin: {
+            screen: EmailLoginScreen,
+            navigationOptions: ({navigation}) => ({
+                title: "",
+                backLeftColor:'#fff',
+                headerLeft: ()=>(
+                    <TouchableOpacity onPress={()=>{navigation.goBack()}}>
+                        <Image source={require('../../assets/btn_png/Back_W.png')} resizeMode='contain' style={{width:24,height:24}}/>
+                    </TouchableOpacity>
+                )
+            })
         }
 
     },
     {
-        initialRouteName: 'login'
+        initialRouteName: 'login',
+        defaultNavigationOptions: ({navigation}) => ({
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+                fontSize: 16,
+                color: '#00000099'
+            },
+            headerTintColor: '#808080',
+            headerTransparent: {
+                position: 'absolute',
+                backgroundColor: 'transparent',
+                zIndex: 100,
+                top: 0,
+                left: 0,
+                right: 0
+            },
+            headerTitleContainerStyle:{
+                flexDirection:'column',
+                alignItems:'center',
+                flex:1,
+                marginHorizontal:0,
+                position:'relative'
+            },
+            headerStyle:{
+                backgroundColor:'#fff',
+                elevation: 0,
+                shadowOpacity: 0,
+            },
+            headerLeftContainerStyle:{marginLeft:24,position:'relative',},
+            headerRightContainerStyle:{marginRight:24,position:'relative',},
+            /*
+            headerBackImage: ()=>(
+                <SvgUri source={require('../../assets/btn/Back.svg')}
+                width= "24" height="24" fill={'#808080'}/>
+            ),*/
+
+            headerLeft: ()=>(
+                <TouchableOpacity onPress={()=>{navigation.goBack()}}>
+                    {/*<Image source={require('../../assets/btn_png/Back.png')} resizeMode='contain' style={{width:24,height:24}}/>*/}
+                    <Image source={require('../../assets/btn_png/Back2.png')} resizeMode='contain' style={{width:24,height:24}}/>
+                </TouchableOpacity>
+            ),
+            headerRight: <View style={{width:24}}></View>
+        })
     }
 )
 /*
@@ -130,9 +167,29 @@ const MyPageStack = createStackNavigator(
     {
         Mypage: {
             screen: MyPageScreen,
-            navigationOptions: {
-                headerShown: false,
-            }
+            navigationOptions: ({navigation}) => ({
+                title: "",
+                headerLeft: ()=>(navigation.getParam('mypageLeft', <Text>Error</Text>)),
+                headerRight:()=>(navigation.getParam('mypageRight', <View></View>)),
+                headerTitleStyle: {
+                    fontSize: 16,
+                    color: '#00000099',
+                },
+                headerTitleContainerStyle:{
+                    flexDirection:'column',
+                    alignItems:'center',
+                    flex:1,
+                    marginHorizontal:0,
+                    position:'relative'
+                },
+                headerStyle:{
+                    backgroundColor:'#fff',
+                    elevation: 0,
+                    shadowOpacity: 0,
+                },
+                headerLeftContainerStyle:{marginLeft:24,position:'relative',},
+                headerRightContainerStyle:{marginRight:24,position:'relative',},
+            })
         },
     },
     {
@@ -171,20 +228,22 @@ const HomeStack = createStackNavigator(
     {
         Home: {
             screen: HomeScreen,
-            navigationOptions: {
-                headerShown: false
-            }
+            navigationOptions: ({navigation}) => ({
+                headerLeft: ()=>(navigation.getParam('homeLeft', <Text>Error</Text>)),
+                headerTitle: null,
+                headerRight:()=>(navigation.getParam('homeRight', <View></View>)),
+            })
         },
         My: {
             screen: MyPageStack,
             navigationOptions: {
-                headerShown: false,
+                headerShown: false
             }
         },
         Modi: {
             screen: MyModiStack,
             navigationOptions: {
-                headerShown: false
+                title: "정보수정",
             }
         },
         pay: {
@@ -207,24 +266,16 @@ const HomeStack = createStackNavigator(
         search: {
             screen: SearchScreen,
             navigationOptions: {
-                headerShown: false,
-            }
-        },
-        charge: {
-            screen: ChargeScreen,
-            navigationOptions: {
-                title: '충전하기',
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#828282'
+                headerTransparent: {
+                    position: 'absolute',
+                    backgroundColor: 'transparent',
+                    zIndex: 100,
+                    top: 0,
+                    left: 0,
+                    right: 0
                 },
-                headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
-                    backgroundColor: '#fff',
-                    
-                },
+                headerLeft:null,
+                title:''
             }
         },
         kakaoPay: {
@@ -240,7 +291,13 @@ const HomeStack = createStackNavigator(
                     elevation: 0,
                     shadowOpacity: 0,
                     backgroundColor: '#fff',
-                }
+                },
+            }
+        },
+        charge: {
+            screen: ChargeScreen,
+            navigationOptions: {
+                title: '충전하기',
             }
         },
         Detail: {
@@ -257,20 +314,56 @@ const HomeStack = createStackNavigator(
         },
         StationSearch: {
             screen: StationSearchScreen,
-            navigationOptions: {
-                title: '',
+            navigationOptions: ({navigation}) => ({
+                title: 'hey',
+                headerTitle: ()=>(navigation.getParam('stationSearchBar', <Text>Error</Text>)),
+                headerRight:()=>(navigation.getParam('searchButton', <View></View>)),
+
                 headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
+                    elevation: 5,
+                    shadowOpacity: 10,
                     backgroundColor: '#fff',
-                    
                 },
-            }
+            })
         }
 
     },
     {
-        initialRouteName: 'Home'
+        initialRouteName: 'Home',
+        defaultNavigationOptions: ({navigation}) => ({
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+                fontSize: 16,
+                color: '#00000099',
+                textAlign:'center',
+            },
+            headerTitleContainerStyle:{
+                flexDirection:'column',
+                alignItems:'center',
+                flex:1,
+                marginHorizontal:0,
+                position:'relative'
+            },
+            headerStyle:{
+                backgroundColor:'#fff',
+                elevation: 0,
+                shadowOpacity: 0,
+            },
+            headerLeftContainerStyle:{marginLeft:24,position:'relative',},
+            headerRightContainerStyle:{marginRight:24,position:'relative',},
+            /*
+            headerBackImage: ()=>(
+                <SvgUri source={require('../../assets/btn/Back.svg')}
+                width= "24" height="24" fill={'#808080'}/>
+            ),*/
+            headerLeft: ()=>(
+                <TouchableOpacity onPress={()=>{navigation.goBack()}}>
+                    <Image source={require('../../assets/btn_png/Back2.png')} resizeMode='contain' style={{width:24, height:24}}/>
+                </TouchableOpacity>
+            ),
+            headerRight: <View style={{width:24}}></View>
+
+        })
     }
 )
 

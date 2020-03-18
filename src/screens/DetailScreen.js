@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {View, StyleSheet, Text,TouchableHighlight, Image} from 'react-native'
 import SubwayBarImage from '../components/SubwayBarImage'
 import SubwayHorizonBar from '../components/SubwayHorizonBar'
+import { ScrollView } from 'react-native-gesture-handler'
 
 export default class DetailScreen extends Component {
     constructor(props) {
@@ -29,63 +30,142 @@ export default class DetailScreen extends Component {
     _PayFee = () => {
         
     }
+
+    _calculateFee(distance) {
+        let fee = 1250;
+        if(distance > 10000) {
+           fee += 100;
+           fee += Math.floor((distance-10000) / 5000)*100;
+        }
+
+        return fee;
+    }
+    _calculateTime(minute) {
+        var hours = new Date().getHours();
+        var min = new Date().getMinutes();
+        const m = Number(minute);
+
+        console.log(hours, min)
+        if(m + min > 60) {
+            hours = hours+1;
+            min = m+min-60;
+
+            if(hours >= 24) {
+                hours = hours - 24
+            }
+
+        }
+        else {
+            min = min+m
+        }
+
+        if(min < 10) {
+            min = "0"+min;
+        }
+        
+        return hours+":"+min;
+
+    }
+
     render() {
         return(
-            <View style={styles.container}>
-                <View style={{flexDirection: 'row', height: '10%', alignItems: 'center', width:'90%'}}>
-                    <Text style={{fontSize:30, fontWeight:'bold', marginTop: -10}}>{this.state.item.time} </Text>
-                    <Text style={{fontWeight:'bold'}}>분</Text>
-                    <Text style={{fontWeight:'bold'}}>  {this.state.time}  도착</Text>
-                </View>
+            <ScrollView contentContainerStyle={{width: '100%', height: '100%'}}>
+                <View style={styles.full_container}>
+                    <View style={styles.container}>
+                        {/*}
+                        <View style={{flexDirection: 'row', height: '10%', alignItems: 'center', width:'90%'}}>
+                            <Text style={{fontSize:30, fontWeight:'bold', marginTop: -10}}>{this.state.item.time} </Text>
+                            <Text style={{fontWeight:'bold'}}>분</Text>
+                            <Text style={{fontWeight:'bold'}}>  {this.state.time}  도착</Text>
+                        </View>
 
-                <Text style={{width:'90%', height:'5%'}}>환승 1회 | 1,250 원</Text>
-                <View style={{flexDirection: 'row', alignItems: 'center', width:'90%', marginBottom: 20}}>
-                    {
-                        this.state.item.pathList.map((value) => {
-                            var width = value.time/this.state.item.subtime * 94;
-                            const line = value.routeNm+"";
-                            return <SubwayBarImage width={width+'%'} time={value.time} line={line.substring(0,1)} 
-                            color={this.state.color[line]}/>
-                        })
-                       }
-                    
-                </View>
-
-                {
-                    this.state.item.pathList.map((value, index)=> {
-                        const line = value.routeNm+"";
-                        return(
-                            <View style={styles.horizon_Container}>
-                                <View style={{flexDirection: 'row'}}>
-                                    <SubwayHorizonBar color={this.state.color[line]} 
-                                    end={index == this.state.item.pathList.length-1 ? true : false} height={100}/>
-                                        <View style={styles.station_container}>
-                                            <Text style={styles.title}>{line} {value.fname} 승차</Text>                               
-                                            <Text style={styles.text}>{value.railLinkList.length}개 역 이동</Text>
-                                            <Text style={styles.title2}>
-                                                {index == this.state.item.pathList.length-1 ? value.tname+' 하차': ""} </Text>
-                                        </View>
+                        <Text style={{width:'90%', height:'5%'}}>환승 1회 | 1,250 원</Text>
+                        <View style={{flexDirection: 'row', alignItems: 'center', width:'90%', marginBottom: 20}}>
+                            {
+                                this.state.item.pathList.map((value) => {
+                                    var width = value.time/this.state.item.subtime * 94;
+                                    const line = value.routeNm+"";
+                                    return <SubwayBarImage width={width+'%'} time={value.time} line={line.substring(0,1)} 
+                                    color={this.state.color[line]}/>
+                                })
+                            }
+                            
+                        </View>
+                        */}
+                        <View style={[styles.container_header,styles.margin_horizontal]}>
+                            <View>
+                                <View style={styles.container_header_text}>
+                                    <Text style={{fontSize:28, fontWeight:'bold'}}>{this.state.item.time} </Text>
+                                    <Text style={{fontWeight:'bold'}}>분</Text>
+                                    <Text style={{fontWeight:'bold'}}> |   {this.state.time}  도착</Text>
                                 </View>
+                                <Text style={[styles.container_detail]}>
+                                환승 {this.state.item.pathList.length}회 | 도보 {this.state.item.time - this.state.item.subtime} 분 | {this._calculateFee(this.state.item.distance)} 원</Text>
                             </View>
-                        )
-                    })
-                }
-                
 
-               
+                        </View>
 
-            </View>
-            
+                        <View style={styles.route_graph}>
+                            {
+                                this.state.item.pathList.map((value) => {
+                                    var width = value.time/this.state.item.subtime * 94;
+                                    const line = value.routeNm+"";
+                                    return <SubwayBarImage width={width+'%'} time={value.time} line={line.substring(0,1)} 
+                                    color={this.state.color[line]}/>
+                                })
+                            }
+                        </View>
+                        <View style={[styles.detail_container,styles.margin_horizontal]}>
+                        {
+                            this.state.item.pathList.map((value, index)=> {
+                                const line = value.routeNm+"";
+                                return(
+                                    <View style={styles.horizon_Container}>
+                                        <View style={{flexDirection: 'row',height:'100%'}}>
+                                            <SubwayHorizonBar color={this.state.color[line]} 
+                                            end={index == this.state.item.pathList.length-1 ? true : false} height={100}/>
+                                                <View style={styles.station_container}>
+                                                    <Text style={styles.title}>{line} {value.fname} 승차</Text>                               
+                                                    <Text style={styles.text}>{value.railLinkList.length}개 역 이동</Text>
+                                                    <Text style={styles.title2}>
+                                                        {index == this.state.item.pathList.length-1 ? value.tname+' 하차': ""} </Text>
+                                                </View>
+                                        </View>
+                                    </View>
+                                )
+                            })
+                        }
+                        </View>
+
+                        
+
+                    
+
+                    </View>
+                </View>     
+            </ScrollView>
+       
         )
     }
 }
 
 const styles = StyleSheet.create({
+    full_container: {
+
+    },
+
     container: {
         width: '100%',
-        height: '100%',
         backgroundColor: '#fff',
-        alignItems: 'center'
+        alignItems: 'flex-start',
+        paddingHorizontal:32,
+        paddingTop:24,
+        paddingBottom:32,
+        borderBottomRightRadius:30,
+        borderBottomLeftRadius:30,
+
+        elevation: 10,
+        shadowOpacity: 0,
     },
     horizon_Container: {
         width: '90%',
@@ -93,26 +173,60 @@ const styles = StyleSheet.create({
     },
     station_container: {
         marginLeft: 10,
-        height: 100,
-
+        height: '100%',
+        flexDirection:'column',
+        justifyContent:'space-between'
     },
     title: {
         fontWeight: 'bold',
         fontSize: 17,
-        marginBottom: 10
     },
     subtitle: {
-      
-        marginBottom: 5
+
     },
     text: {
-        marginTop: 10,
         color: '#828282'
     },
     title2: {
-        marginTop: 10,
         fontWeight: 'bold',
         fontSize: 17,
-        marginBottom: 10
+    },
+
+
+    container_header: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        width:'100%',
+        justifyContent:'space-between',
+        marginBottom:6,
+    },
+    container_header_text: {
+        flexDirection: 'row',
+        alignItems: 'baseline',
+        paddingBottom:12
+    },
+    container_detail:{
+        marginBottom:10,
+        fontSize: 10,
+        color:'#00000099',
+    },
+    route_graph:{
+        flexDirection: 'row', alignItems: 'flex-start', marginBottom:12,
+    },
+    circle: {
+        borderRadius: 50,
+        width: 20,
+        height: 20,
+        backgroundColor: '#000'
+    },
+    margin_horizontal:{
+        marginHorizontal:6
+    },
+    sumary_path:{
+        flexDirection:'column',
+        alignItems:'baseline',
+    },
+    detail_container: {
+
     }
 })

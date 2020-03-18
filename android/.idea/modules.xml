@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-send-intent/android/RNSendIntentModule.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-send-intent/android/RNSendIntentModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-send-intent/android/android-RNSendIntentModule.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-send-intent/android/android-RNSendIntentModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-webview/android/android-react-native-webview.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-webview/android/android-react-native-webview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/expo-app-loader-provider/android/expo-app-loader-provider.iml" filepath="$PROJECT_DIR$/../node_modules/expo-app-loader-provider/android/expo-app-loader-provider.iml" />
@@ -17,7 +18,10 @@
       <module fileurl="file://$PROJECT_DIR$/../node_modules/expo-permissions/android/expo-permissions.iml" filepath="$PROJECT_DIR$/../node_modules/expo-permissions/android/expo-permissions.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/expo-sqlite/android/expo-sqlite.iml" filepath="$PROJECT_DIR$/../node_modules/expo-sqlite/android/expo-sqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/expo-web-browser/android/expo-web-browser.iml" filepath="$PROJECT_DIR$/../node_modules/expo-web-browser/android/expo-web-browser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-webview/android/node_modules-react-native-webview-android-react-native-webview.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-webview/android/node_modules-react-native-webview-android-react-native-webview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-bluetooth-status/android/react-native-bluetooth-status.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-bluetooth-status/android/react-native-bluetooth-status.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-google-signin/android/react-native-google-signin.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-google-signin/android/react-native-google-signin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-permissions/android/react-native-permissions.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-permissions/android/react-native-permissions.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-restart/android/react-native-restart.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-restart/android/react-native-restart.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-seoul/kakao-login/android/react-native-seoul-kakao-login.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-seoul/kakao-login/android/react-native-seoul-kakao-login.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-seoul/naver-login/android/react-native-seoul-naver-login.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-seoul/naver-login/android/react-native-seoul-naver-login.iml" />

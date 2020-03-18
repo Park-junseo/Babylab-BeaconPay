@@ -41,6 +41,8 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <!-- END OPTIONAL PERMISSIONS -->
 
 
@@ -97,7 +99,8 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.STORAGE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- for android -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- for android -->
     <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
     <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
     <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
@@ -112,7 +115,6 @@
     <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
-    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
         android:name="host.exp.exponent.MainApplication"
@@ -123,6 +125,7 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
@@ -521,42 +524,7 @@
         <service
             android:name="expo.modules.location.services.LocationTaskService"
             android:exported="false" />
-        <service
-            android:name="com.burnweb.rnsendintent.RNSendIntentModule"
-            android:exported="true" />
 
-        <provider
-            android:name="com.burnweb.rnsendintent.FileProvider"
-            android:authorities="kr.babylab.BeaconPayment.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true" >
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
-
-        <activity
-            android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.Dialog" />
-        <activity
-            android:name="com.nhn.android.naverlogin.ui.OAuthCustomTabActivity"
-            android:configChanges="orientation|screenSize"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <!-- Intent URL 에서 로그인 액티비티를 실행하기 위해 설정 -->
-                <data
-                    android:host="authorize"
-                    android:path="/"
-                    android:scheme="naver3rdpartylogin" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.facebook.CustomTabMainActivity" />
-        <activity android:name="com.facebook.CustomTabActivity" />
         <activity
             android:name="com.facebook.ads.AudienceNetworkActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -574,44 +542,9 @@
             android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
             android:exported="false"
             android:process=":adnw" />
-        <service
-            android:name="com.google.android.gms.analytics.AnalyticsJobService"
-            android:enabled="true"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
 
-        <activity
-            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <!--
-            Service handling Google Sign-In user revocation. For apps that do not integrate with
-            Google Sign-In, this service will never be started.
-        -->
-        <service
-            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-            android:exported="true"
-            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-
-        <activity
-            android:name="net.openid.appauth.AuthorizationManagementActivity"
-            android:exported="false"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <service
-            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-            android:exported="false" />
-        <service
-            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-            android:exported="false" />
-        <service
-            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-            android:exported="false" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <activity android:name="com.facebook.CustomTabActivity" />
         <!--
          The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
          with the application context. This config is merged in with the host app's manifest,
@@ -641,6 +574,53 @@
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="com.nhn.android.naverlogin.ui.OAuthCustomTabActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Intent URL 에서 로그인 액티비티를 실행하기 위해 설정 -->
+                <data
+                    android:host="authorize"
+                    android:path="/"
+                    android:scheme="naver3rdpartylogin" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.openid.appauth.AuthorizationManagementActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
         <!--
              FirebaseMessagingService performs security checks at runtime,
              but set to not exported to explicitly avoid allowing another app to call it.
@@ -711,6 +691,30 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.burnweb.rnsendintent.RNSendIntentModule"
+            android:exported="true" />
+
+        <provider
+            android:name="com.burnweb.rnsendintent.FileProvider"
+            android:authorities="kr.babylab.BeaconPayment.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+            android:exported="false" />
+        <service
+            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+            android:exported="false" />
+        <service
+            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+            android:exported="false" />
 
         <provider
             android:name="com.crashlytics.android.CrashlyticsInitProvider"

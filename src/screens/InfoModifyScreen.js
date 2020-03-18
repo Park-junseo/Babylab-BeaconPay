@@ -120,69 +120,66 @@ export default class InfoModifyScreen extends Component {
     render() {
         return(
             <KeyboardAvoidingView behavior="padding">
-            <View style={{paddingTop: StatusBar.currentHeight, height:'100%', backgroundColor: '#fff'}}>
-                <View style={styles.header}>
-                    <View style={{width: '90%', height: '100%'}}>
-                        <Image resizeMode="contain" source={require('../../assets/Mypage_1.png')} 
-                            style={{width: '55%', height:'100%', marginLeft: -10}}/>
-                    </View>
-
-                    <TouchableHighlight onPress={()=>this.props.navigation.pop()}>
-                        <AntDesign name="close" size={35} color='#5e5e5e'/>
-                    </TouchableHighlight>
-                </View>
-
-                <View style={styles.container}>
+            <View style={styles.container}>
                 <ScrollView>
-                    <View style={styles.login_form}>
-                        <View style={styles.input_container}>
-                            <Text style={styles.default_Text}>이메일 {this.state.sns != "local" ? "- "+this.state.sns+"로그인" : ""}</Text>
-                            <Text style={styles.default_Text2}>{this.state.email}</Text>
+                    <View style={[styles.login_form,styles.margin_horizontal]}>
+                        <View style={[{marginRight:62, marginBottom:24},]}>
+                            <Text style={[input_styles.default_text,]}>이메일 {this.state.sns != "local" ? "- "+this.state.sns+"로그인" : ""}</Text>
+                            <View style={{flexDirection: 'row'}}>
+                                <Text style={[input_styles.input]} >{this.state.email}</Text>
+                            </View>
                         </View>
-
-                     { this.state.sns == "local" &&   <View style={styles.input_container}>
-                            <Text style={styles.default_Text}>비밀번호 (8자리 이상)</Text>
-                            <TextInput style={styles.input} placeholderTextColor={'#828282'} secureTextEntry={true}
-                            onChangeText={this._inputPW}  />
+                    {this.state.sns == 'local' &&
+                        <View style={[{marginRight:62, marginBottom:24},]}>
+                            <Text style={[input_styles.default_text,]}>비밀번호 (8자리 이상)</Text>
+                            <View style={{flexDirection: 'row'}}>
+                                <TextInput style={[input_styles.input]} placeholder="●●●●●●●●" onChangeText={this._inputPW} secureTextEntry={true}/>
+                            </View>
+                        </View>
+                    }
+                    {this.state.sns == 'local' &&
+                        <View style={[{marginRight:62, marginBottom:24},]}>
+                            <Text style={[input_styles.default_text,]}>비밀번호 확인</Text>
+                            <View style={{flexDirection: 'row'}}>
+                                <TextInput style={[input_styles.input]} placeholder="●●●●●●●●" onChangeText={this._inputPW2} secureTextEntry={true}/>
+                            </View>
                         </View>
                     }
 
-                    {this.state.sns == "local" && <View style={styles.input_container}>
-                            <Text style={styles.default_Text}>비밀번호 확인</Text>
-                            <TextInput style={styles.input} placeholderTextColor={'#828282'} secureTextEntry={true}
-                            onChangeText={this._inputPW2}/>
-                        </View>
-                    }
-                        <View style={styles.input_container}>
-                            <Text style={styles.default_Text}>이름</Text>
-                            <Text style={styles.input}>{this.state.name}</Text>
-                        </View>
-
-                        <View style={styles.input_container}>
-                            <Text style={styles.default_Text}>전화번호</Text>
-                            <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="전화번호 입력"
-                            defaultValue={this.state.phone} keyboardType={'numeric'} onChangeText={this._inputPhone} />
+                        <View style={[{marginRight:62, marginBottom:24},]}>
+                            <Text style={[input_styles.default_text,]}>이름</Text>
+                            <View style={{flexDirection: 'row'}}>
+                                <Text style={input_styles.input}>{this.state.name}</Text>
+                                {/*
+                                <TouchableOpacity style={styles.detail_btn}>
+                                    <Text style={styles.detail_text}>실명확인</Text>
+                                </TouchableOpacity>
+                */}
+                            </View>
                         </View>
 
-
-                        <View style={styles.input_container}>
-                        <Text style={styles.default_Text}>주소지입력</Text>
-                        <View style={{flexDirection: 'row'}}>
-                          <Text style={styles.phone_input} >{this.state.addr}</Text>
-                          <TouchableOpacity style={styles.phone_btn} onPress={this.openModal}>
-                              <Text style={{color: '#000', fontWeight: 'bold'}}>주소 검색</Text>
-                            </TouchableOpacity>
+                        <View style={[{marginRight:62, marginBottom:8},]}>
+                            <Text style={[input_styles.default_text,]}>주소지입력</Text>
+                            <View style={{flexDirection: 'row'}}>
+                                <Text style={[input_styles.input]}>{this.state.addr}</Text>
+                                <TouchableOpacity style={styles.detail_btn}>
+                                    <Text style={styles.detail_text} onPress={this.openModal}>우편번호 검색</Text>
+                                </TouchableOpacity>
+                            </View>
                         </View>
-                        <TextInput style={styles.input} placeholderTextColor={'#828282'} placeholder="상세주소 입력" 
-                        defaultValue={this.state.addr2} onChangeText={this._inputAddr2}/>
+                        <View style={[{marginRight:62, marginBottom:24},]}>
+                            <View style={{flexDirection: 'row'}}>
+                                <TextInput style={[input_styles.input]} placeholderTextColor={'#999999'} onChangeText={this._inputAddr2}
+                                    placeholder="상세주소 입력" defaultValue={this.state.addr2}/>
+                            </View>
+                        </View>
+
+
                     </View>
+                    <View style={styles.join_btn_container}>
+                        <BlueButton text={'정보수정'} onPress={this._modify}/>
                     </View>
-                    <TouchableOpacity style={styles.join_btn} onPress={this._modify}>
-                        <Text style={styles.joinText}>정보수정</Text>
-                    </TouchableOpacity>
                 </ScrollView>
-                </View>
-
                 <Modal visible={this.state.modal}> 
                     
                         <TouchableHighlight onPress={this.closeModal} style={{alignSelf: 'flex-end'}}>
@@ -199,90 +196,101 @@ export default class InfoModifyScreen extends Component {
         )
     }
 }
-const styles = StyleSheet.create({
-    default_Text: {
-        color: '#000',
-        fontSize: 15,
-        fontWeight: 'bold'
-    },
-    default_Text2: {
-        color: '#828282',
-        fontSize: 15,
 
-    },
-    header:{
-        width: '100%',
-        height: 40,
-        flexDirection: 'row'
-    },
-    title: {
-        marginLeft: 20,
-        color: '#465cdb',
-        fontSize: 15,
-        fontWeight: 'bold',
-        width: '40%'
-    },
+
+
+const styles = StyleSheet.create({
     container: {
         width: '100%',
-        height: '90%',
-        backgroundColor: '#fff',
-        marginTop: 20
+        height: '100%',
+        backgroundColor:'#fff'
     },
     login_form:{
-        width: '70%',
-        marginLeft: 20
+        marginTop:20,
+        marginHorizontal: 40,
+        marginBottom:'6%'
     },
     input : {
-        borderBottomWidth: 3,
-        borderColor : '#d9d9d9',
+        borderBottomWidth: 1,
+        borderColor : '#828282',
         paddingLeft: 10,
-        color: '#828282',
-        marginTop: 10
+        
     },
-    input_container: {
-        marginBottom: 20,
-        marginTop: 10,
-    },
-    phone_input: {
-        borderBottomWidth: 3,
-        borderColor : '#d9d9d9',
-        paddingLeft: 10,
+
+    join_btn_container: {
         width: '100%',
-        color: '#828282'
+        marginTop: 20,
+        marginBottom:60
     },
-    phone_btn: {
+    detail_btn: {
         backgroundColor: '#f5f5f5',
         borderRadius: 7,
-        height: 30,
-        width: 100,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginLeft: 5
+        marginLeft: 7,
+        paddingHorizontal:12,
+        paddingVertical:9,
+        borderRadius:20,
+        alignSelf:'baseline',
+        marginBottom:-8
     },
-    join_btn: {
-        alignItems: 'center',
-        width: '90%',
-        marginTop: 60,
-        alignSelf: 'flex-start',
-        
-    },
-    joinText: {
-        color: '#fff',
+    detail_text: {
+        color: '#000000dd',
         fontWeight: 'bold',
+        fontSize:10
+    },
+    margin_horizontal: {
+        marginHorizontal:40
+    }
+})
 
-        width: '100%',
-        height:0,
-        alignSelf: 'flex-start',
-        marginBottom: 5,
+const input_styles = StyleSheet.create({
+    default_text: {
+        color: '#000000dd',
+        paddingLeft:8,
+        marginBottom:9,
+        fontWeight:'bold',
+        fontSize:12
+    },
+    detail_text: {
+        color: '#000000dd',
+        fontWeight: 'bold',
+        fontSize:10
+    },
+    input : {
+        borderBottomWidth: 1,
+        borderColor : '#00000059',
+        paddingLeft: 10,
+        paddingBottom:3,
+        width:'100%',
+        fontSize:14,
 
-        borderTopWidth: 50,
-        borderTopColor: '#3d47ff',
-        borderRightWidth: 10,
-        borderRightColor: 'transparent',
-
-        
-
-        textAlignVertical: 'center',
-        textAlign: 'center'
+    },
+    /*
+    input_container: {
+        marginBottom: 24,
+    },
+    */
+    detail_input: {
+        borderBottomWidth: 1,
+        borderColor : '#00000059',
+        paddingLeft: 10,
+        marginBottom:8,
+        paddingBottom:4,
+        width:'100%',
+        fontSize:14
+    },
+    detail_btn: {
+        backgroundColor: '#f5f5f5',
+        borderRadius: 7,
+        marginLeft: 7,
+        paddingHorizontal:12,
+        paddingVertical:12,
+        textAlignVertical:'bottom',
+        alignSelf:'baseline',
+        justifyContent:'center',
+        borderRadius:20
+    },
+    color_white:{
+        color: '#ffffffdd',
+        borderColor: '#ffffff99'
     }
 })
