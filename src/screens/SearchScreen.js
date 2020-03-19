@@ -124,7 +124,7 @@ export default class SearchScreen extends Component {
     }
     render() {
         return(
-            <View style={{width: '100%', height: '100%', backgroundColor: '#fff'}}>
+            <View style={{width: '100%', height: '100%', backgroundColor: '#fff' ,overflow:'hidden'}}>
                 <View style={styles.search}>
                     <TouchableHighlight style={styles.swap} onPress={this._swap} underlayColor="#transparent">
                         <Image resizeMode="contain" source={require('../../assets/btn_png/Change_New.png')} 
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         width: '100%',
         height:110,
-        /*
+        
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -202,8 +202,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.20,
         shadowRadius: 1.41,
         elevation: 5, 
-        */
-        marginTop:StatusBar.currentHeight,
+        
         alignSelf: 'center',
         alignItems: 'center',
         flexDirection: 'row',
@@ -212,8 +211,7 @@ const styles = StyleSheet.create({
         paddingVertical:14,
         paddingHorizontal:6,
 
-        borderBottomWidth: 5,
-        borderColor: '#00000010'
+
       
     },
     swap: {

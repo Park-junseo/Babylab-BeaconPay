@@ -73,7 +73,7 @@ export default class KakaoLoginComponent extends Component {
         const loggedIn = this.state.loggedIn;
         return (
             <>
-            <TouchableHighlight style={styles.kakao_btn} onPress={this.kakaoLogin}>
+            <TouchableHighlight style={styles.kakao_btn} onPress={this.kakaoLogin}  underlayColor="#transparent">
                 <Image style={{height: 50, width: 50}} 
                     source={require('../../assets/kakao.png')}/>
             </TouchableHighlight>

@@ -21,7 +21,7 @@ import KakaoPayScreen from '../screens/KakaoPayScreen'
 
 import React,{Component} from 'react'
 
-import {Text, Image, View, TouchableOpacity} from 'react-native'
+import {Text, Image, View, TouchableOpacity, StatusBar} from 'react-native'
 
 
 
@@ -266,13 +266,11 @@ const HomeStack = createStackNavigator(
         search: {
             screen: SearchScreen,
             navigationOptions: {
-                headerTransparent: {
-                    position: 'absolute',
-                    backgroundColor: 'transparent',
-                    zIndex: 100,
-                    top: 0,
-                    left: 0,
-                    right: 0
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    backgroundColor: '#fff',
+                    height:StatusBar.currentHeight
                 },
                 headerLeft:null,
                 title:''

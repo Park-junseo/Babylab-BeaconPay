@@ -273,7 +273,9 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         alignItems: 'center',
         flexDirection: 'row',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+
+        marginTop:16,
       
     },
     swap: {

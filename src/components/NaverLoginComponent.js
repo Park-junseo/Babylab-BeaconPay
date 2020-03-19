@@ -75,7 +75,7 @@ class NaverLoginComponent extends Component{
         const loggedIn = this.state.loggedIn;
         return(
             <>
-            <TouchableHighlight style={styles.naver_btn} onPress={()=>this.naverLogin(initials)}>
+            <TouchableHighlight style={styles.naver_btn} onPress={()=>this.naverLogin(initials)}  underlayColor="#transparent">
                     <Image style={{height:50, width:50}}
                         source={require('../../assets/naver.png')}/>
             </TouchableHighlight>

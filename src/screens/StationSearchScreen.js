@@ -12,7 +12,9 @@ export default class StationSearchScreen extends Component {
             code: '',
             flag : false,
             query: this.props.navigation.state.params.default,
+            
         };
+
     }
     findStation(query) {
         if(query === '') {
@@ -38,7 +40,7 @@ export default class StationSearchScreen extends Component {
         )
     }
 
-    componentDidMount() {
+    componentWillMount() {
         const {query} = this.state;
         const comp = (a, b) => a.trim() === b.trim();
         const stationList = this.findStation(query)
@@ -46,20 +48,29 @@ export default class StationSearchScreen extends Component {
         this.props.navigation.setParams({
             stationSearchBar: (
                 <View style={{flexDirection:'row', alignItems:"center", width:'100%',height:'100%', paddingHorizontal:16}}>
-                    <TextInput style={styles.autocompleteContainer} onChangeText={text => this.setState({query:text})} >{this.state.query}</TextInput>
+                    <TextInput style={styles.autocompleteContainer} onChangeText={text => this.setState({query:text})} //ref={(input)=>{this.searchBar=input;}}
+                    placeholderTextColor={'#999999'} placeholder="역을 입력해주세요">
+                        {this.state.query}
+                        </TextInput>
                 </View>
             ),
             searchButton: (
                 <Image resizeMode="contain" source={require('../../assets/btn_png/Search.png')} 
                                 style={{width: 24, height:24}}/>
             )
-        })
+        },)
+        //this.searchBar.current.focus().bind(this);
     }
-
+/*
+    componentDidMount() {
+        if(this.searchBar) this.searchBar.focus();
+    }
+*/
     render() {
         const {query} = this.state;
         const comp = (a, b) => a.trim() === b.trim();
         const stationList = this.findStation(query)
+
 
         return(
             <KeyboardAvoidingView behavior="padding">

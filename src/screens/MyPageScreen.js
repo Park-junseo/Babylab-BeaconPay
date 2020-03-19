@@ -4,6 +4,12 @@ import Modal from 'react-native-modal'
 import {AntDesign} from '@expo/vector-icons'
 import CardComponent from '../components/CardComponent'
 import axios from 'axios'
+
+import RNRestart from 'react-native-restart'
+import KakaoLogins from '@react-native-seoul/kakao-login';
+import {NaverLogin} from '@react-native-seoul/naver-login'
+import {GoogleSignin} from '@react-native-community/google-signin';
+
 const apiKey = "beacon091211fX2TAJS0VbillUWp1aVx002VggT";
 
 export default class MyPageScreen extends Component {
@@ -77,24 +83,61 @@ export default class MyPageScreen extends Component {
     closeModal = () => {
         this.setState({Version: false, Term: false, quit: false})
     }
-    logout = () => {
+    
+    _logout = () => {
         Alert.alert(
-            '로그아웃 하시겠습니까?',
-            '',
+            "로그아웃 하시겠습니까?",
+            "",
             [
-                {
-                    text: '네',
-                    onPress: ()=> console.log('ok'),
-                },
-                {
-                    text: '아니오',
-                    onPress: () => console.log('cancel'),
-                    style: 'cancel'
-                }
+                {text: '로그아웃', onPress:()=>this._logoutProcess()},
+                {text: '취소'}
             ],
-            {cancelable: false}
-        )
+            { cancelable: true}
+        );
     }
+    kakaoLogout = () => {
+        KakaoLogins.logout().then(result => {
+            
+        }).catch(err => {
+            
+        })
+    }
+    naverLogout = () => {
+        NaverLogin.logout();
+       
+    }
+    signOut = async() => {
+        try {
+            await GoogleSignin.revokeAccess();
+            await GoogleSignin.signOut();
+        }catch (error) {
+            console.log(error);
+        }
+    }
+
+    _logoutProcess = async() => {
+        AsyncStorage.getItem("type").then(asyncStorageRes => {
+            if(asyncStorageRes == "kakao")
+                 this.kakaoLogout();
+             else if(asyncStorageRes == "naver")
+                 this.naverLogout();
+             else if(asyncStorageRes == "google")
+                 this.signOut();
+         })
+
+       try {
+           const keys = await AsyncStorage.getAllKeys();
+           await AsyncStorage.multiRemove(keys);
+       }catch (err) {
+           console.error('Error');
+
+       }finally {
+           RNRestart.Restart();
+       }
+       
+
+    }
+
     _changeList(target) {
         this.setState({target: target})
     }
@@ -173,7 +216,7 @@ export default class MyPageScreen extends Component {
 
                 <View style={styles.footer}>
                     <View style={{width:"100%",height:'100%', flexDirection:'row', alignItems:'center', justifyContent:'flex-end'}}>
-                        <TouchableOpacity style={{width:100,height:32}} onPress={()=>{this.logout()}}>
+                        <TouchableOpacity style={{width:100,height:32}} onPress={this._logout}>
                             <Text style={styles.btn_text}>로그아웃</Text>
                         </TouchableOpacity>
                     </View>

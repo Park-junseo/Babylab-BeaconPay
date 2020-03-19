@@ -56,6 +56,8 @@ export default class JoinScreen extends Component{
             addr2: '',
             modal: false,
 
+            addrColor : input_styles.color_gray,
+
             agreement: [],
         }
     }
@@ -209,7 +211,7 @@ export default class JoinScreen extends Component{
 
     setAddress(data) {
        // console.log(data.address);
-        this.setState({addr: data.address})
+        this.setState({addr: data.address, addrColor:null})
         this.closeModal();
     }
     closeModal = () => {
@@ -230,6 +232,7 @@ export default class JoinScreen extends Component{
             </View>
         )
     }
+
 
     render() {
         const _this = this;
@@ -269,16 +272,18 @@ export default class JoinScreen extends Component{
                             <TextInput style={input_styles.input} placeholderTextColor={'#999999'} placeholder="김서울"
                             onChangeText={this._inputName}
                             ref={(input)=>{this.ForthTextInput = input}}/>
-                            <TouchableOpacity style={styles.detail_btn}>
+                            {/*<TouchableOpacity style={styles.detail_btn}>
                                 <Text style={styles.detail_text}>실명확인</Text>
-                            </TouchableOpacity>
+                            </TouchableOpacity>*/}
                         </View>
                     </View>
 
                     <View style={[{marginRight:62, marginBottom:8},]}>
                         <Text style={[input_styles.default_text,]}>주소지입력</Text>
                         <View style={{flexDirection: 'row'}}>
-                            <Text style={[input_styles.input]}>{(this.state.addr=='') ? '서울특별시 강남역 1번 출구': this.state.addr}</Text>
+                            <Text style={[input_styles.input,this.state.addrColor]}>
+                                {(this.state.addr=='') ? '서울특별시 강남역 1번 출구': this.state.addr}
+                            </Text>
                             <TouchableOpacity style={styles.detail_btn}>
                                 <Text style={styles.detail_text} onPress={this.openModal}>우편번호 검색</Text>
                             </TouchableOpacity>
@@ -524,5 +529,8 @@ const input_styles = StyleSheet.create({
     color_white:{
         color: '#ffffffdd',
         borderColor: '#ffffff99'
+    },
+    color_gray: {
+        color:'#00000059'
     }
 })

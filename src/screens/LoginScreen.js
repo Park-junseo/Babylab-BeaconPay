@@ -95,7 +95,7 @@ export default class LoginScreen extends Component {
                     
                     <View style={styles.join_container}>
                         <Text style={styles.join_text}>회원이 아니신가요?   </Text>
-                        <TouchableOpacity style={styles.join} onPress={()=>this.props.navigation.navigate('join')}>
+                        <TouchableOpacity style={styles.join} onPress={()=>this.props.navigation.navigate('join')} >
                             <Text style={styles.join_text}>회원가입 하기</Text>
                         </TouchableOpacity>
                     </View>

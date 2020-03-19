@@ -77,7 +77,7 @@ export default class GoogleLoginComponent extends Component {
         return(
             <>
                 {!this.state.loggedIn && <TouchableHighlight style={styles.btn}
-                    onPress={this._signIn}>
+                    onPress={this._signIn}  underlayColor="#transparent">
                         <Image style={{height:50, width:50}} source={require('../../assets/google.jpg')}/>
                         </TouchableHighlight>}
 

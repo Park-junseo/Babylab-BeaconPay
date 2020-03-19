@@ -43,7 +43,7 @@ const BlueButton = ({text, onPress, white, shadow, right})=>{
     return (
         <View style={[btn_styles.btn_wrapper, rotateStyle.btn_wrapper,]}>
             <TouchableOpacity style={[btn_styles.btn, rotateStyle.wrapper]} onPress={onPress} >
-                <Text style={[rotateStyle.svg, svg_shadow,white_back,white_text]}>{text}</Text>
+                <Text style={[{fontSize:16},rotateStyle.svg, svg_shadow,white_back,white_text]}>{text}</Text>
             </TouchableOpacity>
         </View>        
         )

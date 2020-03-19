@@ -78,20 +78,20 @@ export default class CardComponent extends Component {
         return(
             <>
              <View style={styles.container}>
-                    <Image source={require('../../assets/Card.png')} resizeMode="contain" style={styles.card}/>
-                    <View style={styles.card_content}>
-                        <View style={{flexDirection: 'row', height: 40}}>
-                            <Text style={styles.bank_title}> </Text>
-                            {this.props.setting && <TouchableHighlight onPress={this.openModal}>
-                                <Feather name="more-vertical" size={30} color="#fff"/>
-                            </TouchableHighlight>}
-                        </View>
-                        <View style={{flexDirection: 'row', width: '55%', alignSelf:'flex-end', marginTop: 20, alignItems:'center'}}>
-                            <Text style={{color: '#fff', marginRight:10}}>잔여 금액</Text>
-                            <Text style={{color:'#fff', fontSize:20, fontWeight:'bold'}}>{this._balanceToText(this.state.balance)} 원</Text>
-                        </View>
+                <Image source={require('../../assets/Card.png')} resizeMode="contain" style={styles.card}/>
+                <View style={styles.card_content}>
+                    <View style={{flexDirection: 'row', height: 40}}>
+                        <Text style={styles.bank_title}> </Text>
+                        {this.props.setting && <TouchableHighlight onPress={this.openModal}>
+                            <Feather name="more-vertical" size={30} color="#fff"/>
+                        </TouchableHighlight>}
+                    </View>
+                    <View style={{flexDirection: 'row', width: '55%', alignSelf:'flex-end', marginTop: 20, alignItems:'center'}}>
+                        <Text style={{color: '#fff', marginRight:10}}>잔여 금액</Text>
+                        <Text style={{color:'#fff', fontSize:20, fontWeight:'bold'}}>{this._balanceToText(this.state.balance)} 원</Text>
                     </View>
                 </View>
+            </View>
 
             <Modal visible={this.state.modal} animationType="slide" transparent={true} >
                 <View style={styles.modal_container}>
@@ -129,11 +129,12 @@ const styles = StyleSheet.create({
         backgroundColor:'#430'
     },
     container: {
+        padding:0,
 
         position:'relative',
 
-
-
+        marginTop: 10,
+        //backgroundColor:'#3f0',
     },
     card:{
         width:'100%',
